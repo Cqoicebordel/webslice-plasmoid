@@ -9,6 +9,9 @@
         <entry name="websliceUrl" type="String">
             <default>http://www.cqoicebordel.net</default>
         </entry>
+		<entry name="enableReload" type="Bool">
+            <default>false</default>
+        </entry>
         <entry name="reloadIntervalMin" type="Int">
             <default>60</default>
         </entry>

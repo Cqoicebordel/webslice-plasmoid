@@ -20,24 +20,36 @@
 import QtQuick 2.0
 import QtWebKit 3.0
 import QtQuick.Layouts 1.1
+import QtWebKit.experimental 1.0
 
 Item {
 	id: main
 	
 	property string websliceUrl: plasmoid.configuration.websliceUrl
+	property bool enableReload: plasmoid.configuration.enableReload
+	property int reloadIntervalMin: plasmoid.configuration.reloadIntervalMin
 	
 	Layout.fillWidth: true
-	//Layout.fillHeight: true
+	Layout.fillHeight: true
 
 	WebView {
 		id: webview
 		url: websliceUrl
 		anchors.fill: parent
+		experimental.preferredMinimumContentsWidth: 100
 	}
-	
+
 	Component.onCompleted: {
         plasmoid.setAction("reload", i18n("Refresh"), "view-refresh")
         webview.reload()
     }
 
+    Timer {
+        interval: 1000 * 60 * reloadIntervalMin
+        running: enableReload
+        repeat: true
+        onTriggered: {
+			webview.reload()
+        }
+    }
 }

@@ -5,7 +5,8 @@ import QtQuick.Layouts 1.0
 Item {
 
     property alias cfg_websliceUrl: websliceUrl.text
-    //property alias cfg_reloadIntervalMin: reloadIntervalMin.value
+    property alias cfg_enableReload: enableReload.checked
+    property alias cfg_reloadIntervalMin: reloadIntervalMin.value
     
     property int textfieldWidth: theme.defaultFont.pointSize * 30
 
@@ -23,15 +24,22 @@ Item {
             Layout.preferredWidth: textfieldWidth
         }
         
-        /*Label {
+        CheckBox {
+            id: enableReload
+            Layout.columnSpan: 2
+            text: i18n('Enable auto reload')
+        }
+        
+        Label {
             text: i18n('Reload interval :')
-            //Layout.alignment: Qt.AlignRight
         }
         
         SpinBox {
             id: reloadIntervalMin
             suffix: i18nc('Abbreviation for minutes', 'min')
-        }*/
+			enabled: enableReload.checked
+			minimumValue: 1
+        }
         
     }
     
