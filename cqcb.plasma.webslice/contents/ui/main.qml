@@ -28,6 +28,7 @@ Item {
 	property string websliceUrl: plasmoid.configuration.websliceUrl
 	property bool enableReload: plasmoid.configuration.enableReload
 	property int reloadIntervalMin: plasmoid.configuration.reloadIntervalMin
+	property bool enableTransparency: plasmoid.configuration.enableTransparency
 	
 	Layout.fillWidth: true
 	Layout.fillHeight: true
@@ -37,12 +38,8 @@ Item {
 		url: websliceUrl
 		anchors.fill: parent
 		experimental.preferredMinimumContentsWidth: 100
+		experimental.transparentBackground: enableTransparency
 	}
-
-	Component.onCompleted: {
-        plasmoid.setAction("reload", i18n("Refresh"), "view-refresh")
-        webview.reload()
-    }
 
     Timer {
         interval: 1000 * 60 * reloadIntervalMin

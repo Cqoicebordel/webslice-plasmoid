@@ -15,6 +15,9 @@
         <entry name="reloadIntervalMin" type="Int">
             <default>60</default>
         </entry>
+		<entry name="enableTransparency" type="Bool">
+            <default>true</default>
+        </entry>
     </group>
 
 </kcfg>
