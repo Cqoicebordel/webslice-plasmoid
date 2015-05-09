@@ -20,6 +20,7 @@
 import QtQuick 2.0
 import QtWebKit 3.0
 import QtQuick.Layouts 1.1
+import QtQuick.Controls 1.3
 import QtWebKit.experimental 1.0
 
 Item {
@@ -39,6 +40,25 @@ Item {
 		anchors.fill: parent
 		experimental.preferredMinimumContentsWidth: 100
 		experimental.transparentBackground: enableTransparency
+		
+		MouseArea {
+			anchors.fill: parent
+			acceptedButtons: Qt.RightButton
+			onClicked: {
+				if(mouse.button & Qt.RightButton) {
+					contextMenu.popup()
+				}
+			}
+		}
+	}
+
+	Menu {
+		id: contextMenu
+		MenuItem {
+			iconName: "view-refresh"
+			text: i18n('Reload')
+			onTriggered: webview.reload()
+		}
 	}
 
     Timer {
