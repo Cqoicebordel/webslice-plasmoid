@@ -26,7 +26,8 @@ Item {
 
         /*Button{
 			iconName: 'view-refresh'
-			action: webview.url = websliceUrl.text
+			action: main.mainWebview.url = websliceUrl.text
+			//action: main.mainWebview.reload()
 		}*/
 
 		Item {

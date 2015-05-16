@@ -7,4 +7,9 @@ ConfigModel {
          icon: 'preferences-system-windows'
          source: 'ConfigGeneral.qml'
     }
+    ConfigCategory {
+         name: i18n('Advanced')
+         icon: 'preferences-desktop-notification'
+         source: 'ConfigAdvanced.qml'
+    }
 }

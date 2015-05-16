@@ -26,10 +26,15 @@ import QtWebKit.experimental 1.0
 Item {
 	id: main
 	
+	//property alias mainWebview: webview.url
+	
 	property string websliceUrl: plasmoid.configuration.websliceUrl
 	property bool enableReload: plasmoid.configuration.enableReload
 	property int reloadIntervalMin: plasmoid.configuration.reloadIntervalMin
 	property bool enableTransparency: plasmoid.configuration.enableTransparency
+	
+	property bool enableJSID: plasmoid.configuration.enableJSID
+	property string jsSelector: plasmoid.configuration.jsSelector
 	
 	Layout.fillWidth: true
 	Layout.fillHeight: true
@@ -40,6 +45,13 @@ Item {
 		anchors.fill: parent
 		experimental.preferredMinimumContentsWidth: 100
 		experimental.transparentBackground: enableTransparency
+		
+		onLoadingChanged: {
+            if (enableJSID && loadRequest.status === WebView.LoadSucceededStatus) {
+                experimental.evaluateJavaScript(
+                    jsSelector + ".scrollIntoView(true);");
+            }
+        }
 		
 		MouseArea {
 			anchors.fill: parent
