@@ -22,10 +22,10 @@ import QtWebKit 3.0
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 import QtWebKit.experimental 1.0
+import org.kde.plasma.plasmoid 2.0
 
 Item {
 	id: main
-	
 	//property alias mainWebview: webview.url
 	
 	property string websliceUrl: plasmoid.configuration.websliceUrl
@@ -35,21 +35,29 @@ Item {
 	
 	property bool enableJSID: plasmoid.configuration.enableJSID
 	property string jsSelector: plasmoid.configuration.jsSelector
+	property string minimumContentWidth: plasmoid.configuration.minimumContentWidth
+	property bool enableJS: plasmoid.configuration.enableJS
+	property string js: plasmoid.configuration.js
 	
 	Layout.fillWidth: true
 	Layout.fillHeight: true
+	
+	Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
 
 	WebView {
 		id: webview
 		url: websliceUrl
 		anchors.fill: parent
-		experimental.preferredMinimumContentsWidth: 100
+		experimental.preferredMinimumContentsWidth: minimumContentWidth
 		experimental.transparentBackground: enableTransparency
 		
 		onLoadingChanged: {
             if (enableJSID && loadRequest.status === WebView.LoadSucceededStatus) {
                 experimental.evaluateJavaScript(
                     jsSelector + ".scrollIntoView(true);");
+            }
+            if (enableJS && loadRequest.status === WebView.LoadSucceededStatus) {
+                experimental.evaluateJavaScript(js);
             }
         }
 		

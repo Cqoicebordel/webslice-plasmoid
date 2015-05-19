@@ -59,7 +59,7 @@ Item {
         }
 
         Item {
-            width: 25
+            width: 3
             height: 25
         }
 

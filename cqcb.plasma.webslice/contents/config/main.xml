@@ -26,5 +26,14 @@
 		<entry name="jsSelector" type="String">
             <default></default>
         </entry>
+		<entry name="minimumContentWidth" type="Int">
+            <default>100</default>
+        </entry>
+		<entry name="enableJS" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="js" type="String">
+            <default></default>
+        </entry>
 	</group>
 </kcfg>
