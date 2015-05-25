@@ -32,6 +32,8 @@ Item {
 	property bool enableReload: plasmoid.configuration.enableReload
 	property int reloadIntervalMin: plasmoid.configuration.reloadIntervalMin
 	property bool enableTransparency: plasmoid.configuration.enableTransparency
+	property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
+	property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
 	
 	property bool enableJSID: plasmoid.configuration.enableJSID
 	property string jsSelector: plasmoid.configuration.jsSelector
@@ -42,7 +44,9 @@ Item {
 	Layout.fillWidth: true
 	Layout.fillHeight: true
 	
-	Plasmoid.preferredRepresentation: Plasmoid.fullRepresentation
+	
+	Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
+
 
 	WebView {
 		id: webview
@@ -78,6 +82,11 @@ Item {
 			iconName: "view-refresh"
 			text: i18n('Reload')
 			onTriggered: webview.reload()
+		}
+		MenuItem {
+			iconName: "configure"
+			text: i18n('Configure')
+			onTriggered: plasmoid.action("configure").trigger()
 		}
 	}
 
