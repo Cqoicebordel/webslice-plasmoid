@@ -23,6 +23,7 @@ import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
 import QtWebKit.experimental 1.0
 import org.kde.plasma.plasmoid 2.0
+import org.kde.plasma.components 2.0 as PlasmaComponents
 
 Item {
 	id: main
@@ -30,7 +31,7 @@ Item {
 	
 	property string websliceUrl: plasmoid.configuration.websliceUrl
 	property bool enableReload: plasmoid.configuration.enableReload
-	property int reloadIntervalMin: plasmoid.configuration.reloadIntervalMin
+	property int reloadIntervalSec: plasmoid.configuration.reloadIntervalSec
 	property bool enableTransparency: plasmoid.configuration.enableTransparency
 	property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
 	property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
@@ -63,6 +64,10 @@ Item {
             if (enableJS && loadRequest.status === WebView.LoadSucceededStatus) {
                 experimental.evaluateJavaScript(js);
             }
+            if (loadRequest.status === WebView.LoadSucceededStatus) {
+				busyIndicator.visible = false;
+				busyIndicator.running = false;
+			}
         }
 		
 		MouseArea {
@@ -81,7 +86,7 @@ Item {
 		MenuItem {
 			iconName: "view-refresh"
 			text: i18n('Reload')
-			onTriggered: webview.reload()
+			onTriggered: reload()
 		}
 		MenuItem {
 			iconName: "configure"
@@ -91,11 +96,24 @@ Item {
 	}
 
     Timer {
-        interval: 1000 * 60 * reloadIntervalMin
+        interval: 1000 * reloadIntervalSec
         running: enableReload
         repeat: true
         onTriggered: {
-			webview.reload()
+			reload()
         }
+    }
+    
+    PlasmaComponents.BusyIndicator {
+        id: busyIndicator
+        anchors.fill: parent
+        visible: false
+        running: false
+    }
+    
+    function reload() {
+        busyIndicator.visible = true;
+        busyIndicator.running = true;
+		webview.reload();
     }
 }

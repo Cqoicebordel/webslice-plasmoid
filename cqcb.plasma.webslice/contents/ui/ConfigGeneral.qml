@@ -6,7 +6,7 @@ Item {
 
     property alias cfg_websliceUrl: websliceUrl.text
     property alias cfg_enableReload: enableReload.checked
-    property alias cfg_reloadIntervalMin: reloadIntervalMin.value
+    property alias cfg_reloadIntervalSec: reloadIntervalSec.value
     property alias cfg_enableTransparency: enableTransparency.checked
     property alias cfg_displaySiteBehaviour: displaySiteBehaviour.checked
     property alias cfg_buttonBehaviour: buttonBehaviour.checked
@@ -53,10 +53,12 @@ Item {
         }
 
         SpinBox {
-            id: reloadIntervalMin
-            suffix: i18nc('Abbreviation for minutes', 'min')
+            id: reloadIntervalSec
+            suffix: i18nc('Abbreviation for seconds', 'sec')
 			enabled: enableReload.checked
-			minimumValue: 1
+			minimumValue: 15
+			maximumValue: 360000
+			stepSize: 15
 			Layout.columnSpan: 2
         }
 

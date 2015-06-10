@@ -12,8 +12,8 @@
 		<entry name="enableReload" type="Bool">
             <default>false</default>
         </entry>
-        <entry name="reloadIntervalMin" type="Int">
-            <default>60</default>
+        <entry name="reloadIntervalSec" type="Int">
+            <default>3600</default>
         </entry>
 		<entry name="enableTransparency" type="Bool">
             <default>true</default>
