@@ -1,0 +1,123 @@
+# plasma-applet-yahooweather language translation file.
+# Copyright (C) 2014 Symeon Huang
+# This file is distributed under the same license as the plasma-applet-yahooweather package.
+# 
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.7.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-06-20 14:18+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../ui/ConfigAdvanced.qml:20
+msgid "Attention, modify with care and only if you know what you are doing."
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:28
+msgid "Enable JS Scroll Into View"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:32
+msgid "JS Selector :"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:51
+msgid "Minimum Content width :"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:56
+msgctxt "Abbreviation for pixels"
+msgid "px"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:64
+msgid "(default : 100px)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:70
+msgid "This option can help you trigger media queries, and may help with zoom."
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:83
+msgid "Enable personnalized JavaScript to be executed once the page is loaded"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:87
+msgid "Your JavaScript :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:21
+msgid "URL :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:49
+msgid "Enable auto reload"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:53
+msgid "Reload interval :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:58
+msgctxt "Abbreviation for seconds"
+msgid "sec"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:74
+msgid "Enable transparency"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:79
+msgid ""
+"Note that the transparency will only work if the page background is also "
+"transparent or not set.\n"
+"Also, the transparency may not be visible until the page is reloaded or "
+"repainted."
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:90
+msgid "Plasmoid behaviour :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:105
+msgid "Display the site"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:111
+msgid "Display a button that opens the site in a new panel"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:119
+msgid ""
+"Note that this behaviour will not be visible until the plasmoid is reloaded."
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:132
+msgid "Display reload animation"
+msgstr ""
+
+#: ../ui/main.qml:89
+msgid "Reload"
+msgstr ""
+
+#: ../ui/main.qml:94
+msgid "Configure"
+msgstr ""
+
+#: rc.js:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#: rc.js:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
