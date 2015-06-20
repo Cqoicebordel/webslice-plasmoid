@@ -35,6 +35,7 @@ Item {
 	property bool enableTransparency: plasmoid.configuration.enableTransparency
 	property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
 	property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
+	property bool reloadAnimation: plasmoid.configuration.reloadAnimation
 	
 	property bool enableJSID: plasmoid.configuration.enableJSID
 	property string jsSelector: plasmoid.configuration.jsSelector
@@ -112,8 +113,10 @@ Item {
     }
     
     function reload() {
-        busyIndicator.visible = true;
-        busyIndicator.running = true;
+		if(reloadAnimation){
+			busyIndicator.visible = true;
+			busyIndicator.running = true;
+		}
 		webview.reload();
     }
 }

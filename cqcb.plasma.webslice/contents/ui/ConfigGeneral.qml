@@ -10,6 +10,7 @@ Item {
     property alias cfg_enableTransparency: enableTransparency.checked
     property alias cfg_displaySiteBehaviour: displaySiteBehaviour.checked
     property alias cfg_buttonBehaviour: buttonBehaviour.checked
+    property alias cfg_reloadAnimation: reloadAnimation.checked
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
 
@@ -119,7 +120,17 @@ Item {
             Layout.columnSpan: 3
             //Layout.alignment: Qt.AlignLeft
         }
+
+        Item {
+            width: 3
+            height: 25
+        }
+
+        CheckBox {
+            id: reloadAnimation
+            Layout.columnSpan: 3
+            text: i18n('Display reload animation')
+        }
     }
-    
 }
  
