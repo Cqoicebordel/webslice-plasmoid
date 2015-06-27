@@ -1,79 +1,86 @@
 # plasma-applet-yahooweather language translation file.
 # Copyright (C) 2014 Symeon Huang
 # This file is distributed under the same license as the plasma-applet-yahooweather package.
-# 
 #
-#, fuzzy
+#
+# Translators:
+# Anderson Casimiro <duodraco@php.net>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.7.0\n"
+"Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2015-06-27 17:52+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2015-06-21 20:20+0000\n"
+"Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
+"language/es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../ui/ConfigAdvanced.qml:20
 msgid "Attention, modify with care and only if you know what you are doing."
 msgstr ""
+"Atención, cambia con cuidado y solo se usted sabe lo que está haciendo."
 
 #: ../ui/ConfigAdvanced.qml:28
 msgid "Enable JS Scroll Into View"
-msgstr ""
+msgstr "Habilita desplazamiento JS en la View"
 
 #: ../ui/ConfigAdvanced.qml:32
 msgid "JS Selector :"
-msgstr ""
+msgstr "Selector JS: "
 
 #: ../ui/ConfigAdvanced.qml:51
 msgid "Minimum Content width :"
-msgstr ""
+msgstr "Anchura mínima de lo contenido "
 
 #: ../ui/ConfigAdvanced.qml:56
 msgctxt "Abbreviation for pixels"
 msgid "px"
-msgstr ""
+msgstr "px"
 
 #: ../ui/ConfigAdvanced.qml:64
 msgid "(default : 100px)"
-msgstr ""
+msgstr "(default: 100px)"
 
 #: ../ui/ConfigAdvanced.qml:70
 msgid "This option can help you trigger media queries, and may help with zoom."
 msgstr ""
+"Esta opción puede ayudarlo en desencadenar media queries y puede ayudar con "
+"el zoom."
 
 #: ../ui/ConfigAdvanced.qml:83
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
+"Habilita la ejecución de Javascript personalizado cuando la página es cargada"
 
 #: ../ui/ConfigAdvanced.qml:87
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "Su Javascript: "
 
 #: ../ui/ConfigGeneral.qml:21
 msgid "URL :"
-msgstr ""
+msgstr "URL:"
 
 #: ../ui/ConfigGeneral.qml:49
 msgid "Enable auto reload"
-msgstr ""
+msgstr "Habilita a recargar automáticamente."
 
 #: ../ui/ConfigGeneral.qml:53
 msgid "Reload interval :"
-msgstr ""
+msgstr "intervalo de recarga: "
 
 #: ../ui/ConfigGeneral.qml:58
 msgctxt "Abbreviation for seconds"
 msgid "sec"
-msgstr ""
+msgstr "seg"
 
 #: ../ui/ConfigGeneral.qml:74
 msgid "Enable transparency"
-msgstr ""
+msgstr "Habilita transparencia"
 
 #: ../ui/ConfigGeneral.qml:79
 msgid ""
@@ -82,42 +89,48 @@ msgid ""
 "Also, the transparency may not be visible until the page is reloaded or "
 "repainted."
 msgstr ""
+"Tenga en cuenta que la transparencia sólo funcionará si el fondo de la "
+"página también es transparente o no configurada.\n"
+"Además, la transparencia puede no ser visible hasta que la página sea "
+"recargada o sea repintada."
 
 #: ../ui/ConfigGeneral.qml:90
 msgid "Plasmoid behaviour :"
-msgstr ""
+msgstr "comportamiento del plasmoid: "
 
 #: ../ui/ConfigGeneral.qml:105
 msgid "Display the site"
-msgstr ""
+msgstr "Mostra el sitio"
 
 #: ../ui/ConfigGeneral.qml:111
 msgid "Display a button that opens the site in a new panel"
-msgstr ""
+msgstr "Mostra un butón que abre el sitio en un nuevo panel"
 
 #: ../ui/ConfigGeneral.qml:119
 msgid ""
 "Note that this behaviour will not be visible until the plasmoid is reloaded."
 msgstr ""
+"Tenga en cuenta que este comportamiento no es visible hasta que el plasmoid "
+"sea recargado."
 
 #: ../ui/ConfigGeneral.qml:132
 msgid "Display reload animation"
-msgstr ""
+msgstr "Mostra la animación de recarga"
 
 #: ../ui/main.qml:89
 msgid "Reload"
-msgstr ""
+msgstr "Recargar"
 
 #: ../ui/main.qml:94
 msgid "Configure"
-msgstr ""
+msgstr "Configurar"
 
 #: rc.js:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Sus nombres"
 
 #: rc.js:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "Sus correos electrónicos"
