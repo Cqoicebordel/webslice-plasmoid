@@ -49,7 +49,6 @@ Item {
 	
 	Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
 
-
 	WebView {
 		id: webview
 		url: websliceUrl
@@ -76,25 +75,27 @@ Item {
 			acceptedButtons: Qt.RightButton
 			onClicked: {
 				if(mouse.button & Qt.RightButton) {
-					contextMenu.popup()
+					contextMenu.open(mouse.x, mouse.y)
 				}
 			}
 		}
 	}
-
-	Menu {
-		id: contextMenu
-		MenuItem {
-			iconName: "view-refresh"
-			text: i18n('Reload')
-			onTriggered: reload()
-		}
-		MenuItem {
-			iconName: "configure"
-			text: i18n('Configure')
-			onTriggered: plasmoid.action("configure").trigger()
-		}
-	}
+	
+    PlasmaComponents.ContextMenu {
+        id: contextMenu
+        
+        PlasmaComponents.MenuItem {
+            text: i18n('Reload')
+            icon: 'view-refresh'
+            onClicked: reload()
+        }
+        
+        PlasmaComponents.MenuItem {
+            text: i18n('Configure')
+            icon: 'configure'
+            onClicked: plasmoid.action("configure").trigger()
+        }
+    }
 
     Timer {
         interval: 1000 * reloadIntervalSec
