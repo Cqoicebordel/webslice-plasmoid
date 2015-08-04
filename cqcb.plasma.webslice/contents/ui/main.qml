@@ -26,37 +26,38 @@ import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 
 Item {
-	id: main
-	//property alias mainWebview: webview.url
-	
-	property string websliceUrl: plasmoid.configuration.websliceUrl
-	property bool enableReload: plasmoid.configuration.enableReload
-	property int reloadIntervalSec: plasmoid.configuration.reloadIntervalSec
-	property bool enableTransparency: plasmoid.configuration.enableTransparency
-	property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
-	property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
-	property bool reloadAnimation: plasmoid.configuration.reloadAnimation
-	
-	property bool enableJSID: plasmoid.configuration.enableJSID
-	property string jsSelector: plasmoid.configuration.jsSelector
-	property string minimumContentWidth: plasmoid.configuration.minimumContentWidth
-	property bool enableJS: plasmoid.configuration.enableJS
-	property string js: plasmoid.configuration.js
-	
-	Layout.fillWidth: true
-	Layout.fillHeight: true
-	
-	
-	Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
+    id: main
+    //property alias mainWebview: webview.url
 
-	WebView {
-		id: webview
-		url: websliceUrl
-		anchors.fill: parent
-		experimental.preferredMinimumContentsWidth: minimumContentWidth
-		experimental.transparentBackground: enableTransparency
-		
-		onLoadingChanged: {
+    property string websliceUrl: plasmoid.configuration.websliceUrl
+    property bool enableReload: plasmoid.configuration.enableReload
+    property int reloadIntervalSec: plasmoid.configuration.reloadIntervalSec
+    property bool enableTransparency: plasmoid.configuration.enableTransparency
+    property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
+    property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
+    property bool reloadAnimation: plasmoid.configuration.reloadAnimation
+
+    property bool enableJSID: plasmoid.configuration.enableJSID
+    property string jsSelector: plasmoid.configuration.jsSelector
+    property string minimumContentWidth: plasmoid.configuration.minimumContentWidth
+    property bool enableJS: plasmoid.configuration.enableJS
+    property string js: plasmoid.configuration.js
+
+    Layout.fillWidth: true
+    Layout.fillHeight: true
+
+
+    Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
+
+
+    WebView {
+        id: webview
+        url: websliceUrl
+        anchors.fill: parent
+        experimental.preferredMinimumContentsWidth: minimumContentWidth
+        experimental.transparentBackground: enableTransparency
+
+        onLoadingChanged: {
             if (enableJSID && loadRequest.status === WebView.LoadSucceededStatus) {
                 experimental.evaluateJavaScript(
                     jsSelector + ".scrollIntoView(true);");
@@ -65,31 +66,51 @@ Item {
                 experimental.evaluateJavaScript(js);
             }
             if (loadRequest.status === WebView.LoadSucceededStatus) {
-				busyIndicator.visible = false;
-				busyIndicator.running = false;
-			}
+                busyIndicator.visible = false;
+                busyIndicator.running = false;
+            }
         }
-		
-		MouseArea {
-			anchors.fill: parent
-			acceptedButtons: Qt.RightButton
-			onClicked: {
-				if(mouse.button & Qt.RightButton) {
-					contextMenu.open(mouse.x, mouse.y)
-				}
-			}
-		}
-	}
-	
+
+        MouseArea {
+            anchors.fill: parent
+            acceptedButtons: Qt.RightButton
+            onClicked: {
+                if(mouse.button & Qt.RightButton) {
+                    contextMenu.open(mapToItem(webview, mouseX, mouseY).x, mapToItem(webview, mouseX, mouseY).y)
+                }
+            }
+        }
+    }
+
     PlasmaComponents.ContextMenu {
         id: contextMenu
-        
+
+        PlasmaComponents.MenuItem {
+            text: i18n('Back')
+            icon: 'draw-arrow-back'
+            enabled: webview.canGoBack
+            onClicked: webview.goBack()
+        }
+
+        PlasmaComponents.MenuItem {
+            text: i18n('Forward')
+            icon: 'draw-arrow-forward'
+            enabled: webview.canGoForward
+            onClicked: webview.goForward()
+        }
+
         PlasmaComponents.MenuItem {
             text: i18n('Reload')
             icon: 'view-refresh'
             onClicked: reload()
         }
-        
+
+        PlasmaComponents.MenuItem {
+            text: i18n('Open current URL in default browser')
+            icon: 'document-share'
+            onClicked: Qt.openUrlExternally(webview.url)
+        }
+
         PlasmaComponents.MenuItem {
             text: i18n('Configure')
             icon: 'configure'
@@ -102,22 +123,22 @@ Item {
         running: enableReload
         repeat: true
         onTriggered: {
-			reload()
+            reload()
         }
     }
-    
+
     PlasmaComponents.BusyIndicator {
         id: busyIndicator
         anchors.fill: parent
         visible: false
         running: false
     }
-    
+
     function reload() {
-		if(reloadAnimation){
-			busyIndicator.visible = true;
-			busyIndicator.running = true;
-		}
-		webview.reload();
+        if(reloadAnimation){
+            busyIndicator.visible = true;
+            busyIndicator.running = true;
+        }
+        webview.reload();
     }
 }
