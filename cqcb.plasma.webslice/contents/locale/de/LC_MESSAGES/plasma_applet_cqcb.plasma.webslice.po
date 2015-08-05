@@ -1,79 +1,86 @@
 # plasma-applet-yahooweather language translation file.
 # Copyright (C) 2014 Symeon Huang
 # This file is distributed under the same license as the plasma-applet-yahooweather package.
-# 
 #
-#, fuzzy
+#
+# Translators:
+# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015
 msgid ""
 msgstr ""
-"Project-Id-Version: 0.7.0\n"
+"Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-27 17:52+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2015-08-05 19:24+0200\n"
+"PO-Revision-Date: 2015-07-28 19:03+0000\n"
+"Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
+"Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
+"language/de/)\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../ui/ConfigAdvanced.qml:20
 msgid "Attention, modify with care and only if you know what you are doing."
 msgstr ""
+"Achtung! Bitte nehmen Sie nur Änderungen vor, wenn Sie wissen, was Sie tun."
 
 #: ../ui/ConfigAdvanced.qml:28
 msgid "Enable JS Scroll Into View"
-msgstr ""
+msgstr "JS Selektor Auswahl ins Blickfeld scrollen"
 
 #: ../ui/ConfigAdvanced.qml:32
 msgid "JS Selector :"
-msgstr ""
+msgstr "JS Selektor:"
 
 #: ../ui/ConfigAdvanced.qml:51
 msgid "Minimum Content width :"
-msgstr ""
+msgstr "Mindestbreite des Inhalts:"
 
 #: ../ui/ConfigAdvanced.qml:56
 msgctxt "Abbreviation for pixels"
 msgid "px"
-msgstr ""
+msgstr "px"
 
 #: ../ui/ConfigAdvanced.qml:64
 msgid "(default : 100px)"
-msgstr ""
+msgstr "(Voreinstellung: 100px)"
 
 #: ../ui/ConfigAdvanced.qml:70
 msgid "This option can help you trigger media queries, and may help with zoom."
 msgstr ""
+"Diese Option hilft Ihnen, CSS/Media Queries auszulösen und kann beim zoomen "
+"helfen."
 
 #: ../ui/ConfigAdvanced.qml:83
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
+"Persönliche JavaScripts, die nach dem laden der Seite ausgeführt werden."
 
 #: ../ui/ConfigAdvanced.qml:87
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "Ihr Javascript:"
 
 #: ../ui/ConfigGeneral.qml:21
 msgid "URL :"
-msgstr ""
+msgstr "URL:"
 
 #: ../ui/ConfigGeneral.qml:49
 msgid "Enable auto reload"
-msgstr ""
+msgstr "Automatisch neu laden"
 
 #: ../ui/ConfigGeneral.qml:53
 msgid "Reload interval :"
-msgstr ""
+msgstr "Nachladeintervall:"
 
 #: ../ui/ConfigGeneral.qml:58
 msgctxt "Abbreviation for seconds"
 msgid "sec"
-msgstr ""
+msgstr "Sek."
 
 #: ../ui/ConfigGeneral.qml:74
 msgid "Enable transparency"
-msgstr ""
+msgstr "Transparenz einschalten"
 
 #: ../ui/ConfigGeneral.qml:79
 msgid ""
@@ -82,42 +89,61 @@ msgid ""
 "Also, the transparency may not be visible until the page is reloaded or "
 "repainted."
 msgstr ""
+"Transparenz ist nur möglich, wenn der Seitenhintergrund ebenfalls "
+"transparent oder nicht gesetzt ist.\n"
+"Transparenz ist möglicherweise erst nach neu laden oder zeichnen der Seite "
+"sichtbar."
 
 #: ../ui/ConfigGeneral.qml:90
 msgid "Plasmoid behaviour :"
-msgstr ""
+msgstr "Plasmoid Verhalten:"
 
 #: ../ui/ConfigGeneral.qml:105
 msgid "Display the site"
-msgstr ""
+msgstr "Site anzeigen"
 
 #: ../ui/ConfigGeneral.qml:111
 msgid "Display a button that opens the site in a new panel"
 msgstr ""
+"Kompakt-Ansicht anzeigen. Öffnet die Site bei Klick in einem neuen Paneel."
 
 #: ../ui/ConfigGeneral.qml:119
 msgid ""
 "Note that this behaviour will not be visible until the plasmoid is reloaded."
 msgstr ""
+"Hinweis: Dieses Einstellung ist erst nach dem neu laden des Plasmoids "
+"wirksam."
 
 #: ../ui/ConfigGeneral.qml:132
 msgid "Display reload animation"
+msgstr "\"Neu laden\" Animation anzeigen"
+
+#: ../ui/main.qml:99
+msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:89
+#: ../ui/main.qml:106
+msgid "Forward"
+msgstr ""
+
+#: ../ui/main.qml:113
 msgid "Reload"
+msgstr "Neu laden"
+
+#: ../ui/main.qml:119
+msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:94
+#: ../ui/main.qml:125
 msgid "Configure"
-msgstr ""
+msgstr "Konfigurieren"
 
 #: rc.js:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Ihre Namen"
 
 #: rc.js:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "Ihre E-Mails"

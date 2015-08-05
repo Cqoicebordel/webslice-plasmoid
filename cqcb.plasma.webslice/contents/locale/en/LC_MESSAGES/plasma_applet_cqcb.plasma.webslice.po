@@ -4,37 +4,36 @@
 #
 #
 # Translators:
-# Cqoicebordel <david.barouh@wanadoo.fr>, 2015
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-20 14:18+0200\n"
+"POT-Creation-Date: 2015-08-05 19:24+0200\n"
 "PO-Revision-Date: 2015-06-20 12:11+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
-"Language-Team: French (http://www.transifex.com/projects/p/webslice/language/"
-"fr/)\n"
-"Language: fr\n"
+"Language-Team: English (http://www.transifex.com/projects/p/webslice/"
+"language/en/)\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../ui/ConfigAdvanced.qml:20
 msgid "Attention, modify with care and only if you know what you are doing."
-msgstr "Faites attention à ne modifier que si vous savez ce que vous faites."
+msgstr "Attention, modify with care and only if you know what you are doing."
 
 #: ../ui/ConfigAdvanced.qml:28
 msgid "Enable JS Scroll Into View"
-msgstr "Activer le déplacement de la page"
+msgstr "Enable JS Scroll Into View"
 
 #: ../ui/ConfigAdvanced.qml:32
 msgid "JS Selector :"
-msgstr "Selector JS"
+msgstr "JS Selector :"
 
 #: ../ui/ConfigAdvanced.qml:51
 msgid "Minimum Content width :"
-msgstr "Largeur minimal du contenu :"
+msgstr "Minimum Content width :"
 
 #: ../ui/ConfigAdvanced.qml:56
 msgctxt "Abbreviation for pixels"
@@ -43,33 +42,32 @@ msgstr "px"
 
 #: ../ui/ConfigAdvanced.qml:64
 msgid "(default : 100px)"
-msgstr "(défaut : 100px)"
+msgstr "(default : 100px)"
 
 #: ../ui/ConfigAdvanced.qml:70
 msgid "This option can help you trigger media queries, and may help with zoom."
 msgstr ""
-"Cette option peut activer les média queries, et pourrait aider avec le zoom."
+"This option can help you trigger media queries, and may help with zoom."
 
 #: ../ui/ConfigAdvanced.qml:83
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
-msgstr ""
-"Activer le JavaScript personnalisé à être exécuté lorsque la page est chargée"
+msgstr "Enable personnalized JavaScript to be executed once the page is loaded"
 
 #: ../ui/ConfigAdvanced.qml:87
 msgid "Your JavaScript :"
-msgstr "Votre JavaScript : "
+msgstr "Your JavaScript :"
 
 #: ../ui/ConfigGeneral.qml:21
 msgid "URL :"
-msgstr "URL : "
+msgstr "URL :"
 
 #: ../ui/ConfigGeneral.qml:49
 msgid "Enable auto reload"
-msgstr "Activer l'auto-actualisation"
+msgstr "Enable auto reload"
 
 #: ../ui/ConfigGeneral.qml:53
 msgid "Reload interval :"
-msgstr "Intervalle d'actualisation :"
+msgstr "Reload interval :"
 
 #: ../ui/ConfigGeneral.qml:58
 msgctxt "Abbreviation for seconds"
@@ -78,7 +76,7 @@ msgstr "sec"
 
 #: ../ui/ConfigGeneral.qml:74
 msgid "Enable transparency"
-msgstr "Activer la transparence"
+msgstr "Enable transparency"
 
 #: ../ui/ConfigGeneral.qml:79
 msgid ""
@@ -87,48 +85,59 @@ msgid ""
 "Also, the transparency may not be visible until the page is reloaded or "
 "repainted."
 msgstr ""
-"La transparence ne fonctionnera que si le fond de la page est transparent ou "
-"inexistant.\n"
-"De plus, la transparence pourrait ne pas être visible tant que la page n'est "
-"pas rechargée ou redessinée."
+"Note that the transparency will only work if the page background is also "
+"transparent or not set.\n"
+"Also, the transparency may not be visible until the page is reloaded or "
+"repainted."
 
 #: ../ui/ConfigGeneral.qml:90
 msgid "Plasmoid behaviour :"
-msgstr "Comportement du plasmoid : "
+msgstr "Plasmoid behaviour :"
 
 #: ../ui/ConfigGeneral.qml:105
 msgid "Display the site"
-msgstr "Afficher le site"
+msgstr "Display the site"
 
 #: ../ui/ConfigGeneral.qml:111
 msgid "Display a button that opens the site in a new panel"
-msgstr "Afficher un bouton qui ouvre le site dans un nouveau panneau"
+msgstr "Display a button that opens the site in a new panel"
 
 #: ../ui/ConfigGeneral.qml:119
 msgid ""
 "Note that this behaviour will not be visible until the plasmoid is reloaded."
 msgstr ""
-"Ce comportement ne sera pas visible tant que le plasmoid ne sera pas "
-"rechargé."
+"Note that this behaviour will not be visible until the plasmoid is reloaded."
 
 #: ../ui/ConfigGeneral.qml:132
 msgid "Display reload animation"
-msgstr "Afficher l'animation d'actualisation"
+msgstr "Display reload animation"
 
-#: ../ui/main.qml:89
+#: ../ui/main.qml:99
+msgid "Back"
+msgstr ""
+
+#: ../ui/main.qml:106
+msgid "Forward"
+msgstr ""
+
+#: ../ui/main.qml:113
 msgid "Reload"
-msgstr "Recharger"
+msgstr "Reload"
 
-#: ../ui/main.qml:94
+#: ../ui/main.qml:119
+msgid "Open current URL in default browser"
+msgstr ""
+
+#: ../ui/main.qml:125
 msgid "Configure"
-msgstr "Configurer"
+msgstr "Configure"
 
 #: rc.js:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Vos noms"
+msgstr "Your names"
 
 #: rc.js:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "Vos emails"
+msgstr "Your emails"

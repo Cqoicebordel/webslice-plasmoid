@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-06-27 17:52+0200\n"
+"POT-Creation-Date: 2015-08-05 19:24+0200\n"
 "PO-Revision-Date: 2015-06-21 20:20+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
@@ -117,11 +117,23 @@ msgstr ""
 msgid "Display reload animation"
 msgstr "Mostra la animación de recarga"
 
-#: ../ui/main.qml:89
+#: ../ui/main.qml:99
+msgid "Back"
+msgstr ""
+
+#: ../ui/main.qml:106
+msgid "Forward"
+msgstr ""
+
+#: ../ui/main.qml:113
 msgid "Reload"
 msgstr "Recargar"
 
-#: ../ui/main.qml:94
+#: ../ui/main.qml:119
+msgid "Open current URL in default browser"
+msgstr ""
+
+#: ../ui/main.qml:125
 msgid "Configure"
 msgstr "Configurar"
 
