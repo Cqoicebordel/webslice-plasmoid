@@ -12,7 +12,7 @@ cd "${0%/*}"
 DIR=$(pwd)
 
 #NAME=$(basename $(dirname $DIR))
-NAME=`grep "X-KDE-PluginInfo-Name" ../../metadata.desktop | sed 's/.*=//'`
+NAME="plasma_applet_"`grep "X-KDE-PluginInfo-Name" ../../metadata.desktop | sed 's/.*=//'`
 API=$(grep "X-Plasma-API" ../../metadata.desktop | sed 's/.*=//')
 case "$API" in
   "python") SCRIPTEXT="py" ;;
