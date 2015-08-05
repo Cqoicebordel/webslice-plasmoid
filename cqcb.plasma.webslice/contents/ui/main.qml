@@ -71,11 +71,21 @@ Item {
             }
         }
 
+        onNavigationRequested: {
+            //console.debug ("NavigationRequested: " + request.url + " navigationType=" + request.navigationType + " " + WebView.LinkClickedNavigation + " mouse:"+ request.mouseButton + " " + Qt.MiddleButton)
+            //console.debug(request.keyboardModifiers + " " + Qt.ControlModifier + " " + request)
+            if (request.navigationType == WebView.LinkClickedNavigation && (request.keyboardModifiers == Qt.ControlModifier || request.mouseButton == Qt.MiddleButton)) {
+                //console.debug ("*************** yeah ************");
+                request.action = WebView.IgnoreRequest;
+                Qt.openUrlExternally(request.url);
+            }
+        }
+
         MouseArea {
             anchors.fill: parent
             acceptedButtons: Qt.RightButton
             onClicked: {
-                if(mouse.button & Qt.RightButton) {
+                if (mouse.button & Qt.RightButton) {
                     contextMenu.open(mapToItem(webview, mouseX, mouseY).x, mapToItem(webview, mouseX, mouseY).y)
                 }
             }
