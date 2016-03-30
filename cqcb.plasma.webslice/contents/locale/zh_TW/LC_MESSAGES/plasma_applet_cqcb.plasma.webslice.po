@@ -1,0 +1,142 @@
+# plasma-applet-yahooweather language translation file.
+# Copyright (C) 2014 Symeon Huang
+# This file is distributed under the same license as the plasma-applet-yahooweather package.
+#
+#
+# Jeff Huang <s8321414@gmail.com>, 2016.
+msgid ""
+msgstr ""
+"Project-Id-Version: 0.9.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-08-05 19:28+0200\n"
+"PO-Revision-Date: 2016-03-30 13:28+0800\n"
+"Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
+"Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 2.0\n"
+
+#: ../ui/ConfigAdvanced.qml:20
+msgid "Attention, modify with care and only if you know what you are doing."
+msgstr "注意，僅在您知道您正在做什麼時才小心地修改。"
+
+#: ../ui/ConfigAdvanced.qml:28
+msgid "Enable JS Scroll Into View"
+msgstr "啟用 JS 捲動檢視範圍"
+
+#: ../ui/ConfigAdvanced.qml:32
+msgid "JS Selector :"
+msgstr "JS 選擇器："
+
+#: ../ui/ConfigAdvanced.qml:51
+msgid "Minimum Content width :"
+msgstr "最小內容寬度："
+
+#: ../ui/ConfigAdvanced.qml:56
+msgctxt "Abbreviation for pixels"
+msgid "px"
+msgstr "px"
+
+#: ../ui/ConfigAdvanced.qml:64
+msgid "(default : 100px)"
+msgstr "（預設：100px）"
+
+#: ../ui/ConfigAdvanced.qml:70
+msgid "This option can help you trigger media queries, and may help with zoom."
+msgstr "這個選項可以協助您觸發媒體查詢，以及可能會對縮放有所幫助。"
+
+#: ../ui/ConfigAdvanced.qml:83
+msgid "Enable personnalized JavaScript to be executed once the page is loaded"
+msgstr "啟用個人化的 JavaScript 以在頁面被載入時執行"
+
+#: ../ui/ConfigAdvanced.qml:87
+msgid "Your JavaScript :"
+msgstr "您的 JavaScript："
+
+#: ../ui/ConfigGeneral.qml:21
+msgid "URL :"
+msgstr "URL："
+
+#: ../ui/ConfigGeneral.qml:49
+msgid "Enable auto reload"
+msgstr "啟用自動重新整理"
+
+#: ../ui/ConfigGeneral.qml:53
+msgid "Reload interval :"
+msgstr "重新整理間隔："
+
+#: ../ui/ConfigGeneral.qml:58
+msgctxt "Abbreviation for seconds"
+msgid "sec"
+msgstr "秒"
+
+#: ../ui/ConfigGeneral.qml:74
+msgid "Enable transparency"
+msgstr "啟用透明"
+
+#: ../ui/ConfigGeneral.qml:79
+msgid ""
+"Note that the transparency will only work if the page background is also "
+"transparent or not set.\n"
+"Also, the transparency may not be visible until the page is reloaded or "
+"repainted."
+msgstr ""
+"注意，透明將只會在頁面背景也是"
+"透明或是未設定時運作。\n"
+"並且，透明可能會在頁面重新整理或"
+"重新繪製前不可見。"
+
+#: ../ui/ConfigGeneral.qml:90
+msgid "Plasmoid behaviour :"
+msgstr "Plasmoid 行為："
+
+#: ../ui/ConfigGeneral.qml:105
+msgid "Display the site"
+msgstr "顯示頁面"
+
+#: ../ui/ConfigGeneral.qml:111
+msgid "Display a button that opens the site in a new panel"
+msgstr "顯示在新面板開啟頁面的按鈕"
+
+#: ../ui/ConfigGeneral.qml:119
+msgid ""
+"Note that this behaviour will not be visible until the plasmoid is reloaded."
+msgstr "注意這個行為將會在 plasmoid 重新載入後才可見。"
+
+#: ../ui/ConfigGeneral.qml:132
+msgid "Display reload animation"
+msgstr "顯示重新整理動畫"
+
+#: ../ui/main.qml:99
+msgid "Back"
+msgstr "上一頁"
+
+#: ../ui/main.qml:106
+msgid "Forward"
+msgstr "下一頁"
+
+#: ../ui/main.qml:113
+msgid "Reload"
+msgstr "重新整理"
+
+#: ../ui/main.qml:119
+msgid "Open current URL in default browser"
+msgstr "在預設瀏覽器中開啟目前的 URL"
+
+#: ../ui/main.qml:125
+msgid "Configure"
+msgstr "設定"
+
+#: rc.js:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "您的名字"
+
+#: rc.js:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "您的電子郵件"
+
