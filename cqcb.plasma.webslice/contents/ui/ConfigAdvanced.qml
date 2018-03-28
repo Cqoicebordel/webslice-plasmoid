@@ -15,7 +15,7 @@ Item {
     GridLayout {
         columns: 3
 
-        Text {
+        Label {
             font.bold: true
             text: i18n('Attention, modify with care and only if you know what you are doing.')
             Layout.preferredWidth: 0
@@ -59,13 +59,13 @@ Item {
 			Layout.columnSpan: 1
         }
         
-        Text {
+        Label {
             font.italic: true
             text: i18n('(default : 100px)')
             Layout.columnSpan: 1
         }
 
-        Text {
+        Label {
             font.italic: true
             text: i18n('This option can help you trigger media queries, and may help with zoom.')
             Layout.preferredWidth: 0

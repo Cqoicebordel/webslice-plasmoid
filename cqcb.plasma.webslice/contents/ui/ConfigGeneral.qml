@@ -74,7 +74,7 @@ Item {
             text: i18n('Enable transparency')
         }
 
-        Text {
+        Label {
             font.italic: true
             text: i18n('Note that the transparency will only work if the page background is also transparent or not set.\nAlso, the transparency may not be visible until the page is reloaded or repainted.')
             Layout.columnSpan: 3
@@ -113,8 +113,8 @@ Item {
                 }
             }
         }
-        
-        Text {
+
+        Label {
             font.italic: true
             text: i18n('Note that this behaviour will not be visible until the plasmoid is reloaded.')
             Layout.columnSpan: 3
