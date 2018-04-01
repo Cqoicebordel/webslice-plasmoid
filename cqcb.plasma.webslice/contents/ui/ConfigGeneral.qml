@@ -1,6 +1,6 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.0
-import QtQuick.Layouts 1.0
+import QtQuick 2.7
+import QtQuick.Controls 1.3
+import QtQuick.Layouts 1.1
 
 Item {
 
@@ -10,6 +10,8 @@ Item {
     property alias cfg_enableTransparency: enableTransparency.checked
     property alias cfg_displaySiteBehaviour: displaySiteBehaviour.checked
     property alias cfg_buttonBehaviour: buttonBehaviour.checked
+    property alias cfg_webPopupWidth: webPopupWidth.value
+    property alias cfg_webPopupHeight: webPopupHeight.value
     property alias cfg_reloadAnimation: reloadAnimation.checked
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
@@ -27,20 +29,13 @@ Item {
             Layout.preferredWidth: textfieldWidth
         }
 
-        /*Button{
-			iconName: 'view-refresh'
-			action: main.mainWebview.url = websliceUrl.text
-			//action: main.mainWebview.reload()
-		}*/
-
-		Item {
+        /*Item {
             width: 1
             height: 25
-        }
-
+        }*/
         Item {
             width: 3
-            height: 25
+            height: 40
         }
 
         CheckBox {
@@ -51,21 +46,22 @@ Item {
 
         Label {
             text: i18n('Reload interval :')
+            enabled: enableReload.checked
         }
 
         SpinBox {
             id: reloadIntervalSec
             suffix: i18nc('Abbreviation for seconds', 'sec')
-			enabled: enableReload.checked
-			minimumValue: 15
-			maximumValue: 360000
-			stepSize: 15
-			Layout.columnSpan: 2
+            enabled: enableReload.checked
+            minimumValue: 15
+            maximumValue: 360000
+            stepSize: 15
+            Layout.columnSpan: 2
         }
 
         Item {
             width: 3
-            height: 25
+            height: 20
         }
 
         CheckBox {
@@ -78,17 +74,16 @@ Item {
             font.italic: true
             text: i18n('Note that the transparency will only work if the page background is also transparent or not set.\nAlso, the transparency may not be visible until the page is reloaded or repainted.')
             Layout.columnSpan: 3
-            //Layout.alignment: Qt.AlignLeft
         }
 
         Item {
             width: 3
-            height: 25
+            height: 20
         }
 
         Label {
             text: i18n('Plasmoid behaviour :')
-			Layout.columnSpan: 3
+            Layout.columnSpan: 3
         }
 
         GroupBox {
@@ -114,11 +109,53 @@ Item {
             }
         }
 
+
+        RowLayout{
+            Layout.columnSpan: 3
+            Label{
+                text: i18n('Popup size')
+                enabled: buttonBehaviour.checked
+            }
+
+            Item {
+                width: 30
+                height: 10
+            }
+
+            Label{
+                text: i18n('Width')
+                enabled: buttonBehaviour.checked
+            }
+
+            SpinBox {
+                id: webPopupWidth
+                suffix: i18nc('Abbreviation for pixels', 'px')
+                enabled: buttonBehaviour.checked
+                minimumValue: 10
+                maximumValue: 10000
+                stepSize: 10
+            }
+
+            Label{
+                text: i18n('Height')
+                enabled: buttonBehaviour.checked
+            }
+
+            SpinBox {
+                id: webPopupHeight
+                suffix: i18nc('Abbreviation for pixels', 'px')
+                enabled: buttonBehaviour.checked
+                minimumValue: 10
+                maximumValue: 10000
+                stepSize: 10
+            }
+        }
+
+
         Label {
             font.italic: true
-            text: i18n('Note that this behaviour will not be visible until the plasmoid is reloaded.')
+            text: i18n('Note that this behaviour might not be visible until the plasmoid is reloaded.')
             Layout.columnSpan: 3
-            //Layout.alignment: Qt.AlignLeft
         }
 
         Item {
@@ -133,4 +170,3 @@ Item {
         }
     }
 }
- 

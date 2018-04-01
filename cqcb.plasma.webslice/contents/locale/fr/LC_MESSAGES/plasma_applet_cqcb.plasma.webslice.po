@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Cqoicebordel <david.barouh@wanadoo.fr>, 2015
+# Cqoicebordel <david.barouh@wanadoo.fr>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-05 19:28+0200\n"
-"PO-Revision-Date: 2015-08-05 17:27+0000\n"
+"POT-Creation-Date: 2018-04-02 00:46+0200\n"
+"PO-Revision-Date: 2018-04-01 22:45+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: French (http://www.transifex.com/cqoicebordel/webslice/"
 "language/fr/)\n"
@@ -24,63 +24,64 @@ msgstr ""
 msgid "Attention, modify with care and only if you know what you are doing."
 msgstr "Faites attention à ne modifier que si vous savez ce que vous faites."
 
-#: ../ui/ConfigAdvanced.qml:28
+#: ../ui/ConfigAdvanced.qml:27
 msgid "Enable JS Scroll Into View"
 msgstr "Activer le déplacement de la page"
 
-#: ../ui/ConfigAdvanced.qml:32
+#: ../ui/ConfigAdvanced.qml:31
 msgid "JS Selector :"
 msgstr "Selector JS"
 
-#: ../ui/ConfigAdvanced.qml:51
+#: ../ui/ConfigAdvanced.qml:50
 msgid "Minimum Content width :"
 msgstr "Largeur minimal du contenu :"
 
-#: ../ui/ConfigAdvanced.qml:56
+#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:134
+#: ../ui/ConfigGeneral.qml:148
 msgctxt "Abbreviation for pixels"
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:64
+#: ../ui/ConfigAdvanced.qml:63
 msgid "(default : 100px)"
 msgstr "(défaut : 100px)"
 
-#: ../ui/ConfigAdvanced.qml:70
+#: ../ui/ConfigAdvanced.qml:69
 msgid "This option can help you trigger media queries, and may help with zoom."
 msgstr ""
 "Cette option peut activer les média queries, et pourrait aider avec le zoom."
 
-#: ../ui/ConfigAdvanced.qml:83
+#: ../ui/ConfigAdvanced.qml:82
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Activer le JavaScript personnalisé à être exécuté lorsque la page est chargée"
 
-#: ../ui/ConfigAdvanced.qml:87
+#: ../ui/ConfigAdvanced.qml:86
 msgid "Your JavaScript :"
 msgstr "Votre JavaScript : "
 
-#: ../ui/ConfigGeneral.qml:21
+#: ../ui/ConfigGeneral.qml:23
 msgid "URL :"
 msgstr "URL : "
 
-#: ../ui/ConfigGeneral.qml:49
+#: ../ui/ConfigGeneral.qml:44
 msgid "Enable auto reload"
 msgstr "Activer l'auto-actualisation"
 
-#: ../ui/ConfigGeneral.qml:53
+#: ../ui/ConfigGeneral.qml:48
 msgid "Reload interval :"
 msgstr "Intervalle d'actualisation :"
 
-#: ../ui/ConfigGeneral.qml:58
+#: ../ui/ConfigGeneral.qml:54
 msgctxt "Abbreviation for seconds"
 msgid "sec"
 msgstr "sec"
 
-#: ../ui/ConfigGeneral.qml:74
+#: ../ui/ConfigGeneral.qml:70
 msgid "Enable transparency"
 msgstr "Activer la transparence"
 
-#: ../ui/ConfigGeneral.qml:79
+#: ../ui/ConfigGeneral.qml:75
 msgid ""
 "Note that the transparency will only work if the page background is also "
 "transparent or not set.\n"
@@ -92,55 +93,101 @@ msgstr ""
 "De plus, la transparence pourrait ne pas être visible tant que la page n'est "
 "pas rechargée ou redessinée."
 
-#: ../ui/ConfigGeneral.qml:90
+#: ../ui/ConfigGeneral.qml:87
 msgid "Plasmoid behaviour :"
 msgstr "Comportement du plasmoid : "
 
-#: ../ui/ConfigGeneral.qml:105
+#: ../ui/ConfigGeneral.qml:102
 msgid "Display the site"
 msgstr "Afficher le site"
 
-#: ../ui/ConfigGeneral.qml:111
+#: ../ui/ConfigGeneral.qml:108
 msgid "Display a button that opens the site in a new panel"
 msgstr "Afficher un bouton qui ouvre le site dans un nouveau panneau"
 
-#: ../ui/ConfigGeneral.qml:119
-msgid ""
-"Note that this behaviour will not be visible until the plasmoid is reloaded."
-msgstr ""
-"Ce comportement ne sera pas visible tant que le plasmoid ne sera pas "
-"rechargé."
+#: ../ui/ConfigGeneral.qml:118
+msgid "Popup size"
+msgstr "Taille de la popup"
 
-#: ../ui/ConfigGeneral.qml:132
+#: ../ui/ConfigGeneral.qml:128
+msgid "Width"
+msgstr "Largeur"
+
+#: ../ui/ConfigGeneral.qml:142
+msgid "Height"
+msgstr "Hauteur"
+
+#: ../ui/ConfigGeneral.qml:159
+msgid ""
+"Note that this behaviour might not be visible until the plasmoid is reloaded."
+msgstr ""
+"Ce comportement pourrait ne pas être visible tant que le plasmoid ne sera "
+"pas rechargé."
+
+#: ../ui/ConfigGeneral.qml:171
 msgid "Display reload animation"
 msgstr "Afficher l'animation d'actualisation"
 
-#: ../ui/main.qml:99
+#: ../ui/ConfigMultipleURLs.qml:25
+msgid ""
+"List of URL accessible throught the context menu to switch to others "
+"websites."
+msgstr ""
+"Liste d'adresses accessible dans le menu contextuel pour aller facilement "
+"d'un site web à l'autre."
+
+#: ../ui/ConfigMultipleURLs.qml:34 ../ui/ConfigMultipleURLs.qml:43
+msgid "URL"
+msgstr "Adresse"
+
+#: ../ui/ConfigMultipleURLs.qml:50
+msgid "Add a URL"
+msgstr "Ajouter une adresse"
+
+#: ../ui/ConfigMultipleURLs.qml:59
+msgid "Remove the selected URL"
+msgstr "Supprimer l'adresse sélectionnée"
+
+#: ../ui/ConfigMultipleURLs.qml:67
+msgid "Move the selected URL up"
+msgstr "Monter l'adresse sélectionnée"
+
+#: ../ui/ConfigMultipleURLs.qml:77
+msgid "Move the selected URL down"
+msgstr "Descendre l'adresse sélectionnée"
+
+#: ../ui/main.qml:165
 msgid "Back"
 msgstr "Précédent"
 
-#: ../ui/main.qml:106
+#: ../ui/main.qml:172
 msgid "Forward"
 msgstr "Suivant"
 
-#: ../ui/main.qml:113
+#: ../ui/main.qml:179
 msgid "Reload"
 msgstr "Recharger"
 
-#: ../ui/main.qml:119
+#: ../ui/main.qml:186
+msgid "Go to"
+msgstr "Aller à"
+
+#: ../ui/main.qml:207
 msgid "Open current URL in default browser"
 msgstr "Ouvrir l'URL actuelle dans le navigateur par défaut"
 
-#: ../ui/main.qml:125
+#: ../ui/main.qml:213
 msgid "Configure"
 msgstr "Configurer"
 
-#: rc.js:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "Vos noms"
+#: ../config/config.qml:6
+msgid "General"
+msgstr "Général"
 
-#: rc.js:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "Vos emails"
+#: ../config/config.qml:11
+msgid "Advanced"
+msgstr "Avancé"
+
+#: ../config/config.qml:16
+msgid "More URLs"
+msgstr "Plus d'adresses"

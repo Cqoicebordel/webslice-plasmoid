@@ -1,14 +1,14 @@
-import QtQuick 2.2
-import QtQuick.Controls 1.0
-import QtQuick.Layouts 1.0
+import QtQuick 2.7
+import QtQuick.Controls 1.3
+import QtQuick.Layouts 1.1
 
 Item {
-	
-	property alias cfg_enableJSID: enableJSID.checked
-	property alias cfg_jsSelector: jsSelector.text
-	property alias cfg_minimumContentWidth: minimumContentWidth.value
-	property alias cfg_enableJS: enableJS.checked
-	property alias cfg_js: js.text
+
+    property alias cfg_enableJSID: enableJSID.checked
+    property alias cfg_jsSelector: jsSelector.text
+    property alias cfg_minimumContentWidth: minimumContentWidth.value
+    property alias cfg_enableJS: enableJS.checked
+    property alias cfg_js: js.text
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
 
@@ -18,7 +18,6 @@ Item {
         Label {
             font.bold: true
             text: i18n('Attention, modify with care and only if you know what you are doing.')
-            Layout.preferredWidth: 0
             Layout.columnSpan: 3
         }
 
@@ -30,8 +29,8 @@ Item {
 
         Label {
             text: i18n('JS Selector :')
-			enabled: enableJSID.checked
-			Layout.columnSpan: 1
+            enabled: enableJSID.checked
+            Layout.columnSpan: 1
         }
 
         TextField {
@@ -54,11 +53,11 @@ Item {
         SpinBox {
             id: minimumContentWidth
             suffix: i18nc('Abbreviation for pixels', 'px')
-			minimumValue: 1
-			maximumValue: 10000
-			Layout.columnSpan: 1
+            minimumValue: 1
+            maximumValue: 10000
+            Layout.columnSpan: 1
         }
-        
+
         Label {
             font.italic: true
             text: i18n('(default : 100px)')
@@ -85,16 +84,15 @@ Item {
 
         Label {
             text: i18n('Your JavaScript :')
-			enabled: enableJS.checked
+            enabled: enableJS.checked
         }
 
         TextArea {
             id: js
-            width: 240
+            width: textfieldWidth
+            Layout.minimumWidth: textfieldWidth
             enabled: enableJS.checked
             Layout.columnSpan: 2
         }
     }
-    
 }
- 
