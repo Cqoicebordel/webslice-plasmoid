@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the plasma-applet-yahooweather package.
 #
 #
-# Jeff Huang <s8321414@gmail.com>, 2016.
+# Jeff Huang <s8321414@gmail.com>, 2016, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-04-02 00:43+0200\n"
-"PO-Revision-Date: 2016-04-07 13:06+0800\n"
+"PO-Revision-Date: 2018-04-02 22:12+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -102,21 +102,20 @@ msgstr "顯示在新面板開啟頁面的按鈕"
 
 #: ../ui/ConfigGeneral.qml:118
 msgid "Popup size"
-msgstr ""
+msgstr "彈出視窗大小"
 
 #: ../ui/ConfigGeneral.qml:128
 msgid "Width"
-msgstr ""
+msgstr "寬度"
 
 #: ../ui/ConfigGeneral.qml:142
 msgid "Height"
-msgstr ""
+msgstr "高度"
 
 #: ../ui/ConfigGeneral.qml:159
-#, fuzzy
 msgid ""
 "Note that this behaviour might not be visible until the plasmoid is reloaded."
-msgstr "注意這個行為將會在 plasmoid 重新載入後才可見。"
+msgstr "注意，這個行為可能會在 plasmoid 重新載入後才可見。"
 
 #: ../ui/ConfigGeneral.qml:171
 msgid "Display reload animation"
@@ -126,28 +125,27 @@ msgstr "顯示重新整理動畫"
 msgid ""
 "List of URL accessible throught the context menu to switch to others "
 "websites."
-msgstr ""
+msgstr "可從右鍵選單存取 URL 清單以切換至其他網頁。"
 
 #: ../ui/ConfigMultipleURLs.qml:34 ../ui/ConfigMultipleURLs.qml:43
-#, fuzzy
 msgid "URL"
-msgstr "URL："
+msgstr "URL"
 
 #: ../ui/ConfigMultipleURLs.qml:50
 msgid "Add a URL"
-msgstr ""
+msgstr "新增 URL"
 
 #: ../ui/ConfigMultipleURLs.qml:59
 msgid "Remove the selected URL"
-msgstr ""
+msgstr "移除選定的 URL"
 
 #: ../ui/ConfigMultipleURLs.qml:67
 msgid "Move the selected URL up"
-msgstr ""
+msgstr "將選定的 URL 向上移動"
 
 #: ../ui/ConfigMultipleURLs.qml:77
 msgid "Move the selected URL down"
-msgstr ""
+msgstr "將選定的 URL 向下移動"
 
 #: ../ui/main.qml:165
 msgid "Back"
@@ -163,7 +161,7 @@ msgstr "重新整理"
 
 #: ../ui/main.qml:186
 msgid "Go to"
-msgstr ""
+msgstr "跳到"
 
 #: ../ui/main.qml:207
 msgid "Open current URL in default browser"
@@ -175,12 +173,13 @@ msgstr "設定"
 
 #: ../config/config.qml:6
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #: ../config/config.qml:11
 msgid "Advanced"
-msgstr ""
+msgstr "進階"
 
 #: ../config/config.qml:16
 msgid "More URLs"
-msgstr ""
+msgstr "更多 URL"
+
