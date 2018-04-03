@@ -90,6 +90,8 @@ Item {
         onWidthChanged: updateSizeHints()
         onHeightChanged: updateSizeHints()
 
+        property bool isExternalLink
+
         Connections {
             target: main
             onPopupSizeChanged: {
@@ -128,15 +130,10 @@ Item {
         }
 
         /**
-         * Doesn't work.
-         * Is supposed to open the middle clicked (or ctrl+clicked) link to open in a regular browser
-         * See https://forum.qt.io/topic/57541/wrong-mousebutton-returned-in-a-webview-after-onnavigationrequested
+         * Open the middle clicked (or ctrl+clicked) link in the default browser
          */
         onNavigationRequested: {
-            //console.debug ("NavigationRequested: " + request.url + " navigationType=" + request.navigationType + " " + WebView.LinkClickedNavigation + " mouse:"+ request.mouseButton + " " + Qt.MiddleButton)
-            //console.debug(request.keyboardModifiers + " " + Qt.ControlModifier)
-            if (request.navigationType == WebView.LinkClickedNavigation && ((request.keyboardModifiers == Qt.ControlModifier) || (request.mouseButton == Qt.MiddleButton))) {
-                //console.debug ("*************** yeah ************");
+            if(isExternalLink){
                 request.action = WebView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
             }
@@ -147,10 +144,34 @@ Item {
          */
         MouseArea {
             anchors.fill: parent
-            acceptedButtons: Qt.RightButton
+            acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
+            propagateComposedEvents:true
+            onReleased: mouse.accepted = false;
+            onDoubleClicked: mouse.accepted = false;
+            onPositionChanged: mouse.accepted = false;
+            onPressAndHold: mouse.accepted = false;
             onClicked: {
                 if (mouse.button & Qt.RightButton) {
                     contextMenu.open(mapToItem(webviewID, mouseX, mouseY).x, mapToItem(webviewID, mouseX, mouseY).y)
+                    isExternalLink = false;
+                }else if(mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
+                    mouse.accepted = false
+                    isExternalLink = true
+                }else{
+                    mouse.accepted = false
+                    isExternalLink = false
+                }
+            }
+            onPressed: {
+                if (mouse.button & Qt.RightButton) {
+                    contextMenu.open(mapToItem(webviewID, mouseX, mouseY).x, mapToItem(webviewID, mouseX, mouseY).y)
+                    isExternalLink = false;
+                }else if(mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
+                    mouse.accepted = false
+                    isExternalLink = true
+                }else{
+                    mouse.accepted = false
+                    isExternalLink = false
                 }
             }
         }
@@ -257,9 +278,14 @@ Item {
             }
         }
 
-        PlasmaComponents.BusyIndicator {
+        BusyIndicator {
             id: busyIndicator
-            anchors.fill: parent
+            anchors.left: parent.left
+            anchors.top: parent.top
+            width: Math.min(webviewID.width, webviewID.height);
+            height: Math.min(webviewID.width, webviewID.height);
+            anchors.leftMargin: (webviewID.width - busyIndicator.width)/2
+            anchors.topMargin: (webviewID.height - busyIndicator.height)/2
             visible: false
             running: false
         }

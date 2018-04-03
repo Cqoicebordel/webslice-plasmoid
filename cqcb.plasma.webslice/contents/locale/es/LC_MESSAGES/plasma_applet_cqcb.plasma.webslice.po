@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 00:43+0200\n"
+"POT-Creation-Date: 2018-04-03 17:39+0200\n"
 "PO-Revision-Date: 2015-06-21 20:20+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
@@ -37,8 +37,8 @@ msgstr "Selector JS: "
 msgid "Minimum Content width :"
 msgstr "Anchura mínima de lo contenido "
 
-#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:134
-#: ../ui/ConfigGeneral.qml:148
+#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:132
+#: ../ui/ConfigGeneral.qml:146
 msgctxt "Abbreviation for pixels"
 msgid "px"
 msgstr "px"
@@ -95,31 +95,31 @@ msgstr ""
 "Además, la transparencia puede no ser visible hasta que la página sea "
 "recargada o sea repintada."
 
-#: ../ui/ConfigGeneral.qml:87
+#: ../ui/ConfigGeneral.qml:85
 msgid "Plasmoid behaviour :"
 msgstr "comportamiento del plasmoid: "
 
-#: ../ui/ConfigGeneral.qml:102
+#: ../ui/ConfigGeneral.qml:100
 msgid "Display the site"
 msgstr "Mostra el sitio"
 
-#: ../ui/ConfigGeneral.qml:108
+#: ../ui/ConfigGeneral.qml:106
 msgid "Display a button that opens the site in a new panel"
 msgstr "Mostra un butón que abre el sitio en un nuevo panel"
 
-#: ../ui/ConfigGeneral.qml:118
+#: ../ui/ConfigGeneral.qml:116
 msgid "Popup size"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:128
+#: ../ui/ConfigGeneral.qml:126
 msgid "Width"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:142
+#: ../ui/ConfigGeneral.qml:140
 msgid "Height"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:159
+#: ../ui/ConfigGeneral.qml:157
 #, fuzzy
 msgid ""
 "Note that this behaviour might not be visible until the plasmoid is reloaded."
@@ -127,7 +127,7 @@ msgstr ""
 "Tenga en cuenta que este comportamiento no es visible hasta que el plasmoid "
 "sea recargado."
 
-#: ../ui/ConfigGeneral.qml:171
+#: ../ui/ConfigGeneral.qml:169
 msgid "Display reload animation"
 msgstr "Mostra la animación de recarga"
 
@@ -158,27 +158,27 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:165
+#: ../ui/main.qml:191
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:172
+#: ../ui/main.qml:198
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:179
+#: ../ui/main.qml:205
 msgid "Reload"
 msgstr "Recargar"
 
-#: ../ui/main.qml:186
+#: ../ui/main.qml:212
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:207
+#: ../ui/main.qml:233
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:213
+#: ../ui/main.qml:239
 msgid "Configure"
 msgstr "Configurar"
 

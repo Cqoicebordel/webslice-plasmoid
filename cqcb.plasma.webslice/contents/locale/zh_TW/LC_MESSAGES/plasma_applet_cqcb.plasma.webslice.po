@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-02 00:43+0200\n"
+"POT-Creation-Date: 2018-04-03 17:39+0200\n"
 "PO-Revision-Date: 2018-04-02 22:12+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -35,8 +35,8 @@ msgstr "JS 選擇器："
 msgid "Minimum Content width :"
 msgstr "最小內容寬度："
 
-#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:134
-#: ../ui/ConfigGeneral.qml:148
+#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:132
+#: ../ui/ConfigGeneral.qml:146
 msgctxt "Abbreviation for pixels"
 msgid "px"
 msgstr "px"
@@ -88,36 +88,36 @@ msgstr ""
 "注意，透明將只會在頁面背景也是透明或是未設定時運作。\n"
 "並且，透明可能會在頁面重新整理或重新繪製前不可見。"
 
-#: ../ui/ConfigGeneral.qml:87
+#: ../ui/ConfigGeneral.qml:85
 msgid "Plasmoid behaviour :"
 msgstr "Plasmoid 行為："
 
-#: ../ui/ConfigGeneral.qml:102
+#: ../ui/ConfigGeneral.qml:100
 msgid "Display the site"
 msgstr "顯示頁面"
 
-#: ../ui/ConfigGeneral.qml:108
+#: ../ui/ConfigGeneral.qml:106
 msgid "Display a button that opens the site in a new panel"
 msgstr "顯示在新面板開啟頁面的按鈕"
 
-#: ../ui/ConfigGeneral.qml:118
+#: ../ui/ConfigGeneral.qml:116
 msgid "Popup size"
 msgstr "彈出視窗大小"
 
-#: ../ui/ConfigGeneral.qml:128
+#: ../ui/ConfigGeneral.qml:126
 msgid "Width"
 msgstr "寬度"
 
-#: ../ui/ConfigGeneral.qml:142
+#: ../ui/ConfigGeneral.qml:140
 msgid "Height"
 msgstr "高度"
 
-#: ../ui/ConfigGeneral.qml:159
+#: ../ui/ConfigGeneral.qml:157
 msgid ""
 "Note that this behaviour might not be visible until the plasmoid is reloaded."
 msgstr "注意，這個行為可能會在 plasmoid 重新載入後才可見。"
 
-#: ../ui/ConfigGeneral.qml:171
+#: ../ui/ConfigGeneral.qml:169
 msgid "Display reload animation"
 msgstr "顯示重新整理動畫"
 
@@ -147,27 +147,27 @@ msgstr "將選定的 URL 向上移動"
 msgid "Move the selected URL down"
 msgstr "將選定的 URL 向下移動"
 
-#: ../ui/main.qml:165
+#: ../ui/main.qml:191
 msgid "Back"
 msgstr "上一頁"
 
-#: ../ui/main.qml:172
+#: ../ui/main.qml:198
 msgid "Forward"
 msgstr "下一頁"
 
-#: ../ui/main.qml:179
+#: ../ui/main.qml:205
 msgid "Reload"
 msgstr "重新整理"
 
-#: ../ui/main.qml:186
+#: ../ui/main.qml:212
 msgid "Go to"
 msgstr "跳到"
 
-#: ../ui/main.qml:207
+#: ../ui/main.qml:233
 msgid "Open current URL in default browser"
 msgstr "在預設瀏覽器中開啟目前的 URL"
 
-#: ../ui/main.qml:213
+#: ../ui/main.qml:239
 msgid "Configure"
 msgstr "設定"
 
@@ -182,4 +182,3 @@ msgstr "進階"
 #: ../config/config.qml:16
 msgid "More URLs"
 msgstr "更多 URL"
-
