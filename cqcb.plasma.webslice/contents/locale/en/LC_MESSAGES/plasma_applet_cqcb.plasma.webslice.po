@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 17:39+0200\n"
+"POT-Creation-Date: 2018-05-26 20:51+0200\n"
 "PO-Revision-Date: 2018-04-01 22:44+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: English (http://www.transifex.com/cqoicebordel/webslice/"
@@ -153,27 +153,27 @@ msgstr "Move the selected URL up"
 msgid "Move the selected URL down"
 msgstr "Move the selected URL down"
 
-#: ../ui/main.qml:191
+#: ../ui/main.qml:186
 msgid "Back"
 msgstr "Back"
 
-#: ../ui/main.qml:198
+#: ../ui/main.qml:193
 msgid "Forward"
 msgstr "Forward"
 
-#: ../ui/main.qml:205
+#: ../ui/main.qml:200
 msgid "Reload"
 msgstr "Reload"
 
-#: ../ui/main.qml:212
+#: ../ui/main.qml:207
 msgid "Go to"
 msgstr "Go to"
 
-#: ../ui/main.qml:233
+#: ../ui/main.qml:228
 msgid "Open current URL in default browser"
 msgstr "Open current URL in default browser"
 
-#: ../ui/main.qml:239
+#: ../ui/main.qml:234
 msgid "Configure"
 msgstr "Configure"
 

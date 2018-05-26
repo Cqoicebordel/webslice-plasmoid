@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 17:39+0200\n"
+"POT-Creation-Date: 2018-05-26 20:51+0200\n"
 "PO-Revision-Date: 2015-06-21 19:59+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
@@ -158,27 +158,27 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:191
+#: ../ui/main.qml:186
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:198
+#: ../ui/main.qml:193
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:205
+#: ../ui/main.qml:200
 msgid "Reload"
 msgstr "Atualizar"
 
-#: ../ui/main.qml:212
+#: ../ui/main.qml:207
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:233
+#: ../ui/main.qml:228
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:239
+#: ../ui/main.qml:234
 msgid "Configure"
 msgstr "Configurar"
 

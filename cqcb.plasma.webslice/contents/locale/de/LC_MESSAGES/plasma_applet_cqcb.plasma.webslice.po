@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015
+# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-04-03 17:39+0200\n"
-"PO-Revision-Date: 2015-07-28 19:03+0000\n"
+"POT-Creation-Date: 2018-05-26 20:51+0200\n"
+"PO-Revision-Date: 2018-05-26 09:12+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
 "language/de/)\n"
@@ -23,7 +23,8 @@ msgstr ""
 #: ../ui/ConfigAdvanced.qml:20
 msgid "Attention, modify with care and only if you know what you are doing."
 msgstr ""
-"Achtung! Bitte nehmen Sie nur Änderungen vor, wenn Sie wissen, was Sie tun."
+"Achtung! Bitte ändern Sie diese Einstellungen nur,  wenn Sie wissen, was Sie "
+"tun."
 
 #: ../ui/ConfigAdvanced.qml:27
 msgid "Enable JS Scroll Into View"
@@ -81,7 +82,7 @@ msgstr "Sek."
 
 #: ../ui/ConfigGeneral.qml:70
 msgid "Enable transparency"
-msgstr "Transparenz einschalten"
+msgstr "Transparenz ermöglichen"
 
 #: ../ui/ConfigGeneral.qml:75
 msgid ""
@@ -91,9 +92,9 @@ msgid ""
 "repainted."
 msgstr ""
 "Transparenz ist nur möglich, wenn der Seitenhintergrund ebenfalls "
-"transparent oder nicht gesetzt ist.\n"
-"Transparenz ist möglicherweise erst nach neu laden oder zeichnen der Seite "
-"sichtbar."
+"transparent ist.\n"
+"Damit diese Einstellung wirksam wird, muss  möglicherweise die Seite neu "
+"geladen werden."
 
 #: ../ui/ConfigGeneral.qml:85
 msgid "Plasmoid behaviour :"
@@ -110,23 +111,22 @@ msgstr ""
 
 #: ../ui/ConfigGeneral.qml:116
 msgid "Popup size"
-msgstr ""
+msgstr "Pop-Up Größe"
 
 #: ../ui/ConfigGeneral.qml:126
 msgid "Width"
-msgstr ""
+msgstr "Breite"
 
 #: ../ui/ConfigGeneral.qml:140
 msgid "Height"
-msgstr ""
+msgstr "Höhe"
 
 #: ../ui/ConfigGeneral.qml:157
-#, fuzzy
 msgid ""
 "Note that this behaviour might not be visible until the plasmoid is reloaded."
 msgstr ""
-"Hinweis: Dieses Einstellung ist erst nach dem neu laden des Plasmoids "
-"wirksam."
+"Beachten Sie, dass dieses Verhalten möglicherweise erst sichtbar wird, wenn "
+"das Plasmoid neu geladen wird."
 
 #: ../ui/ConfigGeneral.qml:169
 msgid "Display reload animation"
@@ -137,60 +137,61 @@ msgid ""
 "List of URL accessible throught the context menu to switch to others "
 "websites."
 msgstr ""
+"Liste der URLs, die über das Kontextmenü zugänglich sind, um zu anderen "
+"Websites zu wechseln."
 
 #: ../ui/ConfigMultipleURLs.qml:34 ../ui/ConfigMultipleURLs.qml:43
-#, fuzzy
 msgid "URL"
-msgstr "URL:"
+msgstr "URL"
 
 #: ../ui/ConfigMultipleURLs.qml:50
 msgid "Add a URL"
-msgstr ""
+msgstr "URL hinzufügen"
 
 #: ../ui/ConfigMultipleURLs.qml:59
 msgid "Remove the selected URL"
-msgstr ""
+msgstr "Ausgewählte URL entfernen"
 
 #: ../ui/ConfigMultipleURLs.qml:67
 msgid "Move the selected URL up"
-msgstr ""
+msgstr "Ausgewählte URL nach oben verschieben"
 
 #: ../ui/ConfigMultipleURLs.qml:77
 msgid "Move the selected URL down"
-msgstr ""
+msgstr "Ausgewählte URL nach unten verschieben"
 
-#: ../ui/main.qml:191
+#: ../ui/main.qml:186
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
-#: ../ui/main.qml:198
+#: ../ui/main.qml:193
 msgid "Forward"
-msgstr ""
+msgstr "Vor"
 
-#: ../ui/main.qml:205
+#: ../ui/main.qml:200
 msgid "Reload"
 msgstr "Neu laden"
 
-#: ../ui/main.qml:212
+#: ../ui/main.qml:207
 msgid "Go to"
-msgstr ""
+msgstr "Gehe zu"
 
-#: ../ui/main.qml:233
+#: ../ui/main.qml:228
 msgid "Open current URL in default browser"
-msgstr ""
+msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:239
+#: ../ui/main.qml:234
 msgid "Configure"
 msgstr "Konfigurieren"
 
 #: ../config/config.qml:6
 msgid "General"
-msgstr ""
+msgstr "Allgemein"
 
 #: ../config/config.qml:11
 msgid "Advanced"
-msgstr ""
+msgstr "Erweitert"
 
 #: ../config/config.qml:16
 msgid "More URLs"
-msgstr ""
+msgstr "Weitere URLs"
