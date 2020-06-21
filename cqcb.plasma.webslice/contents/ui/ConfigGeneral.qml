@@ -68,12 +68,14 @@ Item {
             id: enableTransparency
             Layout.columnSpan: 3
             text: i18n('Enable transparency')
+			enabled:false
         }
 
         Label {
             font.italic: true
             text: i18n('Note that the transparency will only work if the page background is also transparent or not set.\nAlso, the transparency may not be visible until the page is reloaded or repainted.')
             Layout.columnSpan: 3
+            enabled:false
         }
 
         Item {
@@ -167,6 +169,7 @@ Item {
             id: reloadAnimation
             Layout.columnSpan: 3
             text: i18n('Display reload animation')
+			enabled:false
         }
     }
 }

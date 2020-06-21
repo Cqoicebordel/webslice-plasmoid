@@ -48,6 +48,7 @@ Item {
 
         Label {
             text: i18n('Minimum Content width :')
+			enabled:false
         }
 
         SpinBox {
@@ -56,12 +57,14 @@ Item {
             minimumValue: 1
             maximumValue: 10000
             Layout.columnSpan: 1
+            enabled:false
         }
 
         Label {
             font.italic: true
             text: i18n('(default : 100px)')
             Layout.columnSpan: 1
+            enabled:false
         }
 
         Label {
@@ -69,6 +72,7 @@ Item {
             text: i18n('This option can help you trigger media queries, and may help with zoom.')
             Layout.preferredWidth: 0
             Layout.columnSpan: 3
+            enabled:false
         }
 
         Item {

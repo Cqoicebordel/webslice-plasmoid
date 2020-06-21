@@ -23,6 +23,7 @@ Item {
 
         Label {
             text: i18n('List of URL accessible throught the context menu to switch to others websites.')
+			enabled:false
         }
 
         TableView {
@@ -34,10 +35,12 @@ Item {
                 title: i18n('URL')
             }
             height:300
+            enabled:false
         }
 
 
         RowLayout {
+			enabled:false
             TextField {
                 id: addedUrl
                 placeholderText: i18n('URL')

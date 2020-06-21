@@ -18,11 +18,11 @@
  ***************************************************************************/
 
 import QtQuick 2.7
-import QtWebKit 3.0
+import QtWebView 1.1
 //import QtWebEngine 1.5
 import QtQuick.Layouts 1.1
 import QtQuick.Controls 1.3
-import QtWebKit.experimental 1.0
+//import QtWebKit.experimental 1.0
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.core 2.0 as PlasmaCore
@@ -81,8 +81,8 @@ Item {
         id: webviewID
         url: websliceUrl
         anchors.fill: parent
-        experimental.preferredMinimumContentsWidth: minimumContentWidth
-        experimental.transparentBackground: enableTransparency
+        //experimental.preferredMinimumContentsWidth: minimumContentWidth
+        //experimental.transparentBackground: enableTransparency
 
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
@@ -117,11 +117,13 @@ Item {
          */
         onLoadingChanged: {
             if (enableJSID && loadRequest.status === WebView.LoadSucceededStatus) {
-                experimental.evaluateJavaScript(
-                    jsSelector + ".scrollIntoView(true);");
+                //experimental.evaluateJavaScript(
+                //    jsSelector + ".scrollIntoView(true);");
+				runJavaScript(jsSelector + ".scrollIntoView(true);");
             }
             if (enableJS && loadRequest.status === WebView.LoadSucceededStatus) {
-                experimental.evaluateJavaScript(js);
+                //experimental.evaluateJavaScript(js);
+				runJavaScript(js);
             }
             if (loadRequest && loadRequest.status === WebView.LoadSucceededStatus) {
                 busyIndicator.visible = false;
@@ -132,12 +134,12 @@ Item {
         /**
          * Open the middle clicked (or ctrl+clicked) link in the default browser
          */
-        onNavigationRequested: {
+        /*onNavigationRequested: {
             if(isExternalLink){
                 request.action = WebView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
             }
-        }
+        }*/
 
         /**
          * Display the context menu

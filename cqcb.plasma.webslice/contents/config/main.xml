@@ -16,7 +16,7 @@
             <default>3600</default>
         </entry>
 		<entry name="enableTransparency" type="Bool">
-            <default>true</default>
+            <default>false</default>
         </entry>
 		<entry name="displaySiteBehaviour" type="Bool">
             <default>true</default>
@@ -31,7 +31,7 @@
             <default>500</default>
         </entry>
 		<entry name="reloadAnimation" type="Bool">
-            <default>true</default>
+            <default>false</default>
         </entry>
     </group>
 	<group name="Advanced">
