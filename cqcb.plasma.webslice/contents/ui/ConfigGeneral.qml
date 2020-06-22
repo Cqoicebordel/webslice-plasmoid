@@ -12,6 +12,7 @@ Item {
     property alias cfg_buttonBehaviour: buttonBehaviour.checked
     property alias cfg_webPopupWidth: webPopupWidth.value
     property alias cfg_webPopupHeight: webPopupHeight.value
+    property alias cfg_webPopupIcon: webPopupIcon.text
     property alias cfg_reloadAnimation: reloadAnimation.checked
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
@@ -112,9 +113,9 @@ Item {
 
         RowLayout{
             Layout.columnSpan: 3
+            enabled: buttonBehaviour.checked
             Label{
                 text: i18n('Popup size')
-                enabled: buttonBehaviour.checked
             }
 
             Item {
@@ -124,13 +125,11 @@ Item {
 
             Label{
                 text: i18n('Width')
-                enabled: buttonBehaviour.checked
             }
 
             SpinBox {
                 id: webPopupWidth
                 suffix: i18nc('Abbreviation for pixels', 'px')
-                enabled: buttonBehaviour.checked
                 minimumValue: 10
                 maximumValue: 10000
                 stepSize: 10
@@ -138,17 +137,37 @@ Item {
 
             Label{
                 text: i18n('Height')
-                enabled: buttonBehaviour.checked
             }
 
             SpinBox {
                 id: webPopupHeight
                 suffix: i18nc('Abbreviation for pixels', 'px')
-                enabled: buttonBehaviour.checked
                 minimumValue: 10
                 maximumValue: 10000
                 stepSize: 10
             }
+        }
+        
+        Label {
+            text: i18n('Icon:')
+            enabled: buttonBehaviour.checked
+        }
+
+        TextField {
+            id: webPopupIcon
+            placeholderText: 'file:///media/.../icon.jpg'
+            Layout.preferredWidth: textfieldWidth
+            enabled: buttonBehaviour.checked
+        }
+        
+        Label {
+            font.italic: true
+            text: i18n('Icon in "file:///media/.../icon.jpg" format, or name of <a href="https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html">standard freedesktop icons</a>.')
+            onLinkActivated:{
+                Qt.openUrlExternally("https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html");
+            }
+            Layout.columnSpan: 3
+            enabled: buttonBehaviour.checked
         }
 
 

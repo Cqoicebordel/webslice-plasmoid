@@ -30,6 +30,9 @@
 		<entry name="webPopupHeight" type="Int">
             <default>500</default>
         </entry>
+		<entry name="webPopupIcon" type="String">
+            <default>applications-internet</default>
+        </entry>
 		<entry name="reloadAnimation" type="Bool">
             <default>true</default>
         </entry>

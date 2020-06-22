@@ -17,12 +17,10 @@
  *   51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA .        *
  ***************************************************************************/
 
-import QtQuick 2.7
-import QtWebKit 3.0
-//import QtWebEngine 1.5
+import QtQuick 2.12
+import QtWebEngine 1.5
 import QtQuick.Layouts 1.1
-import QtQuick.Controls 1.3
-import QtWebKit.experimental 1.0
+import QtQuick.Controls 2.12
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.core 2.0 as PlasmaCore
@@ -43,6 +41,7 @@ Item {
     property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
     property int webPopupWidth: plasmoid.configuration.webPopupWidth
     property int webPopupHeight: plasmoid.configuration.webPopupHeight
+    property string webPopupIcon: plasmoid.configuration.webPopupIcon
     property bool reloadAnimation: plasmoid.configuration.reloadAnimation
 
     property bool enableJSID: plasmoid.configuration.enableJSID
@@ -59,11 +58,12 @@ Item {
     Layout.fillWidth: true
     Layout.fillHeight: true
 
-
     Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
 
     Plasmoid.fullRepresentation: webview
-
+    
+    Plasmoid.icon: webPopupIcon
+    
     onUrlsModelChanged:{
         loadURLs();
     }
@@ -77,12 +77,13 @@ Item {
     }
 
 
-    property Component webview: WebView {
+    property Component webview: WebEngineView {
         id: webviewID
         url: websliceUrl
         anchors.fill: parent
-        experimental.preferredMinimumContentsWidth: minimumContentWidth
-        experimental.transparentBackground: enableTransparency
+        //experimental.preferredMinimumContentsWidth: minimumContentWidth
+        
+        backgroundColor: enableTransparency?"transparent":"white"
 
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
@@ -109,6 +110,7 @@ Item {
                 webviewID.width = webPopupWidth;
                 webviewID.reload();
                 //webviewID.zoomFactor = Math.min(1, webviewID.width / 1000);
+                //console.debug("inside" + webviewID.height + " " + webPopupHeight + " " + plasmoid.configuration.webPopupHeight + " " +displaySiteBehaviour);
             }
         }
 
@@ -116,14 +118,13 @@ Item {
          * Handle everything around web request : display the busy indicator, and run JS
          */
         onLoadingChanged: {
-            if (enableJSID && loadRequest.status === WebView.LoadSucceededStatus) {
-                experimental.evaluateJavaScript(
-                    jsSelector + ".scrollIntoView(true);");
+            if (enableJSID && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+                runJavaScript(jsSelector + ".scrollIntoView(true);");
             }
-            if (enableJS && loadRequest.status === WebView.LoadSucceededStatus) {
-                experimental.evaluateJavaScript(js);
+            if (enableJS && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+                runJavaScript(js);
             }
-            if (loadRequest && loadRequest.status === WebView.LoadSucceededStatus) {
+            if (loadRequest && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 busyIndicator.visible = false;
                 busyIndicator.running = false;
             }
@@ -134,27 +135,25 @@ Item {
          */
         onNavigationRequested: {
             if(isExternalLink){
-                request.action = WebView.IgnoreRequest;
+                request.action = WebEngineView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
             }
         }
 
         /**
-         * Display the context menu
+         * Intercept Middle and ctrl+click
          */
         MouseArea {
             anchors.fill: parent
-            acceptedButtons: Qt.LeftButton | Qt.MiddleButton | Qt.RightButton
+            acceptedButtons: Qt.LeftButton | Qt.MiddleButton
             propagateComposedEvents:true
             onReleased: mouse.accepted = false;
             onDoubleClicked: mouse.accepted = false;
             onPositionChanged: mouse.accepted = false;
             onPressAndHold: mouse.accepted = false;
             onClicked: {
-                if (mouse.button & Qt.RightButton) {
-                    contextMenu.open(mapToItem(webviewID, mouseX, mouseY).x, mapToItem(webviewID, mouseX, mouseY).y)
-                    isExternalLink = false;
-                }else if(mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
+                if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
+                    alert("coucou");
                     mouse.accepted = false
                     isExternalLink = true
                 }else{
@@ -163,10 +162,7 @@ Item {
                 }
             }
             onPressed: {
-                if (mouse.button & Qt.RightButton) {
-                    contextMenu.open(mapToItem(webviewID, mouseX, mouseY).x, mapToItem(webviewID, mouseX, mouseY).y)
-                    isExternalLink = false;
-                }else if(mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
+                if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
                     mouse.accepted = false
                     isExternalLink = true
                 }else{
@@ -175,11 +171,25 @@ Item {
                 }
             }
         }
+        
+        /**
+         * Show context menu
+         */
+        onContextMenuRequested: {
+            request.accepted = true
+            contextMenu.request = request
+            contextMenu.open(request.x, request.y)
+        }
+        
+        onNewViewRequested: {
+            Qt.openUrlExternally(request.url)
+        }
 
         /**
          * Context menu
          */
         PlasmaComponents.ContextMenu {
+            property var request
             id: contextMenu
 
             PlasmaComponents.MenuItem {
@@ -228,6 +238,13 @@ Item {
                 text: i18n('Open current URL in default browser')
                 icon: 'document-share'
                 onClicked: Qt.openUrlExternally(webviewID.url)
+            }
+            
+            PlasmaComponents.MenuItem {
+                text: i18n('Open link URL in default browser')
+                icon: 'document-share'
+                enabled: (contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
             }
 
             PlasmaComponents.MenuItem {
