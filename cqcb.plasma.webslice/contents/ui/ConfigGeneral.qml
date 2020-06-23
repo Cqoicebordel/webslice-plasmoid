@@ -185,7 +185,7 @@ Item {
         CheckBox {
             id: reloadAnimation
             Layout.columnSpan: 3
-            text: i18n('Display reload animation')
+            text: i18n('Display loading animation')
         }
     }
 }

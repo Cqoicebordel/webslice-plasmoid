@@ -137,6 +137,9 @@ Item {
             if(isExternalLink){
                 request.action = WebEngineView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
+            }else if(reloadAnimation){
+                busyIndicator.visible = true;
+                busyIndicator.running = true;
             }
         }
 
@@ -153,10 +156,11 @@ Item {
             onPressAndHold: mouse.accepted = false;
             onClicked: {
                 if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
-                    alert("coucou");
+                    console.log("coucou");
                     mouse.accepted = false
                     isExternalLink = true
                 }else{
+                    console.log("coucou2");
                     mouse.accepted = false
                     isExternalLink = false
                 }
@@ -243,7 +247,8 @@ Item {
             PlasmaComponents.MenuItem {
                 text: i18n('Open link URL in default browser')
                 icon: 'document-share'
-                enabled: (contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                enabled: (contextMenu.request && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                visible: (contextMenu.request && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
             }
 
@@ -258,6 +263,7 @@ Item {
             target: main
             onHandleSettingsUpdated: {
                 loadMenu();
+                updateSizeHints();
             }
         }
 
@@ -297,6 +303,9 @@ Item {
 
         BusyIndicator {
             id: busyIndicator
+            z: 5
+            opacity: 1
+            
             anchors.left: parent.left
             anchors.top: parent.top
             width: Math.min(webviewID.width, webviewID.height);
@@ -305,6 +314,21 @@ Item {
             anchors.topMargin: (webviewID.height - busyIndicator.height)/2
             visible: false
             running: false
+            
+            contentItem: PlasmaCore.SvgItem {
+                id: indicatorItem
+                svg: PlasmaCore.Svg {
+                    imagePath: "widgets/busywidget"
+                }
+                
+                RotationAnimator on rotation {
+                    from: 0
+                    to: 360
+                    duration:2000
+                    running: busyIndicator.running && indicatorItem.visible && indicatorItem.opacity > 0;
+                    loops: Animation.Infinite
+                }
+            }
         }
 
         function reloadFn() {
