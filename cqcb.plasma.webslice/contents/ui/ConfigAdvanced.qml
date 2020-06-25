@@ -25,7 +25,6 @@ Item {
             Layout.fillWidth: true
             columns: 4
             Layout.columnSpan: 4
-            anchors.topMargin: 500
             
             Label {
                 text: i18n('Zoom factor :')
