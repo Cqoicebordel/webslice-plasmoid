@@ -18,13 +18,13 @@
  ***************************************************************************/
 
 import QtQuick 2.12
-import QtWebEngine 1.5
-import QtQuick.Layouts 1.1
+import QtWebEngine 1.8
+import QtQuick.Layouts 1.10
 import QtQuick.Controls 2.12
 import org.kde.plasma.plasmoid 2.0
 import org.kde.plasma.components 2.0 as PlasmaComponents
 import org.kde.plasma.core 2.0 as PlasmaCore
-import QtQml 2.2
+import QtQml 2.12
 
 import "../code/utils.js" as ConfigUtils
 
@@ -44,9 +44,12 @@ Item {
     property string webPopupIcon: plasmoid.configuration.webPopupIcon
     property bool reloadAnimation: plasmoid.configuration.reloadAnimation
 
+    property double zoomFactorCfg: plasmoid.configuration.zoomFactor
+    property bool enableScrollTo: plasmoid.configuration.enableScrollTo
+    property int scrollToX: plasmoid.configuration.scrollToX
+    property int scrollToY: plasmoid.configuration.scrollToY
     property bool enableJSID: plasmoid.configuration.enableJSID
     property string jsSelector: plasmoid.configuration.jsSelector
-    property string minimumContentWidth: plasmoid.configuration.minimumContentWidth
     property bool enableJS: plasmoid.configuration.enableJS
     property string js: plasmoid.configuration.js
 
@@ -75,6 +78,8 @@ Item {
     onWebPopupWidthChanged:{
         main.popupSizeChanged();
     }
+    
+    
 
 
     property Component webview: WebEngineView {
@@ -88,6 +93,8 @@ Item {
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
 
+        zoomFactor: zoomFactorCfg
+        
         onWidthChanged: updateSizeHints()
         onHeightChanged: updateSizeHints()
 
@@ -105,6 +112,7 @@ Item {
          */
         function updateSizeHints() {
             //console.debug(webviewID.height + " " + webPopupHeight + " " + plasmoid.configuration.webPopupHeight + " " +displaySiteBehaviour);
+            webviewID.zoomFactor = zoomFactorCfg;
             if(!displaySiteBehaviour){
                 webviewID.height = webPopupHeight;
                 webviewID.width = webPopupWidth;
@@ -118,6 +126,10 @@ Item {
          * Handle everything around web request : display the busy indicator, and run JS
          */
         onLoadingChanged: {
+            webviewID.zoomFactor = zoomFactorCfg;
+            if (enableScrollTo && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+                runJavaScript("window.scrollTo("+scrollToX+", "+scrollToY+");");
+            }
             if (enableJSID && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 runJavaScript(jsSelector + ".scrollIntoView(true);");
             }
@@ -134,6 +146,7 @@ Item {
          * Open the middle clicked (or ctrl+clicked) link in the default browser
          */
         onNavigationRequested: {
+            webviewID.zoomFactor = zoomFactorCfg
             if(isExternalLink){
                 request.action = WebEngineView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
@@ -247,8 +260,8 @@ Item {
             PlasmaComponents.MenuItem {
                 text: i18n('Open link URL in default browser')
                 icon: 'document-share'
-                enabled: (contextMenu.request && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
-                visible: (contextMenu.request && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                enabled: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
             }
 
