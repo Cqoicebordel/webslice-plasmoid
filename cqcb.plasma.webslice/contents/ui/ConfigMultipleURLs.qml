@@ -1,4 +1,4 @@
-import QtQuick 2.12
+import QtQuick 2.7
 import QtQuick.Controls 1.3
 import QtQuick.Layouts 1.1
 import "../code/utils.js" as ConfigUtils
@@ -23,8 +23,6 @@ Item {
 
         Label {
             text: i18n('List of URL accessible throught the context menu to switch to others websites.')
-            wrapMode: Text.Wrap
-            width: parent.width
         }
 
         TableView {
