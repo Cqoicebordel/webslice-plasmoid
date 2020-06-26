@@ -56,7 +56,6 @@ Item {
     property string urlsModel: plasmoid.configuration.urlsModel
 
     signal handleSettingsUpdated();
-    signal popupSizeChanged();
 
     Layout.fillWidth: true
     Layout.fillHeight: true
@@ -72,21 +71,22 @@ Item {
     }
 
     onWebPopupHeightChanged:{
-        main.popupSizeChanged();
+        main.handleSettingsUpdated();
     }
 
     onWebPopupWidthChanged:{
-        main.popupSizeChanged();
+        main.handleSettingsUpdated();
     }
     
+    onZoomFactorCfgChanged:{
+        main.handleSettingsUpdated();
+    }
     
-
 
     property Component webview: WebEngineView {
         id: webviewID
         url: websliceUrl
         anchors.fill: parent
-        //experimental.preferredMinimumContentsWidth: minimumContentWidth
         
         backgroundColor: enableTransparency?"transparent":"white"
 
@@ -102,7 +102,8 @@ Item {
 
         Connections {
             target: main
-            onPopupSizeChanged: {
+            onHandleSettingsUpdated: {
+                loadMenu();
                 updateSizeHints();
             }
         }
@@ -117,7 +118,6 @@ Item {
                 webviewID.height = webPopupHeight;
                 webviewID.width = webPopupWidth;
                 webviewID.reload();
-                //webviewID.zoomFactor = Math.min(1, webviewID.width / 1000);
                 //console.debug("inside" + webviewID.height + " " + webPopupHeight + " " + plasmoid.configuration.webPopupHeight + " " +displaySiteBehaviour);
             }
         }
@@ -146,7 +146,7 @@ Item {
          * Open the middle clicked (or ctrl+clicked) link in the default browser
          */
         onNavigationRequested: {
-            webviewID.zoomFactor = zoomFactorCfg
+            webviewID.zoomFactor = zoomFactorCfg;
             if(isExternalLink){
                 request.action = WebEngineView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
@@ -158,6 +158,7 @@ Item {
 
         /**
          * Intercept Middle and ctrl+click
+         * Doesn't work, probably because of https://bugreports.qt.io/browse/QTBUG-43602
          */
         MouseArea {
             anchors.fill: parent
@@ -170,21 +171,21 @@ Item {
             onClicked: {
                 if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
                     console.log("coucou");
-                    mouse.accepted = false
-                    isExternalLink = true
+                    mouse.accepted = false;
+                    isExternalLink = true;
                 }else{
                     console.log("coucou2");
-                    mouse.accepted = false
-                    isExternalLink = false
+                    mouse.accepted = false;
+                    isExternalLink = false;
                 }
             }
             onPressed: {
                 if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
-                    mouse.accepted = false
-                    isExternalLink = true
+                    mouse.accepted = false;
+                    isExternalLink = true;
                 }else{
-                    mouse.accepted = false
-                    isExternalLink = false
+                    mouse.accepted = false;
+                    isExternalLink = false;
                 }
             }
         }
@@ -269,14 +270,6 @@ Item {
                 text: i18n('Configure')
                 icon: 'configure'
                 onClicked: plasmoid.action("configure").trigger()
-            }
-        }
-
-        Connections {
-            target: main
-            onHandleSettingsUpdated: {
-                loadMenu();
-                updateSizeHints();
             }
         }
 
