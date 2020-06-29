@@ -1,3 +1,5 @@
 
 *.qmlc
 *.jsc
+*.plasmoid
+*.png
