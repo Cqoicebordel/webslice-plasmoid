@@ -81,7 +81,7 @@ Item {
     onZoomFactorCfgChanged:{
         main.handleSettingsUpdated();
     }
-    
+
 
     property Component webview: WebEngineView {
         id: webviewID
@@ -99,12 +99,44 @@ Item {
         onHeightChanged: updateSizeHints()
 
         property bool isExternalLink
+        
+        /*
+         * When using the shortcut to activate the Plasmoid
+         * Thanks to https://github.com/pronobis/webslice-plasmoid/commit/07633bf508c1876d45645415dfc98b802322d407
+         */
+        Plasmoid.onActivated: {
+            reloadFn();
+        }
 
         Connections {
             target: main
             onHandleSettingsUpdated: {
                 loadMenu();
                 updateSizeHints();
+            }
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Refresh, "F5"]
+            onActivated: reloadFn()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Back, "F1"]
+            onActivated: goBack()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Forward, "F2"]
+            onActivated: goForward()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Cancel, "F4"]
+            onActivated: {
+                stop();
+                busyIndicator.visible = false;
+                busyIndicator.running = false;
             }
         }
 
@@ -136,7 +168,7 @@ Item {
             if (enableJS && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 runJavaScript(js);
             }
-            if (loadRequest && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+            if (loadRequest && (loadRequest.status === WebEngineView.LoadSucceededStatus || loadRequest.status === WebEngineLoadRequest.LoadFailedStatus)) {g
                 busyIndicator.visible = false;
                 busyIndicator.running = false;
             }
