@@ -5,6 +5,7 @@ import QtQuick.Layouts 1.10
 Item {
 
     property alias cfg_websliceUrl: websliceUrl.text
+    property alias cfg_zoomFactor: zoomFactor.value
     property alias cfg_enableReload: enableReload.checked
     property alias cfg_reloadIntervalSec: reloadIntervalSec.value
     property alias cfg_displaySiteBehaviour: displaySiteBehaviour.checked
@@ -20,6 +21,7 @@ Item {
         columns: 4
         rowSpacing: 20
 
+        // URL
         GridLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -37,7 +39,41 @@ Item {
                 Layout.fillWidth: true
             }
         }
+        
+        // Zoom Factor
+        GridLayout{
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 4
+            
+            Label {
+                text: i18n('Zoom factor :')
+                Layout.columnSpan: 1
+            }
 
+            Slider {
+                id: zoomFactor
+                from: 0.25
+                to: 5
+                value: 1
+                stepSize: 0.25
+                Layout.columnSpan: 2
+                Layout.fillWidth: true
+                
+            }
+                Label {
+                    id:zoof
+                    Layout.columnSpan: 1
+                    text: zoomFactor.value+"x"
+                    width:35
+                    //anchors.horizontalCenter: parent.horizontalCenter
+                    //anchors.bottom: parent.top
+                    Layout.minimumWidth:35
+                    Layout.maximumWidth:35
+                }
+        }
+
+        // Auto reload
         GridLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -69,6 +105,7 @@ Item {
             }
         }
 
+        // Full or minimal UI
         GridLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -79,28 +116,29 @@ Item {
                 Layout.columnSpan: 3
             }
 
-                ButtonGroup {
-                    buttons: behaviourGroup.children
+            ButtonGroup {
+                buttons: behaviourGroup.children
+            }
+
+            ColumnLayout {
+                id: behaviourGroup
+
+                RadioButton {
+                    id: displaySiteBehaviour
+                    text: i18n("Display the site")
                 }
 
-                ColumnLayout {
-                    id: behaviourGroup
-
-                    RadioButton {
-                        id: displaySiteBehaviour
-                        text: i18n("Display the site")
-                    }
-
-                    RadioButton {
-                        id: buttonBehaviour
-                        text: i18n("Display a button that opens the site in a new panel")
-                    }
+                RadioButton {
+                    id: buttonBehaviour
+                    text: i18n("Display a button that opens the site in a new panel")
                 }
+            }
 
+            // Minimal UI settings
             GridLayout{
                 Layout.fillWidth: true
-                Layout.columnSpan: 3
                 enabled: buttonBehaviour.checked
+                Layout.columnSpan: 3
                 columns: 5
 
                 Label{
@@ -166,6 +204,7 @@ Item {
             }
         }
 
+        // Loading animation
         ColumnLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -176,6 +215,7 @@ Item {
             }
         }
 
+        // Transparency
         ColumnLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4

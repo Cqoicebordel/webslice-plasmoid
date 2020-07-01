@@ -17,4 +17,9 @@ ConfigModel {
          icon: 'link'
          source: 'ConfigMultipleURLs.qml'
     }
+    ConfigCategory {
+         name: i18n('Experimental')
+         icon: 'applications-science'
+         source: 'ConfigExperimental.qml'
+    }
 }

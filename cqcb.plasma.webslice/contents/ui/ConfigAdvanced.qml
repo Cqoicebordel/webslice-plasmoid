@@ -1,15 +1,16 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.10
+import org.kde.kquickcontrols 2.0
 
 Item {
 
-    property alias cfg_zoomFactor: zoomFactor.value
     property alias cfg_enableScrollTo: enableScrollTo.checked
     property alias cfg_scrollToX: scrollToX.text
     property alias cfg_scrollToY: scrollToY.text
     property alias cfg_enableJSID: enableJSID.checked
     property alias cfg_jsSelector: jsSelector.text
+    property alias cfg_enableReloadOnActivate: enableReloadOnActivate.checked
     property alias cfg_enableJS: enableJS.checked
     property alias cfg_js: js.text
 
@@ -18,45 +19,14 @@ Item {
     GridLayout {
         Layout.fillWidth: true
         columns: 4
-        rowSpacing: 40
+        rowSpacing: 25
+        width:parent.parent.parent.width
 
-
+        // Scroll To Position
         GridLayout{
             Layout.fillWidth: true
-            columns: 4
             Layout.columnSpan: 4
-            
-            Label {
-                text: i18n('Zoom factor :')
-                Layout.columnSpan: 2
-            }
-                    
-            Slider {
-                id: zoomFactor
-                from: 0.25
-                to: 5
-                value: 1
-                stepSize: 0.25
-                Layout.columnSpan: 2
-                Layout.fillWidth: true
-                
-                Label {
-                    text: zoomFactor.value+"x"
-                    anchors.horizontalCenter: parent.horizontalCenter
-                    anchors.bottom: parent.top
-                }
-            }
-            Label {
-                font.italic: true
-                text: i18n('You may need to reload the page to see the effect')
-                Layout.columnSpan: 4
-            }
-        }
-        
-        GridLayout{
-            Layout.fillWidth: true
             columns: 5
-            Layout.columnSpan: 4
             
             CheckBox {
                 id: enableScrollTo
@@ -66,23 +36,26 @@ Item {
             }
             
             Label {
-                text: i18n('Scroll To :')
+                text: i18n('Scroll To : ')
                 Layout.columnSpan: 1
                 enabled: enableScrollTo.checked
                 Layout.fillWidth: true
             }
             
-            Row{
+            GridLayout{
                 Layout.columnSpan: 2
+                columns: 3
+                
                 Label {
-                    text: i18n('X:')
+                    text: i18n('X :')
                     enabled: enableScrollTo.checked
-                    anchors.verticalCenter: parent.verticalCenter
+                    Layout.columnSpan: 1
                 }
                 TextField {
                     id: scrollToX
-                    width: 120
                     placeholderText: '0'
+                    Layout.fillWidth: true
+                    Layout.minimumWidth:30
                     enabled: enableScrollTo.checked
                     horizontalAlignment: TextInput.AlignRight
                     inputMethodHints: Qt.ImhDigitsOnly
@@ -90,25 +63,29 @@ Item {
                         bottom: 0
                         top: 1000000
                     }
+                    Layout.columnSpan: 1
                 }
                 Label {
                     text: i18n('px, ')
                     enabled: enableScrollTo.checked
-                    anchors.verticalCenter: parent.verticalCenter
+                    Layout.columnSpan: 1
                 }
             }
             
-            Row{
+            GridLayout{
                 Layout.columnSpan: 2
+                columns: 3
+                
                 Label {
-                    text: i18n('Y:')
+                    text: i18n('Y :')
                     enabled: enableScrollTo.checked
-                    anchors.verticalCenter: parent.verticalCenter
+                   Layout.columnSpan: 1
                 }
                 TextField {
                     id: scrollToY
-                    width: 120
                     placeholderText: '0'
+                    Layout.fillWidth: true
+                    Layout.minimumWidth:30
                     enabled: enableScrollTo.checked
                     horizontalAlignment: TextInput.AlignRight
                     inputMethodHints: Qt.ImhDigitsOnly
@@ -116,21 +93,22 @@ Item {
                         bottom: 0
                         top: 1000000
                     }
+                    Layout.columnSpan: 1
                 }
                 Label {
                     text: i18n('px')
                     enabled: enableScrollTo.checked
-                    anchors.verticalCenter: parent.verticalCenter
+                    Layout.columnSpan: 1
                 }
             }
         }
-        
-        
+
+        // Scroll to view
         GridLayout{
-            width: parent.width
-            columns: 4
-            Layout.columnSpan: 4
+            //width: parent.width
             Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 4
             
             CheckBox {
                 id: enableJSID
@@ -155,10 +133,25 @@ Item {
             }
         }
 
+        // Reload on Activate
+        GridLayout{
+            //width: parent.width
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 1
+            
+            CheckBox {
+                id: enableReloadOnActivate
+                text: i18n('Reload the page when activated through the global shortcut')
+                Layout.fillWidth: true
+            }
+        }
+
+        // UserJS
         GridLayout{
             Layout.fillWidth: true
-            columns: 4
             Layout.columnSpan: 4
+            columns: 4
             
             CheckBox {
                 id: enableJS

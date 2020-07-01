@@ -34,6 +34,7 @@ Item {
     id: main
 
     property string websliceUrl: plasmoid.configuration.websliceUrl
+    property double zoomFactorCfg: plasmoid.configuration.zoomFactor
     property bool enableReload: plasmoid.configuration.enableReload
     property int reloadIntervalSec: plasmoid.configuration.reloadIntervalSec
     property bool enableTransparency: plasmoid.configuration.enableTransparency
@@ -44,10 +45,10 @@ Item {
     property string webPopupIcon: plasmoid.configuration.webPopupIcon
     property bool reloadAnimation: plasmoid.configuration.reloadAnimation
 
-    property double zoomFactorCfg: plasmoid.configuration.zoomFactor
     property bool enableScrollTo: plasmoid.configuration.enableScrollTo
     property int scrollToX: plasmoid.configuration.scrollToX
     property int scrollToY: plasmoid.configuration.scrollToY
+    property bool enableReloadOnActivate: plasmoid.configuration.enableReloadOnActivate
     property bool enableJSID: plasmoid.configuration.enableJSID
     property string jsSelector: plasmoid.configuration.jsSelector
     property bool enableJS: plasmoid.configuration.enableJS
@@ -55,10 +56,13 @@ Item {
 
     property string urlsModel: plasmoid.configuration.urlsModel
 
-    signal handleSettingsUpdated();
+    property string keysSeqBack: plasmoid.configuration.keysSeqBack
+    property string keysSeqForward: plasmoid.configuration.keysSeqForward
+    property string keysSeqReload: plasmoid.configuration.keysSeqReload
+    property string keysSeqStop: plasmoid.configuration.keysSeqStop
+    property bool fillWidthAndHeight: plasmoid.configuration.fillWidthAndHeight
 
-    Layout.fillWidth: true
-    Layout.fillHeight: true
+    signal handleSettingsUpdated();
 
     Plasmoid.preferredRepresentation: (displaySiteBehaviour)? Plasmoid.fullRepresentation : Plasmoid.compactRepresentation
 
@@ -66,22 +70,16 @@ Item {
     
     Plasmoid.icon: webPopupIcon
     
-    onUrlsModelChanged:{
-        loadURLs();
-    }
+    onUrlsModelChanged:{ loadURLs(); }
 
-    onWebPopupHeightChanged:{
-        main.handleSettingsUpdated();
-    }
+    onWebPopupHeightChanged:{ main.handleSettingsUpdated(); }
 
-    onWebPopupWidthChanged:{
-        main.handleSettingsUpdated();
-    }
+    onWebPopupWidthChanged:{  main.handleSettingsUpdated(); }
     
-    onZoomFactorCfgChanged:{
-        main.handleSettingsUpdated();
-    }
+    onZoomFactorCfgChanged:{  main.handleSettingsUpdated(); }
     
+    //onKeysseqChanged: { main.handleSettingsUpdated(); }
+
 
     property Component webview: WebEngineView {
         id: webviewID
@@ -92,6 +90,8 @@ Item {
 
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
+        Layout.fillWidth: fillWidthAndHeight
+        Layout.fillHeight: fillWidthAndHeight
 
         zoomFactor: zoomFactorCfg
         
@@ -99,12 +99,47 @@ Item {
         onHeightChanged: updateSizeHints()
 
         property bool isExternalLink
+        
+        /*
+         * When using the shortcut to activate the Plasmoid
+         * Thanks to https://github.com/pronobis/webslice-plasmoid/commit/07633bf508c1876d45645415dfc98b802322d407
+         */
+        Plasmoid.onActivated: {
+            if(enableReloadOnActivate){
+                reloadFn();
+            }
+        }
 
         Connections {
             target: main
             onHandleSettingsUpdated: {
                 loadMenu();
                 updateSizeHints();
+            }
+        }
+        
+        Shortcut {
+            id:shortreload
+            sequences: [StandardKey.Refresh, keysSeqReload]
+            onActivated: reloadFn()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Back, keysSeqBack]
+            onActivated: goBack()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Forward, keysSeqForward]
+            onActivated: goForward()
+        }
+        
+        Shortcut {
+            sequences: [StandardKey.Cancel, keysSeqStop]
+            onActivated: {
+                stop();
+                busyIndicator.visible = false;
+                busyIndicator.running = false;
             }
         }
 
@@ -136,7 +171,7 @@ Item {
             if (enableJS && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 runJavaScript(js);
             }
-            if (loadRequest && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+            if (loadRequest && (loadRequest.status === WebEngineView.LoadSucceededStatus || loadRequest.status === WebEngineLoadRequest.LoadFailedStatus)) {
                 busyIndicator.visible = false;
                 busyIndicator.running = false;
             }
