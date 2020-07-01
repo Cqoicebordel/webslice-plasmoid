@@ -229,7 +229,7 @@ Item {
             Label {
                 Layout.fillWidth: true
                 font.italic: true
-                text: i18n('Note that the transparency will only work if the page background is also transparent or not set. Also, the transparency may not be visible until the page is reloaded or repainted.')
+                text: i18n('Note that the transparency will only work if the page background is also transparent or not set.')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.parent.width
             }
