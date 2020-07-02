@@ -98,7 +98,7 @@ Item {
         onWidthChanged: updateSizeHints()
         onHeightChanged: updateSizeHints()
 
-        property bool isExternalLink
+        property bool isExternalLink: false
         
         /*
          * When using the shortcut to activate the Plasmoid
@@ -183,6 +183,7 @@ Item {
         onNavigationRequested: {
             webviewID.zoomFactor = zoomFactorCfg;
             if(isExternalLink){
+                isExternalLink = false;
                 request.action = WebEngineView.IgnoreRequest;
                 Qt.openUrlExternally(request.url);
             }else if(reloadAnimation){
@@ -190,38 +191,12 @@ Item {
                 busyIndicator.running = true;
             }
         }
-
-        /**
-         * Intercept Middle and ctrl+click
-         * Doesn't work, probably because of https://bugreports.qt.io/browse/QTBUG-43602
-         */
-        MouseArea {
-            anchors.fill: parent
-            acceptedButtons: Qt.LeftButton | Qt.MiddleButton
-            propagateComposedEvents:true
-            onReleased: mouse.accepted = false;
-            onDoubleClicked: mouse.accepted = false;
-            onPositionChanged: mouse.accepted = false;
-            onPressAndHold: mouse.accepted = false;
-            onClicked: {
-                if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
-                    console.log("coucou");
-                    mouse.accepted = false;
-                    isExternalLink = true;
-                }else{
-                    console.log("coucou2");
-                    mouse.accepted = false;
-                    isExternalLink = false;
-                }
-            }
-            onPressed: {
-                if (mouse.button & Qt.MiddleButton || ((mouse.button & Qt.LeftButton) && (mouse.modifiers & Qt.ControlModifier))){
-                    mouse.accepted = false;
-                    isExternalLink = true;
-                }else{
-                    mouse.accepted = false;
-                    isExternalLink = false;
-                }
+        
+        onNewViewRequested: {
+            if(request.userInitiated){
+                isExternalLink = true;
+            }else{
+                isExternalLink = false;
             }
         }
         
@@ -232,10 +207,6 @@ Item {
             request.accepted = true
             contextMenu.request = request
             contextMenu.open(request.x, request.y)
-        }
-        
-        onNewViewRequested: {
-            Qt.openUrlExternally(request.url)
         }
 
         /**
