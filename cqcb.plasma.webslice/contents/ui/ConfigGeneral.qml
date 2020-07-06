@@ -1,6 +1,7 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.12
 import QtQuick.Layouts 1.10
+import org.kde.kquickcontrols 2.0
 
 Item {
 
@@ -14,7 +15,11 @@ Item {
     property alias cfg_webPopupHeight: webPopupHeight.value
     property alias cfg_webPopupIcon: webPopupIcon.text
     property alias cfg_reloadAnimation: reloadAnimation.checked
-    property alias cfg_enableTransparency: enableTransparency.checked
+    property alias cfg_backgroundColorWhite: backgroundColorWhite.checked
+    property alias cfg_backgroundColorTransparent: backgroundColorTransparent.checked
+    property alias cfg_backgroundColorTheme: backgroundColorTheme.checked
+    property alias cfg_backgroundColorCustom: backgroundColorCustom.checked
+    property alias cfg_customBackgroundColor: customBackgroundColor.color
 
     GridLayout {
         Layout.fillWidth: true
@@ -215,21 +220,58 @@ Item {
             }
         }
 
-        // Transparency
+        // Plasmoid background color
         ColumnLayout{
             Layout.fillWidth: true
-            Layout.columnSpan: 4
+            Layout.columnSpan: 4           
             
+            Label {
+                Layout.fillWidth: true
+                text: i18n('Plasmoid background color')
+            }
+            
+            ButtonGroup {
+                id: backgroundColorGroup
+            }
 
-            CheckBox {
-                id: enableTransparency
-                text: i18n('Enable transparency')
+            ColumnLayout {
+
+                RadioButton {
+                    id: backgroundColorWhite
+                    text: i18n("White")
+                    ButtonGroup.group: backgroundColorGroup
+                }
+
+                RadioButton {
+                    id: backgroundColorTransparent
+                    text: i18n("Transparent <i>(⚠ might cause drawing issues)</i>")
+                    ButtonGroup.group: backgroundColorGroup
+                }
+                
+                RadioButton {
+                    id: backgroundColorTheme
+                    text: i18n("Theme background color")
+                    ButtonGroup.group: backgroundColorGroup
+                }
+                
+                RowLayout{
+                    RadioButton {
+                        id: backgroundColorCustom
+                        text: i18n("Custom")
+                        ButtonGroup.group: backgroundColorGroup
+                    }
+                    ColorButton {
+                        id: customBackgroundColor
+                        showAlphaChannel:true
+                        enabled: backgroundColorCustom.checked
+                    }
+                }
             }
 
             Label {
                 Layout.fillWidth: true
                 font.italic: true
-                text: i18n('Note that the transparency will only work if the page background is also transparent or not set.')
+                text: i18n('Note that the transparency will only work if the page background is also transparent or not set. This setting is for the background of the plasmoid, not of the page.')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.parent.width
             }

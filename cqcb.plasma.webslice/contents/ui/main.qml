@@ -37,13 +37,17 @@ Item {
     property double zoomFactorCfg: plasmoid.configuration.zoomFactor
     property bool enableReload: plasmoid.configuration.enableReload
     property int reloadIntervalSec: plasmoid.configuration.reloadIntervalSec
-    property bool enableTransparency: plasmoid.configuration.enableTransparency
     property bool displaySiteBehaviour: plasmoid.configuration.displaySiteBehaviour
     property bool buttonBehaviour: plasmoid.configuration.buttonBehaviour
     property int webPopupWidth: plasmoid.configuration.webPopupWidth
     property int webPopupHeight: plasmoid.configuration.webPopupHeight
     property string webPopupIcon: plasmoid.configuration.webPopupIcon
     property bool reloadAnimation: plasmoid.configuration.reloadAnimation
+    property bool backgroundColorWhite: plasmoid.configuration.backgroundColorWhite
+    property bool backgroundColorTransparent: plasmoid.configuration.backgroundColorTransparent
+    property bool backgroundColorTheme: plasmoid.configuration.backgroundColorTheme
+    property bool backgroundColorCustom: plasmoid.configuration.backgroundColorCustom
+    property string customBackgroundColor: plasmoid.configuration.customBackgroundColor
 
     property bool enableScrollTo: plasmoid.configuration.enableScrollTo
     property int scrollToX: plasmoid.configuration.scrollToX
@@ -85,8 +89,8 @@ Item {
         id: webviewID
         url: websliceUrl
         anchors.fill: parent
-        
-        backgroundColor: enableTransparency?"transparent":"white"
+
+        backgroundColor: backgroundColorWhite?"white":(backgroundColorTransparent?"transparent":(backgroundColorTheme?theme.viewBackgroundColor:(backgroundColorCustom?customBackgroundColor:"black")))
 
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
