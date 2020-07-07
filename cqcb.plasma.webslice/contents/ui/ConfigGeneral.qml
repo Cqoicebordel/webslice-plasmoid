@@ -227,7 +227,7 @@ Item {
             
             Label {
                 Layout.fillWidth: true
-                text: i18n('Plasmoid background color')
+                text: i18n('Plasmoid background color :')
             }
             
             ButtonGroup {
@@ -271,7 +271,7 @@ Item {
             Label {
                 Layout.fillWidth: true
                 font.italic: true
-                text: i18n('Note that the transparency will only work if the page background is also transparent or not set. This setting is for the background of the plasmoid, not of the page.')
+                text: i18n('Note that the background color will only be visible if the page background is also transparent or not set. This setting is for the background of the plasmoid, not of the page.')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.parent.width
             }
