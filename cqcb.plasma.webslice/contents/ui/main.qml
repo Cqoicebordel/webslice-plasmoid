@@ -256,10 +256,18 @@ Item {
                     visualParent: gotourls.action
                     PlasmaComponents.MenuItem {
                         text: websliceUrl
-                        icon: 'link'
+                        icon: 'go-home'
                         onClicked: webviewID.url = websliceUrl
                     }
                 }
+            }
+            
+            PlasmaComponents.MenuItem {
+                text: i18n('Go Home')
+                icon: 'go-home'
+                visible:(urlsToShow.count==0)
+                enabled:(urlsToShow.count==0)
+                onClicked: webviewID.url = websliceUrl
             }
 
             PlasmaComponents.MenuItem {
@@ -269,7 +277,7 @@ Item {
             }
             
             PlasmaComponents.MenuItem {
-                text: i18n('Open link URL in default browser')
+                text: i18n('Open link\'s URL in default browser')
                 icon: 'document-share'
                 enabled: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
