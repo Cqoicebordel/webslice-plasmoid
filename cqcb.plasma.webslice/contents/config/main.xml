@@ -9,14 +9,14 @@
         <entry name="websliceUrl" type="String">
             <default>http://www.cqoicebordel.net</default>
         </entry>
+		<entry name=" zoomFactor" type="Double">
+            <default>1</default>
+        </entry>
 		<entry name="enableReload" type="Bool">
             <default>false</default>
         </entry>
         <entry name="reloadIntervalSec" type="Int">
             <default>3600</default>
-        </entry>
-		<entry name="enableTransparency" type="Bool">
-            <default>true</default>
         </entry>
 		<entry name="displaySiteBehaviour" type="Bool">
             <default>true</default>
@@ -30,19 +30,52 @@
 		<entry name="webPopupHeight" type="Int">
             <default>500</default>
         </entry>
+		<entry name="webPopupIcon" type="String">
+            <default>applications-internet</default>
+        </entry>
 		<entry name="reloadAnimation" type="Bool">
             <default>true</default>
         </entry>
+		<entry name="backgroundColorWhite" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="backgroundColorTransparent" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="backgroundColorTheme" type="Bool">
+            <default>true</default>
+        </entry>
+		<entry name="backgroundColorCustom" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="customBackgroundColor" type="String">
+            <default>#000000</default>
+        </entry>
     </group>
 	<group name="Advanced">
+		<entry name="enableScrollTo" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="scrollToX" type="Int">
+            <default>0</default>
+        </entry>
+		<entry name="scrollToY" type="Int">
+            <default>0</default>
+        </entry>
+		<entry name="enableReloadOnActivate" type="Bool">
+            <default>true</default>
+        </entry>
 		<entry name="enableJSID" type="Bool">
             <default>false</default>
         </entry>
 		<entry name="jsSelector" type="String">
             <default></default>
         </entry>
-		<entry name="minimumContentWidth" type="Int">
-            <default>100</default>
+		<entry name="enableCustomUA" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="customUA" type="String">
+            <default>QtWebEngine/5.12.4 Chrome/69.0.3497.128</default>
         </entry>
 		<entry name="enableJS" type="Bool">
             <default>false</default>
@@ -54,6 +87,23 @@
 	<group name="More URLs">
 		<entry name="urlsModel" type="String">
             <default></default>
+        </entry>
+	</group>
+	<group name="Experimental">
+		<entry name="keysSeqBack" type="String">
+            <default></default>
+        </entry>
+		<entry name="keysSeqForward" type="String">
+            <default></default>
+        </entry>
+		<entry name="keysSeqReload" type="String">
+            <default></default>
+        </entry>
+		<entry name="keysSeqStop" type="String">
+            <default></default>
+        </entry>
+		<entry name="fillWidthAndHeight" type="Bool">
+            <default>false</default>
         </entry>
 	</group>
 </kcfg>

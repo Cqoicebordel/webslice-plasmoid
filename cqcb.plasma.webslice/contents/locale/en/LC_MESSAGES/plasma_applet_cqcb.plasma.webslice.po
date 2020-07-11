@@ -1,14 +1,15 @@
-# plasma-applet-yahooweather language translation file.
-# Copyright (C) 2014 Symeon Huang
-# This file is distributed under the same license as the plasma-applet-yahooweather package.
+# plasma-applet-webslice language translation file.
+# Copyright (C) 2018 Cqoicebordel
+# This file is distributed under the same license as the plasma-applet-webslice package.
 #
 #
 # Translators:
+# Cqoicebordel <david.barouh@wanadoo.fr>, 2015,2018
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-26 20:51+0200\n"
+"POT-Creation-Date: 2020-07-11 19:02+0200\n"
 "PO-Revision-Date: 2018-04-01 22:44+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: English (http://www.transifex.com/cqoicebordel/webslice/"
@@ -19,111 +20,203 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:20
-msgid "Attention, modify with care and only if you know what you are doing."
-msgstr "Attention, modify with care and only if you know what you are doing."
+#: ../ui/ConfigAdvanced.qml:36
+msgid "Scroll to a fixed position"
+msgstr "Scroll to a fixed position"
 
-#: ../ui/ConfigAdvanced.qml:27
-msgid "Enable JS Scroll Into View"
-msgstr "Enable JS Scroll Into View"
+#: ../ui/ConfigAdvanced.qml:41
+msgid "Scroll To : "
+msgstr "Scroll To : "
 
-#: ../ui/ConfigAdvanced.qml:31
-msgid "JS Selector :"
-msgstr "JS Selector :"
+#: ../ui/ConfigAdvanced.qml:52
+msgid "X :"
+msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:50
-msgid "Minimum Content width :"
-msgstr "Minimum Content width :"
+#: ../ui/ConfigAdvanced.qml:71
+msgid "px, "
+msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:132
-#: ../ui/ConfigGeneral.qml:146
-msgctxt "Abbreviation for pixels"
+#: ../ui/ConfigAdvanced.qml:82
+msgid "Y :"
+msgstr "Y :"
+
+#: ../ui/ConfigAdvanced.qml:101
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:63
-msgid "(default : 100px)"
-msgstr "(default : 100px)"
+#: ../ui/ConfigAdvanced.qml:118
+msgid "Enable JS Scroll Into View"
+msgstr "Enable JS Scroll Into View"
 
-#: ../ui/ConfigAdvanced.qml:69
-msgid "This option can help you trigger media queries, and may help with zoom."
-msgstr ""
-"This option can help you trigger media queries, and may help with zoom."
+#: ../ui/ConfigAdvanced.qml:123
+msgid "JS Selector :"
+msgstr "JS Selector :"
 
-#: ../ui/ConfigAdvanced.qml:82
+#: ../ui/ConfigAdvanced.qml:147
+msgid "Enable custom User-Agent"
+msgstr "Enable custom User-Agent"
+
+#: ../ui/ConfigAdvanced.qml:152
+msgid "User-Agent :"
+msgstr "User-Agent :"
+
+#: ../ui/ConfigAdvanced.qml:176
+msgid "Reload the page when activated through the global shortcut"
+msgstr "Reload the page when activated through the global shortcut"
+
+#: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr "Enable personnalized JavaScript to be executed once the page is loaded"
 
-#: ../ui/ConfigAdvanced.qml:86
-msgid "Your JavaScript :"
-msgstr "Your JavaScript :"
+#: ../ui/ConfigAdvanced.qml:194
+msgid "Your JavaScript :"
+msgstr "Your JavaScript :"
 
-#: ../ui/ConfigGeneral.qml:23
-msgid "URL :"
-msgstr "URL :"
+#: ../ui/ConfigExperimental.qml:26
+msgid "Shortcuts :"
+msgstr "Shortcuts :"
 
-#: ../ui/ConfigGeneral.qml:44
+#: ../ui/ConfigExperimental.qml:33
+msgid ""
+"Note that the usual shortcuts for those actions are already included. Here "
+"you can add to those. It's in experimental, because it's seems to not work "
+"for some shortcuts, and because I don't know if they will be global or not "
+"once the plasmoid is properly installed. There might also be an issue when "
+"multiple webslices are present."
+msgstr ""
+"Note that the usual shortcuts for those actions are already included. Here "
+"you can add to those. It's in experimental, because it's seems to not work "
+"for some shortcuts, and because I don't know if they will be global or not "
+"once the plasmoid is properly installed. There might also be an issue when "
+"multiple webslices are present."
+
+#: ../ui/ConfigExperimental.qml:39
+msgid "Back (ctrl+left already in)"
+msgstr "Back (ctrl+left already in)"
+
+#: ../ui/ConfigExperimental.qml:45
+msgid "Forward (ctrl+right already in)"
+msgstr "Forward (ctrl+right already in)"
+
+#: ../ui/ConfigExperimental.qml:65
+msgid "Reload (F5 already in)"
+msgstr "Reload (F5 already in)"
+
+#: ../ui/ConfigExperimental.qml:71
+msgid "Stop (Esc already in)"
+msgstr "Stop (Esc already in)"
+
+#: ../ui/ConfigExperimental.qml:100
+msgid "Fill the whole width and height"
+msgstr "Fill the whole width and height"
+
+#: ../ui/ConfigExperimental.qml:106
+msgid ""
+"Might be useful when the plasmoid is in a panel, to fill the empty space. "
+"Not sure if it works correctly, and not sure if it really fill vertically "
+"(seems OK horizontally)."
+msgstr ""
+"Might be useful when the plasmoid is in a panel, to fill the empty space. "
+"Not sure if it works correctly, and not sure if it really fill vertically "
+"(seems OK horizontally)."
+
+#: ../ui/ConfigGeneral.qml:39
+msgid "URL :"
+msgstr "URL :"
+
+#: ../ui/ConfigGeneral.qml:58
+msgid "Zoom factor :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
 msgstr "Enable auto reload"
 
-#: ../ui/ConfigGeneral.qml:48
-msgid "Reload interval :"
-msgstr "Reload interval :"
+#: ../ui/ConfigGeneral.qml:97
+msgid "Reload interval :"
+msgstr "Reload interval :"
 
-#: ../ui/ConfigGeneral.qml:54
+#: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
-msgid "sec"
-msgstr "sec"
+msgid "%1 sec"
+msgstr "%1 sec"
 
-#: ../ui/ConfigGeneral.qml:70
-msgid "Enable transparency"
-msgstr "Enable transparency"
-
-#: ../ui/ConfigGeneral.qml:75
-msgid ""
-"Note that the transparency will only work if the page background is also "
-"transparent or not set.\n"
-"Also, the transparency may not be visible until the page is reloaded or "
-"repainted."
+#: ../ui/ConfigGeneral.qml:123
+msgid "Plasmoid behaviour :"
 msgstr ""
-"Note that the transparency will only work if the page background is also "
-"transparent or not set.\n"
-"Also, the transparency may not be visible until the page is reloaded or "
-"repainted."
 
-#: ../ui/ConfigGeneral.qml:85
-msgid "Plasmoid behaviour :"
-msgstr "Plasmoid behaviour :"
-
-#: ../ui/ConfigGeneral.qml:100
+#: ../ui/ConfigGeneral.qml:136
 msgid "Display the site"
 msgstr "Display the site"
 
-#: ../ui/ConfigGeneral.qml:106
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display a button that opens the site in a new panel"
 msgstr "Display a button that opens the site in a new panel"
 
-#: ../ui/ConfigGeneral.qml:116
+#: ../ui/ConfigGeneral.qml:154
 msgid "Popup size"
 msgstr "Popup size"
 
-#: ../ui/ConfigGeneral.qml:126
+#: ../ui/ConfigGeneral.qml:159
 msgid "Width"
 msgstr "Width"
 
-#: ../ui/ConfigGeneral.qml:140
+#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
+msgctxt "Abbreviation for pixels"
+msgid "%1 px"
+msgstr "%1 px"
+
+#: ../ui/ConfigGeneral.qml:175
 msgid "Height"
 msgstr "Height"
 
-#: ../ui/ConfigGeneral.qml:157
-msgid ""
-"Note that this behaviour might not be visible until the plasmoid is reloaded."
-msgstr ""
-"Note that this behaviour might not be visible until the plasmoid is reloaded."
+#: ../ui/ConfigGeneral.qml:191
+msgid "Icon :"
+msgstr "Icon :"
 
-#: ../ui/ConfigGeneral.qml:169
-msgid "Display reload animation"
-msgstr "Display reload animation"
+#: ../ui/ConfigGeneral.qml:204
+msgid ""
+"Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
+"specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
+"\">standard freedesktop icons</a>."
+msgstr ""
+"Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
+"specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
+"\">standard freedesktop icons</a>."
+
+#: ../ui/ConfigGeneral.qml:222
+msgid "Display loading animation"
+msgstr "Display loading animation"
+
+#: ../ui/ConfigGeneral.qml:233
+msgid "Plasmoid background color :"
+msgstr "Plasmoid background color :"
+
+#: ../ui/ConfigGeneral.qml:244
+msgid "White"
+msgstr "White"
+
+#: ../ui/ConfigGeneral.qml:250
+msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
+msgstr "Transparent <i>(⚠ might cause drawing issues)</i>"
+
+#: ../ui/ConfigGeneral.qml:256
+msgid "Theme's background color"
+msgstr "Theme's background color"
+
+#: ../ui/ConfigGeneral.qml:263
+msgid "Custom"
+msgstr "Custom"
+
+#: ../ui/ConfigGeneral.qml:277
+msgid ""
+"Note that the background color will only be visible if the page background "
+"is also transparent or not set. This setting is for the background of the "
+"plasmoid, not of the page."
+msgstr ""
+"Note that the background color will only be visible if the page background "
+"is also transparent or not set. This setting is for the background of the "
+"plasmoid, not of the page."
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
@@ -153,27 +246,35 @@ msgstr "Move the selected URL up"
 msgid "Move the selected URL down"
 msgstr "Move the selected URL down"
 
-#: ../ui/main.qml:186
+#: ../ui/main.qml:230
 msgid "Back"
 msgstr "Back"
 
-#: ../ui/main.qml:193
+#: ../ui/main.qml:237
 msgid "Forward"
 msgstr "Forward"
 
-#: ../ui/main.qml:200
+#: ../ui/main.qml:244
 msgid "Reload"
 msgstr "Reload"
 
-#: ../ui/main.qml:207
+#: ../ui/main.qml:251
 msgid "Go to"
 msgstr "Go to"
 
-#: ../ui/main.qml:228
+#: ../ui/main.qml:272
+msgid "Go Home"
+msgstr "Go Home"
+
+#: ../ui/main.qml:280
 msgid "Open current URL in default browser"
 msgstr "Open current URL in default browser"
 
-#: ../ui/main.qml:234
+#: ../ui/main.qml:286
+msgid "Open link's URL in default browser"
+msgstr "Open link's URL in default browser"
+
+#: ../ui/main.qml:294
 msgid "Configure"
 msgstr "Configure"
 
@@ -188,3 +289,7 @@ msgstr "Advanced"
 #: ../config/config.qml:16
 msgid "More URLs"
 msgstr "More URLs"
+
+#: ../config/config.qml:21
+msgid "Experimental"
+msgstr "Experimental"

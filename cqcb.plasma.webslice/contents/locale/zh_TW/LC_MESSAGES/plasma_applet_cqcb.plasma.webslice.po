@@ -1,14 +1,15 @@
-# plasma-applet-yahooweather language translation file.
-# Copyright (C) 2014 Symeon Huang
-# This file is distributed under the same license as the plasma-applet-yahooweather package.
+# plasma-applet-webslice language translation file.
+# Copyright (C) 2018 Cqoicebordel
+# This file is distributed under the same license as the plasma-applet-webslice package.
 #
 #
+# Translators:
 # Jeff Huang <s8321414@gmail.com>, 2016, 2018.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-26 20:51+0200\n"
+"POT-Creation-Date: 2020-07-11 19:02+0200\n"
 "PO-Revision-Date: 2018-04-02 22:12+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -19,107 +20,189 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 2.0\n"
 
-#: ../ui/ConfigAdvanced.qml:20
-msgid "Attention, modify with care and only if you know what you are doing."
-msgstr "注意，僅在您知道您正在做什麼時才小心地修改。"
+#: ../ui/ConfigAdvanced.qml:36
+msgid "Scroll to a fixed position"
+msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:27
+#: ../ui/ConfigAdvanced.qml:41
+msgid "Scroll To : "
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:52
+msgid "X :"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:71
+msgid "px, "
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:82
+msgid "Y :"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:101
+msgid "px"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:118
 msgid "Enable JS Scroll Into View"
 msgstr "啟用 JS 捲動檢視範圍"
 
-#: ../ui/ConfigAdvanced.qml:31
-msgid "JS Selector :"
-msgstr "JS 選擇器："
+#: ../ui/ConfigAdvanced.qml:123
+msgid "JS Selector :"
+msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:50
-msgid "Minimum Content width :"
-msgstr "最小內容寬度："
+#: ../ui/ConfigAdvanced.qml:147
+msgid "Enable custom User-Agent"
+msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:55 ../ui/ConfigGeneral.qml:132
-#: ../ui/ConfigGeneral.qml:146
-msgctxt "Abbreviation for pixels"
-msgid "px"
-msgstr "px"
+#: ../ui/ConfigAdvanced.qml:152
+msgid "User-Agent :"
+msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:63
-msgid "(default : 100px)"
-msgstr "（預設：100px）"
+#: ../ui/ConfigAdvanced.qml:176
+msgid "Reload the page when activated through the global shortcut"
+msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:69
-msgid "This option can help you trigger media queries, and may help with zoom."
-msgstr "這個選項可以協助您觸發媒體查詢，以及可能會對縮放有所幫助。"
-
-#: ../ui/ConfigAdvanced.qml:82
+#: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr "啟用個人化的 JavaScript 以在頁面被載入時執行"
 
-#: ../ui/ConfigAdvanced.qml:86
-msgid "Your JavaScript :"
-msgstr "您的 JavaScript："
+#: ../ui/ConfigAdvanced.qml:194
+msgid "Your JavaScript :"
+msgstr ""
 
-#: ../ui/ConfigGeneral.qml:23
-msgid "URL :"
+#: ../ui/ConfigExperimental.qml:26
+msgid "Shortcuts :"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:33
+msgid ""
+"Note that the usual shortcuts for those actions are already included. Here "
+"you can add to those. It's in experimental, because it's seems to not work "
+"for some shortcuts, and because I don't know if they will be global or not "
+"once the plasmoid is properly installed. There might also be an issue when "
+"multiple webslices are present."
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:39
+msgid "Back (ctrl+left already in)"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:45
+msgid "Forward (ctrl+right already in)"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:65
+msgid "Reload (F5 already in)"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:71
+msgid "Stop (Esc already in)"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:100
+msgid "Fill the whole width and height"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:106
+msgid ""
+"Might be useful when the plasmoid is in a panel, to fill the empty space. "
+"Not sure if it works correctly, and not sure if it really fill vertically "
+"(seems OK horizontally)."
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:39
+msgid "URL :"
 msgstr "URL："
 
-#: ../ui/ConfigGeneral.qml:44
+#: ../ui/ConfigGeneral.qml:58
+msgid "Zoom factor :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
 msgstr "啟用自動重新整理"
 
-#: ../ui/ConfigGeneral.qml:48
-msgid "Reload interval :"
+#: ../ui/ConfigGeneral.qml:97
+msgid "Reload interval :"
 msgstr "重新整理間隔："
 
-#: ../ui/ConfigGeneral.qml:54
+#: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
-msgid "sec"
-msgstr "秒"
-
-#: ../ui/ConfigGeneral.qml:70
-msgid "Enable transparency"
-msgstr "啟用透明"
-
-#: ../ui/ConfigGeneral.qml:75
-msgid ""
-"Note that the transparency will only work if the page background is also "
-"transparent or not set.\n"
-"Also, the transparency may not be visible until the page is reloaded or "
-"repainted."
+msgid "%1 sec"
 msgstr ""
-"注意，透明將只會在頁面背景也是透明或是未設定時運作。\n"
-"並且，透明可能會在頁面重新整理或重新繪製前不可見。"
 
-#: ../ui/ConfigGeneral.qml:85
-msgid "Plasmoid behaviour :"
+#: ../ui/ConfigGeneral.qml:123
+msgid "Plasmoid behaviour :"
 msgstr "Plasmoid 行為："
 
-#: ../ui/ConfigGeneral.qml:100
+#: ../ui/ConfigGeneral.qml:136
 msgid "Display the site"
 msgstr "顯示頁面"
 
-#: ../ui/ConfigGeneral.qml:106
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display a button that opens the site in a new panel"
 msgstr "顯示在新面板開啟頁面的按鈕"
 
-#: ../ui/ConfigGeneral.qml:116
+#: ../ui/ConfigGeneral.qml:154
 msgid "Popup size"
 msgstr "彈出視窗大小"
 
-#: ../ui/ConfigGeneral.qml:126
+#: ../ui/ConfigGeneral.qml:159
 msgid "Width"
 msgstr "寬度"
 
-#: ../ui/ConfigGeneral.qml:140
+#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
+msgctxt "Abbreviation for pixels"
+msgid "%1 px"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:175
 msgid "Height"
 msgstr "高度"
 
-#: ../ui/ConfigGeneral.qml:157
-msgid ""
-"Note that this behaviour might not be visible until the plasmoid is reloaded."
-msgstr "注意，這個行為可能會在 plasmoid 重新載入後才可見。"
+#: ../ui/ConfigGeneral.qml:191
+msgid "Icon :"
+msgstr ""
 
-#: ../ui/ConfigGeneral.qml:169
-msgid "Display reload animation"
-msgstr "顯示重新整理動畫"
+#: ../ui/ConfigGeneral.qml:204
+msgid ""
+"Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
+"specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
+"\">standard freedesktop icons</a>."
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:222
+msgid "Display loading animation"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:233
+msgid "Plasmoid background color :"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:244
+msgid "White"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:250
+msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:256
+msgid "Theme's background color"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:263
+msgid "Custom"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:277
+msgid ""
+"Note that the background color will only be visible if the page background "
+"is also transparent or not set. This setting is for the background of the "
+"plasmoid, not of the page."
+msgstr ""
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
@@ -147,27 +230,35 @@ msgstr "將選定的 URL 向上移動"
 msgid "Move the selected URL down"
 msgstr "將選定的 URL 向下移動"
 
-#: ../ui/main.qml:186
+#: ../ui/main.qml:230
 msgid "Back"
 msgstr "上一頁"
 
-#: ../ui/main.qml:193
+#: ../ui/main.qml:237
 msgid "Forward"
 msgstr "下一頁"
 
-#: ../ui/main.qml:200
+#: ../ui/main.qml:244
 msgid "Reload"
 msgstr "重新整理"
 
-#: ../ui/main.qml:207
+#: ../ui/main.qml:251
 msgid "Go to"
 msgstr "跳到"
 
-#: ../ui/main.qml:228
+#: ../ui/main.qml:272
+msgid "Go Home"
+msgstr ""
+
+#: ../ui/main.qml:280
 msgid "Open current URL in default browser"
 msgstr "在預設瀏覽器中開啟目前的 URL"
 
-#: ../ui/main.qml:234
+#: ../ui/main.qml:286
+msgid "Open link's URL in default browser"
+msgstr ""
+
+#: ../ui/main.qml:294
 msgid "Configure"
 msgstr "設定"
 
@@ -182,3 +273,16 @@ msgstr "進階"
 #: ../config/config.qml:16
 msgid "More URLs"
 msgstr "更多 URL"
+
+#: ../config/config.qml:21
+msgid "Experimental"
+msgstr ""
+
+#~ msgid "URL :"
+#~ msgstr "URL："
+
+#~ msgid "Reload interval :"
+#~ msgstr "重新整理間隔："
+
+#~ msgid "Plasmoid behaviour :"
+#~ msgstr "Plasmoid 行為："

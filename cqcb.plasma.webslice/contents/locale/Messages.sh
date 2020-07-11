@@ -56,7 +56,7 @@ for d in */; do
     if [ -d "$d" ]; then
         if [ -f "$d/LC_MESSAGES/$NAME.po" ]; then
             echo "Merging $NAME.pot -> $d/LC_MESSAGES/$NAME.po ..."
-            msgmerge -U --backup=none "$d/LC_MESSAGES/$NAME.po" "$NAME.pot"
+            msgmerge -U -N --backup=none "$d/LC_MESSAGES/$NAME.po" "$NAME.pot"
         else
             echo "Copying $NAME.pot -> $d/LC_MESSAGES/$NAME.po ..."
             cp "$NAME.pot" "$d/LC_MESSAGES/$NAME.po"
