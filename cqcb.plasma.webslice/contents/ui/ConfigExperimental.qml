@@ -23,14 +23,14 @@ Item {
             columns: 4
 
             Label {
-                text: i18n('Shortcuts :')
+                text: i18n('Shortcuts :')
                 Layout.columnSpan: 4
                 Layout.fillWidth: true
                 
             }
             Label {
                 font.italic: true
-                text: i18n('Note that the usual shortcuts for those actions are already included. Here you can add to those. It\'s in experimental, because it\'s seems to not work for some shortcuts, and because I don\'t know if they will be global or not once the plasmoid is properly installed.')
+                text: i18n('Note that the usual shortcuts for those actions are already included. Here you can add to those. It\'s in experimental, because it\'s seems to not work for some shortcuts, and because I don\'t know if they will be global or not once the plasmoid is properly installed. There might also be an issue when multiple webslices are present.')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.width
                 Layout.columnSpan: 4

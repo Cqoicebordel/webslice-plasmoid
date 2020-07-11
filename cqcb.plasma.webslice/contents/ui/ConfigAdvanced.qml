@@ -36,7 +36,7 @@ Item {
             }
             
             Label {
-                text: i18n('Scroll To : ')
+                text: i18n('Scroll To : ')
                 Layout.columnSpan: 1
                 enabled: enableScrollTo.checked
                 Layout.fillWidth: true

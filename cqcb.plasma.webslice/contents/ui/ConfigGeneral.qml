@@ -20,9 +20,12 @@ Item {
     property alias cfg_backgroundColorTheme: backgroundColorTheme.checked
     property alias cfg_backgroundColorCustom: backgroundColorCustom.checked
     property alias cfg_customBackgroundColor: customBackgroundColor.color
+    
+    property double maxWidth: width
 
     GridLayout {
         Layout.fillWidth: true
+        Layout.maximumWidth: maxWidth
         columns: 4
         rowSpacing: 20
 
@@ -33,7 +36,7 @@ Item {
             columns: 3
             
             Label {
-                text: i18n('URL :')
+                text: i18n('URL :')
                 Layout.columnSpan: 1
             }
 
@@ -52,7 +55,7 @@ Item {
             columns: 4
             
             Label {
-                text: i18n('Zoom factor :')
+                text: i18n('Zoom factor :')
                 Layout.columnSpan: 1
             }
 
@@ -91,7 +94,7 @@ Item {
             }
 
             Label {
-                text: i18n('Reload interval :')
+                text: i18n('Reload interval :')
                 enabled: enableReload.checked
                 Layout.columnSpan: 1
                 Layout.fillWidth: true
@@ -117,7 +120,7 @@ Item {
             columns: 3
             
             Label {
-                text: i18n('Plasmoid behaviour :')
+                text: i18n('Plasmoid behaviour :')
                 Layout.columnSpan: 3
             }
 
@@ -185,7 +188,7 @@ Item {
                 }
                 
                 Label {
-                    text: i18n('Icon :')
+                    text: i18n('Icon :')
                     Layout.columnSpan: 2
                 }
 
@@ -203,7 +206,7 @@ Item {
                         Qt.openUrlExternally("https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html");
                     }
                     wrapMode: Text.Wrap
-                    Layout.maximumWidth: parent.parent.parent.parent.width
+                    Layout.maximumWidth: maxWidth
                     Layout.columnSpan: 5
                 }
             }
@@ -227,7 +230,7 @@ Item {
             
             Label {
                 Layout.fillWidth: true
-                text: i18n('Plasmoid background color :')
+                text: i18n('Plasmoid background color :')
             }
             
             ButtonGroup {
@@ -250,7 +253,7 @@ Item {
                 
                 RadioButton {
                     id: backgroundColorTheme
-                    text: i18n("Theme background color")
+                    text: i18n("Theme's background color")
                     ButtonGroup.group: backgroundColorGroup
                 }
                 
@@ -273,7 +276,7 @@ Item {
                 font.italic: true
                 text: i18n('Note that the background color will only be visible if the page background is also transparent or not set. This setting is for the background of the plasmoid, not of the page.')
                 wrapMode: Text.Wrap
-                Layout.maximumWidth: parent.parent.parent.width
+                Layout.maximumWidth: maxWidth
             }
         }
     }
