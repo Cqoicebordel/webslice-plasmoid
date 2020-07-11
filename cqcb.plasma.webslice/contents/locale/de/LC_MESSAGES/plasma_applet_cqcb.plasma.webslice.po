@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 18:20+0200\n"
+"POT-Creation-Date: 2020-07-11 19:02+0200\n"
 "PO-Revision-Date: 2018-05-26 09:12+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
@@ -20,48 +20,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:34
+#: ../ui/ConfigAdvanced.qml:36
 msgid "Scroll to a fixed position"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:39
+#: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll To : "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:50
+#: ../ui/ConfigAdvanced.qml:52
 msgid "X :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:69
+#: ../ui/ConfigAdvanced.qml:71
 msgid "px, "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:80
+#: ../ui/ConfigAdvanced.qml:82
 msgid "Y :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:99
+#: ../ui/ConfigAdvanced.qml:101
 msgid "px"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:116
+#: ../ui/ConfigAdvanced.qml:118
 msgid "Enable JS Scroll Into View"
 msgstr "JS Selektor Auswahl ins Blickfeld scrollen"
 
-#: ../ui/ConfigAdvanced.qml:121
+#: ../ui/ConfigAdvanced.qml:123
 msgid "JS Selector :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:145
+#: ../ui/ConfigAdvanced.qml:147
+msgid "Enable custom User-Agent"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:152
+msgid "User-Agent :"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:176
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:159
+#: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Persönliche JavaScripts, die nach dem laden der Seite ausgeführt werden."
 
-#: ../ui/ConfigAdvanced.qml:163
+#: ../ui/ConfigAdvanced.qml:194
 msgid "Your JavaScript :"
 msgstr ""
 
@@ -226,35 +234,35 @@ msgstr "Ausgewählte URL nach oben verschieben"
 msgid "Move the selected URL down"
 msgstr "Ausgewählte URL nach unten verschieben"
 
-#: ../ui/main.qml:224
+#: ../ui/main.qml:230
 msgid "Back"
 msgstr "Zurück"
 
-#: ../ui/main.qml:231
+#: ../ui/main.qml:237
 msgid "Forward"
 msgstr "Vor"
 
-#: ../ui/main.qml:238
+#: ../ui/main.qml:244
 msgid "Reload"
 msgstr "Neu laden"
 
-#: ../ui/main.qml:245
+#: ../ui/main.qml:251
 msgid "Go to"
 msgstr "Gehe zu"
 
-#: ../ui/main.qml:266
+#: ../ui/main.qml:272
 msgid "Go Home"
 msgstr ""
 
-#: ../ui/main.qml:274
+#: ../ui/main.qml:280
 msgid "Open current URL in default browser"
 msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:280
+#: ../ui/main.qml:286
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:288
+#: ../ui/main.qml:294
 msgid "Configure"
 msgstr "Konfigurieren"
 

@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 18:20+0200\n"
+"POT-Creation-Date: 2020-07-11 19:02+0200\n"
 "PO-Revision-Date: 2020-07-11 16:16+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: French (http://www.transifex.com/cqoicebordel/webslice/"
@@ -21,49 +21,57 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:34
+#: ../ui/ConfigAdvanced.qml:36
 msgid "Scroll to a fixed position"
 msgstr "Défiler vers une position précise"
 
-#: ../ui/ConfigAdvanced.qml:39
+#: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll To : "
 msgstr "Défiler vers :"
 
-#: ../ui/ConfigAdvanced.qml:50
+#: ../ui/ConfigAdvanced.qml:52
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:69
+#: ../ui/ConfigAdvanced.qml:71
 msgid "px, "
 msgstr "px, "
 
-#: ../ui/ConfigAdvanced.qml:80
+#: ../ui/ConfigAdvanced.qml:82
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:99
+#: ../ui/ConfigAdvanced.qml:101
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:116
+#: ../ui/ConfigAdvanced.qml:118
 msgid "Enable JS Scroll Into View"
 msgstr "Activer le déplacement de la page"
 
-#: ../ui/ConfigAdvanced.qml:121
+#: ../ui/ConfigAdvanced.qml:123
 msgid "JS Selector :"
 msgstr "Sélecteur JS :"
 
-#: ../ui/ConfigAdvanced.qml:145
+#: ../ui/ConfigAdvanced.qml:147
+msgid "Enable custom User-Agent"
+msgstr "Activer l'User-Agent personnalisé"
+
+#: ../ui/ConfigAdvanced.qml:152
+msgid "User-Agent :"
+msgstr "User-Agent :"
+
+#: ../ui/ConfigAdvanced.qml:176
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 "Recharge la page lorsque le Plasmoid est activé grace au raccourci global"
 
-#: ../ui/ConfigAdvanced.qml:159
+#: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Activer le JavaScript personnalisé à être exécuté lorsque la page est chargée"
 
-#: ../ui/ConfigAdvanced.qml:163
+#: ../ui/ConfigAdvanced.qml:194
 msgid "Your JavaScript :"
 msgstr "Votre JavaScript : "
 
@@ -243,35 +251,35 @@ msgstr "Monter l'adresse sélectionnée"
 msgid "Move the selected URL down"
 msgstr "Descendre l'adresse sélectionnée"
 
-#: ../ui/main.qml:224
+#: ../ui/main.qml:230
 msgid "Back"
 msgstr "Précédent"
 
-#: ../ui/main.qml:231
+#: ../ui/main.qml:237
 msgid "Forward"
 msgstr "Suivant"
 
-#: ../ui/main.qml:238
+#: ../ui/main.qml:244
 msgid "Reload"
 msgstr "Recharger"
 
-#: ../ui/main.qml:245
+#: ../ui/main.qml:251
 msgid "Go to"
 msgstr "Aller à"
 
-#: ../ui/main.qml:266
+#: ../ui/main.qml:272
 msgid "Go Home"
 msgstr "Aller à la page d'accueil"
 
-#: ../ui/main.qml:274
+#: ../ui/main.qml:280
 msgid "Open current URL in default browser"
 msgstr "Ouvrir l'URL actuelle dans le navigateur par défaut"
 
-#: ../ui/main.qml:280
+#: ../ui/main.qml:286
 msgid "Open link's URL in default browser"
 msgstr "Ouvrir l'adresse du lien dans le navigateur par défaut"
 
-#: ../ui/main.qml:288
+#: ../ui/main.qml:294
 msgid "Configure"
 msgstr "Configurer"
 
