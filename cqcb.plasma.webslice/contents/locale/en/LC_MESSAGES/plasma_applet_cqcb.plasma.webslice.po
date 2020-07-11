@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 17:34+0200\n"
+"POT-Creation-Date: 2020-07-11 18:20+0200\n"
 "PO-Revision-Date: 2018-04-01 22:44+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: English (http://www.transifex.com/cqoicebordel/webslice/"
@@ -112,61 +112,61 @@ msgstr ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 
-#: ../ui/ConfigGeneral.qml:43
+#: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
 msgstr "URL :"
 
-#: ../ui/ConfigGeneral.qml:62
+#: ../ui/ConfigGeneral.qml:58
 msgid "Zoom factor :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:96
+#: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
 msgstr "Enable auto reload"
 
-#: ../ui/ConfigGeneral.qml:101
+#: ../ui/ConfigGeneral.qml:97
 msgid "Reload interval :"
 msgstr "Reload interval :"
 
-#: ../ui/ConfigGeneral.qml:114
+#: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
 msgstr "%1 sec"
 
-#: ../ui/ConfigGeneral.qml:127
+#: ../ui/ConfigGeneral.qml:123
 msgid "Plasmoid behaviour :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:140
+#: ../ui/ConfigGeneral.qml:136
 msgid "Display the site"
 msgstr "Display the site"
 
-#: ../ui/ConfigGeneral.qml:145
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display a button that opens the site in a new panel"
 msgstr "Display a button that opens the site in a new panel"
 
-#: ../ui/ConfigGeneral.qml:158
+#: ../ui/ConfigGeneral.qml:154
 msgid "Popup size"
 msgstr "Popup size"
 
-#: ../ui/ConfigGeneral.qml:163
+#: ../ui/ConfigGeneral.qml:159
 msgid "Width"
 msgstr "Width"
 
-#: ../ui/ConfigGeneral.qml:173 ../ui/ConfigGeneral.qml:189
+#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
 msgstr "%1 px"
 
-#: ../ui/ConfigGeneral.qml:179
+#: ../ui/ConfigGeneral.qml:175
 msgid "Height"
 msgstr "Height"
 
-#: ../ui/ConfigGeneral.qml:195
+#: ../ui/ConfigGeneral.qml:191
 msgid "Icon :"
 msgstr "Icon :"
 
-#: ../ui/ConfigGeneral.qml:208
+#: ../ui/ConfigGeneral.qml:204
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
@@ -176,31 +176,31 @@ msgstr ""
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 
-#: ../ui/ConfigGeneral.qml:226
+#: ../ui/ConfigGeneral.qml:222
 msgid "Display loading animation"
 msgstr "Display loading animation"
 
-#: ../ui/ConfigGeneral.qml:237
+#: ../ui/ConfigGeneral.qml:233
 msgid "Plasmoid background color :"
 msgstr "Plasmoid background color :"
 
-#: ../ui/ConfigGeneral.qml:248
+#: ../ui/ConfigGeneral.qml:244
 msgid "White"
 msgstr "White"
 
-#: ../ui/ConfigGeneral.qml:254
+#: ../ui/ConfigGeneral.qml:250
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr "Transparent <i>(⚠ might cause drawing issues)</i>"
 
-#: ../ui/ConfigGeneral.qml:260
+#: ../ui/ConfigGeneral.qml:256
 msgid "Theme's background color"
 msgstr "Theme's background color"
 
-#: ../ui/ConfigGeneral.qml:267
+#: ../ui/ConfigGeneral.qml:263
 msgid "Custom"
 msgstr "Custom"
 
-#: ../ui/ConfigGeneral.qml:281
+#: ../ui/ConfigGeneral.qml:277
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
