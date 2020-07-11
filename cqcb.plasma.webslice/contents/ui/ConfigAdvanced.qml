@@ -10,6 +10,8 @@ Item {
     property alias cfg_scrollToY: scrollToY.text
     property alias cfg_enableJSID: enableJSID.checked
     property alias cfg_jsSelector: jsSelector.text
+    property alias cfg_enableCustomUA: enableCustomUA.checked
+    property alias cfg_customUA: customUA.text
     property alias cfg_enableReloadOnActivate: enableReloadOnActivate.checked
     property alias cfg_enableJS: enableJS.checked
     property alias cfg_js: js.text
@@ -128,6 +130,35 @@ Item {
                 placeholderText: 'document.getElementById("id")'
                 Layout.minimumWidth: textfieldWidth
                 enabled: enableJSID.checked
+                Layout.columnSpan: 3
+                Layout.fillWidth: true
+            }
+        }
+
+        // UA
+        GridLayout{
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 4
+            
+            CheckBox {
+                id: enableCustomUA
+                Layout.columnSpan: 4
+                text: i18n('Enable custom User-Agent')
+                Layout.fillWidth: true
+            }
+
+            Label {
+                text: i18n('User-Agent :')
+                enabled: enableCustomUA.checked
+                Layout.columnSpan: 1
+            }
+
+            TextField {
+                id: customUA
+                placeholderText: 'QtWebEngine/5.12.4 Chrome/69.0.3497.128'
+                Layout.minimumWidth: textfieldWidth
+                enabled: enableCustomUA.checked
                 Layout.columnSpan: 3
                 Layout.fillWidth: true
             }

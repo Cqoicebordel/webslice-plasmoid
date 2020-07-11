@@ -55,6 +55,8 @@ Item {
     property bool enableReloadOnActivate: plasmoid.configuration.enableReloadOnActivate
     property bool enableJSID: plasmoid.configuration.enableJSID
     property string jsSelector: plasmoid.configuration.jsSelector
+    property bool enableCustomUA: plasmoid.configuration.enableCustomUA
+    property string customUA: plasmoid.configuration.customUA
     property bool enableJS: plasmoid.configuration.enableJS
     property string js: plasmoid.configuration.js
 
@@ -103,6 +105,10 @@ Item {
         onHeightChanged: updateSizeHints()
 
         property bool isExternalLink: false
+        
+        profile:  WebEngineProfile{
+            httpUserAgent: (enableCustomUA)?customUA:httpUserAgent
+        }
         
         /*
          * When using the shortcut to activate the Plasmoid

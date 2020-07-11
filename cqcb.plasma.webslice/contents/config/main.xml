@@ -71,6 +71,12 @@
 		<entry name="jsSelector" type="String">
             <default></default>
         </entry>
+		<entry name="enableCustomUA" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="customUA" type="String">
+            <default>QtWebEngine/5.12.4 Chrome/69.0.3497.128</default>
+        </entry>
 		<entry name="enableJS" type="Bool">
             <default>false</default>
         </entry>
