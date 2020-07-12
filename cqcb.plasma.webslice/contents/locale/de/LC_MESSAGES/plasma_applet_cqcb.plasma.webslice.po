@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015,2018
+# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015,2018,2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 19:02+0200\n"
-"PO-Revision-Date: 2018-05-26 09:12+0000\n"
+"POT-Creation-Date: 2020-07-12 18:16+0200\n"
+"PO-Revision-Date: 2020-07-12 16:13+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
 "language/de/)\n"
@@ -22,27 +22,27 @@ msgstr ""
 
 #: ../ui/ConfigAdvanced.qml:36
 msgid "Scroll to a fixed position"
-msgstr ""
+msgstr "Zu einer festen Position scrollen"
 
 #: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll To : "
-msgstr ""
+msgstr "Scroll nach : "
 
 #: ../ui/ConfigAdvanced.qml:52
 msgid "X :"
-msgstr ""
+msgstr "X :"
 
 #: ../ui/ConfigAdvanced.qml:71
 msgid "px, "
-msgstr ""
+msgstr "px,"
 
 #: ../ui/ConfigAdvanced.qml:82
 msgid "Y :"
-msgstr ""
+msgstr "Y :"
 
 #: ../ui/ConfigAdvanced.qml:101
 msgid "px"
-msgstr ""
+msgstr "px"
 
 #: ../ui/ConfigAdvanced.qml:118
 msgid "Enable JS Scroll Into View"
@@ -50,19 +50,20 @@ msgstr "JS Selektor Auswahl ins Blickfeld scrollen"
 
 #: ../ui/ConfigAdvanced.qml:123
 msgid "JS Selector :"
-msgstr ""
+msgstr "JS-Selektor :"
 
 #: ../ui/ConfigAdvanced.qml:147
 msgid "Enable custom User-Agent"
-msgstr ""
+msgstr "Benutzerdefinierten Benutzer-Agenten aktivieren"
 
 #: ../ui/ConfigAdvanced.qml:152
 msgid "User-Agent :"
-msgstr ""
+msgstr "Benutzer-Agent :"
 
 #: ../ui/ConfigAdvanced.qml:176
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
+"Die Seite neu laden, wenn sie über das globale Tastenkürzel aktiviert wird"
 
 #: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
@@ -71,11 +72,11 @@ msgstr ""
 
 #: ../ui/ConfigAdvanced.qml:194
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "Ihr JavaScript :"
 
 #: ../ui/ConfigExperimental.qml:26
 msgid "Shortcuts :"
-msgstr ""
+msgstr "Tastenkürzel :"
 
 #: ../ui/ConfigExperimental.qml:33
 msgid ""
@@ -85,26 +86,32 @@ msgid ""
 "once the plasmoid is properly installed. There might also be an issue when "
 "multiple webslices are present."
 msgstr ""
+"Hier können Sie diese ergänzen. Beachten Sie, dass die üblichen Abkürzungen "
+"für diese Aktionen bereits enthalten sind.  Dies ist in \"Experimente\", "
+"weil es für einige Tastenkürzel nicht zu funktionieren scheint und weil ich "
+"nicht weiß, ob sie global sein werden oder nicht, wenn das Plasmoid richtig "
+"installiert ist. Es könnte auch Probleme mit mehreren vorhandenen Webslices "
+"geben."
 
 #: ../ui/ConfigExperimental.qml:39
 msgid "Back (ctrl+left already in)"
-msgstr ""
+msgstr "Zurück (Strg+Links bereits vorhanden) "
 
 #: ../ui/ConfigExperimental.qml:45
 msgid "Forward (ctrl+right already in)"
-msgstr ""
+msgstr "Vor (Strg+rechts bereits vorhanden)"
 
 #: ../ui/ConfigExperimental.qml:65
 msgid "Reload (F5 already in)"
-msgstr ""
+msgstr "Neu laden (F5 bereits vorhanden)"
 
 #: ../ui/ConfigExperimental.qml:71
 msgid "Stop (Esc already in)"
-msgstr ""
+msgstr "Stop (Esc bereits vorhanden)"
 
 #: ../ui/ConfigExperimental.qml:100
 msgid "Fill the whole width and height"
-msgstr ""
+msgstr "Die gesamte Breite und Höhe ausfüllen"
 
 #: ../ui/ConfigExperimental.qml:106
 msgid ""
@@ -112,6 +119,10 @@ msgid ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 msgstr ""
+"Dies kann nützlich sein, wenn sich das Plasmoid in einem Paneel befindet, um "
+"den leeren Raum aufzufüllen. Ich bin mir nicht sicher, ob es richtig "
+"funktioniert und ob es tatsächlich vertikal auffüllt (horizontal scheint "
+"aber OK zu sein)."
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -119,7 +130,7 @@ msgstr "URL:"
 
 #: ../ui/ConfigGeneral.qml:58
 msgid "Zoom factor :"
-msgstr ""
+msgstr "Vergrößerungsfaktor :"
 
 #: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
@@ -132,7 +143,7 @@ msgstr "Nachladeintervall:"
 #: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
-msgstr ""
+msgstr "%1 s"
 
 #: ../ui/ConfigGeneral.qml:123
 msgid "Plasmoid behaviour :"
@@ -158,53 +169,59 @@ msgstr "Breite"
 #: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
-msgstr ""
+msgstr "%1 px"
 
 #: ../ui/ConfigGeneral.qml:175
 msgid "Height"
 msgstr "Höhe"
 
-#: ../ui/ConfigGeneral.qml:191
+#: ../ui/ConfigGeneral.qml:196
 msgid "Icon :"
-msgstr ""
+msgstr "Icon :"
 
-#: ../ui/ConfigGeneral.qml:204
+#: ../ui/ConfigGeneral.qml:210
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
+"Icon im Format \"file:///medias/.../Icon.jpg\" oder der Name der <a href="
+"\"https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-"
+"latest.html\">standard freedesktop icons</a>."
 
-#: ../ui/ConfigGeneral.qml:222
+#: ../ui/ConfigGeneral.qml:228
 msgid "Display loading animation"
-msgstr ""
+msgstr "Ladeanimation anzeigen"
 
-#: ../ui/ConfigGeneral.qml:233
+#: ../ui/ConfigGeneral.qml:239
 msgid "Plasmoid background color :"
-msgstr ""
-
-#: ../ui/ConfigGeneral.qml:244
-msgid "White"
-msgstr ""
+msgstr "Plasmoid Hintergrundfarbe :"
 
 #: ../ui/ConfigGeneral.qml:250
-msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
-msgstr ""
+msgid "White"
+msgstr "Weiß"
 
 #: ../ui/ConfigGeneral.qml:256
+msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
+msgstr "Transparent <i>(⚠ könnte Darstellungsprobleme verursachen)</i>"
+
+#: ../ui/ConfigGeneral.qml:262
 msgid "Theme's background color"
-msgstr ""
+msgstr "Hintergrundfarbe des Themas"
 
-#: ../ui/ConfigGeneral.qml:263
+#: ../ui/ConfigGeneral.qml:269
 msgid "Custom"
-msgstr ""
+msgstr "Benutzerdefiniert"
 
-#: ../ui/ConfigGeneral.qml:277
+#: ../ui/ConfigGeneral.qml:283
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
 "plasmoid, not of the page."
 msgstr ""
+"Beachten Sie, dass die Hintergrundfarbe nur dann sichtbar ist, wenn der "
+"Seitenhintergrund ebenfalls transparent oder nicht gesetzt ist. Diese "
+"Einstellung gilt für den Hintergrund des Plasmoids, nicht für den der Seite."
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
@@ -252,7 +269,7 @@ msgstr "Gehe zu"
 
 #: ../ui/main.qml:272
 msgid "Go Home"
-msgstr ""
+msgstr "Startseite aufrufen"
 
 #: ../ui/main.qml:280
 msgid "Open current URL in default browser"
@@ -260,7 +277,7 @@ msgstr "Aktuelle URL im Standard-Browser öffnen."
 
 #: ../ui/main.qml:286
 msgid "Open link's URL in default browser"
-msgstr ""
+msgstr "URL des Links im Standardbrowser öffnen"
 
 #: ../ui/main.qml:294
 msgid "Configure"
@@ -280,4 +297,4 @@ msgstr "Weitere URLs"
 
 #: ../config/config.qml:21
 msgid "Experimental"
-msgstr ""
+msgstr "Experimente"

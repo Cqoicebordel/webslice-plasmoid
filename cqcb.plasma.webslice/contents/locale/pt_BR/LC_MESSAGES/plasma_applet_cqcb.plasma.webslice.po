@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 19:02+0200\n"
+"POT-Creation-Date: 2020-07-12 18:08+0200\n"
 "PO-Revision-Date: 2015-06-21 19:59+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
@@ -164,42 +164,42 @@ msgstr ""
 msgid "Height"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:191
+#: ../ui/ConfigGeneral.qml:196
 msgid "Icon :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:204
+#: ../ui/ConfigGeneral.qml:210
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:222
+#: ../ui/ConfigGeneral.qml:228
 msgid "Display loading animation"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:233
+#: ../ui/ConfigGeneral.qml:239
 msgid "Plasmoid background color :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:244
+#: ../ui/ConfigGeneral.qml:250
 msgid "White"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:250
+#: ../ui/ConfigGeneral.qml:256
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:256
+#: ../ui/ConfigGeneral.qml:262
 msgid "Theme's background color"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:263
+#: ../ui/ConfigGeneral.qml:269
 msgid "Custom"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:277
+#: ../ui/ConfigGeneral.qml:283
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "

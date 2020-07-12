@@ -187,16 +187,22 @@ Item {
                     Layout.columnSpan: 1
                 }
                 
-                Label {
-                    text: i18n('Icon :')
-                    Layout.columnSpan: 2
-                }
+                GridLayout{
+                Layout.fillWidth: true
+                Layout.columnSpan: 5
+                columns: 5
+                
+                    Label {
+                        text: i18n('Icon :')
+                        Layout.columnSpan: 2
+                    }
 
-                TextField {
-                    id: webPopupIcon
-                    Layout.fillWidth: true
-                    placeholderText: 'file:///media/.../icon.jpg'
-                    Layout.columnSpan: 3
+                    TextField {
+                        id: webPopupIcon
+                        Layout.fillWidth: true
+                        placeholderText: 'file:///media/.../icon.jpg'
+                        Layout.columnSpan: 3
+                    }
                 }
                 
                 Label {

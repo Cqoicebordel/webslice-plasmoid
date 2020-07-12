@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-11 19:02+0200\n"
+"POT-Creation-Date: 2020-07-12 18:08+0200\n"
 "PO-Revision-Date: 2020-07-12 10:36+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -84,11 +84,9 @@ msgid ""
 "once the plasmoid is properly installed. There might also be an issue when "
 "multiple webslices are present."
 msgstr ""
-"注意，已經包含那些動作的一般快捷鍵。您可以"
-"在此新增。此功能仍在實驗階段，因為某些快捷"
-"鍵似乎無法運作，且我不知道一旦 plasmoid 正"
-"確安裝時，它們是否為全域。同時有多個 webslices 時"
-"也可能會有問題。"
+"注意，已經包含那些動作的一般快捷鍵。您可以在此新增。此功能仍在實驗階段，因為"
+"某些快捷鍵似乎無法運作，且我不知道一旦 plasmoid 正確安裝時，它們是否為全域。"
+"同時有多個 webslices 時也可能會有問題。"
 
 #: ../ui/ConfigExperimental.qml:39
 msgid "Back (ctrl+left already in)"
@@ -116,9 +114,8 @@ msgid ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 msgstr ""
-"在 plasmoid 在面板中時可能有用，這樣就可以填滿空間。"
-"不確定是否可以正常運作，也不確定其垂直部份會不會填滿"
-"（看起來水平部份是正常的）。"
+"在 plasmoid 在面板中時可能有用，這樣就可以填滿空間。不確定是否可以正常運作，"
+"也不確定其垂直部份會不會填滿（看起來水平部份是正常的）。"
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -170,11 +167,11 @@ msgstr "%1 像素"
 msgid "Height"
 msgstr "高度"
 
-#: ../ui/ConfigGeneral.qml:191
+#: ../ui/ConfigGeneral.qml:196
 msgid "Icon :"
 msgstr "圖示："
 
-#: ../ui/ConfigGeneral.qml:204
+#: ../ui/ConfigGeneral.qml:210
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
@@ -184,38 +181,38 @@ msgstr ""
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">標準 freedesktop 圖示</a>的名字。"
 
-#: ../ui/ConfigGeneral.qml:222
+#: ../ui/ConfigGeneral.qml:228
 msgid "Display loading animation"
 msgstr "顯示正在載入的動畫"
 
-#: ../ui/ConfigGeneral.qml:233
+#: ../ui/ConfigGeneral.qml:239
 msgid "Plasmoid background color :"
 msgstr "Plasmoid 背景色彩："
 
-#: ../ui/ConfigGeneral.qml:244
+#: ../ui/ConfigGeneral.qml:250
 msgid "White"
 msgstr "白"
 
-#: ../ui/ConfigGeneral.qml:250
+#: ../ui/ConfigGeneral.qml:256
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr "透明 <i>（⚠ 可能造成繪製問題）</i>"
 
-#: ../ui/ConfigGeneral.qml:256
+#: ../ui/ConfigGeneral.qml:262
 msgid "Theme's background color"
 msgstr "佈景主題背景色彩"
 
-#: ../ui/ConfigGeneral.qml:263
+#: ../ui/ConfigGeneral.qml:269
 msgid "Custom"
 msgstr "自訂"
 
-#: ../ui/ConfigGeneral.qml:277
+#: ../ui/ConfigGeneral.qml:283
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
 "plasmoid, not of the page."
 msgstr ""
-"注意背景色彩將僅在頁面背景也是透明或是未設定時"
-"才可見。此設定是 plasmoid 的而非頁面的背景。"
+"注意背景色彩將僅在頁面背景也是透明或是未設定時才可見。此設定是 plasmoid 的而"
+"非頁面的背景。"
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
