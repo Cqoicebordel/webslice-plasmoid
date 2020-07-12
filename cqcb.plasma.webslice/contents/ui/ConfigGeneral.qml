@@ -21,7 +21,7 @@ Item {
     property alias cfg_backgroundColorCustom: backgroundColorCustom.checked
     property alias cfg_customBackgroundColor: customBackgroundColor.color
     
-    property double maxWidth: width
+    property double maxWidth: width - 22
 
     GridLayout {
         Layout.fillWidth: true
