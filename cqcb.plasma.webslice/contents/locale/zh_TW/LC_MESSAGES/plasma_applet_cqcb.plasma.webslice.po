@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Jeff Huang <s8321414@gmail.com>, 2016, 2018.
+# Jeff Huang <s8321414@gmail.com>, 2016, 2018, 2020.
 msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-11 19:02+0200\n"
-"PO-Revision-Date: 2018-04-02 22:12+0800\n"
+"PO-Revision-Date: 2020-07-12 10:36+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -18,31 +18,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 2.0\n"
+"X-Generator: Lokalize 19.08.3\n"
 
 #: ../ui/ConfigAdvanced.qml:36
 msgid "Scroll to a fixed position"
-msgstr ""
+msgstr "捲動到固定的位置"
 
 #: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll To : "
-msgstr ""
+msgstr "捲動至："
 
 #: ../ui/ConfigAdvanced.qml:52
 msgid "X :"
-msgstr ""
+msgstr "X :"
 
 #: ../ui/ConfigAdvanced.qml:71
 msgid "px, "
-msgstr ""
+msgstr "像素，"
 
 #: ../ui/ConfigAdvanced.qml:82
 msgid "Y :"
-msgstr ""
+msgstr "Y :"
 
 #: ../ui/ConfigAdvanced.qml:101
 msgid "px"
-msgstr ""
+msgstr "像素"
 
 #: ../ui/ConfigAdvanced.qml:118
 msgid "Enable JS Scroll Into View"
@@ -50,19 +50,19 @@ msgstr "啟用 JS 捲動檢視範圍"
 
 #: ../ui/ConfigAdvanced.qml:123
 msgid "JS Selector :"
-msgstr ""
+msgstr "JS 選擇器："
 
 #: ../ui/ConfigAdvanced.qml:147
 msgid "Enable custom User-Agent"
-msgstr ""
+msgstr "啟用自訂使用者代理字串"
 
 #: ../ui/ConfigAdvanced.qml:152
 msgid "User-Agent :"
-msgstr ""
+msgstr "使用者代理字串："
 
 #: ../ui/ConfigAdvanced.qml:176
 msgid "Reload the page when activated through the global shortcut"
-msgstr ""
+msgstr "當透過全域快捷鍵啟動時重新載入頁面"
 
 #: ../ui/ConfigAdvanced.qml:190
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
@@ -70,11 +70,11 @@ msgstr "啟用個人化的 JavaScript 以在頁面被載入時執行"
 
 #: ../ui/ConfigAdvanced.qml:194
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "您的 JavaScript："
 
 #: ../ui/ConfigExperimental.qml:26
 msgid "Shortcuts :"
-msgstr ""
+msgstr "快捷鍵："
 
 #: ../ui/ConfigExperimental.qml:33
 msgid ""
@@ -84,26 +84,31 @@ msgid ""
 "once the plasmoid is properly installed. There might also be an issue when "
 "multiple webslices are present."
 msgstr ""
+"注意，已經包含那些動作的一般快捷鍵。您可以"
+"在此新增。此功能仍在實驗階段，因為某些快捷"
+"鍵似乎無法運作，且我不知道一旦 plasmoid 正"
+"確安裝時，它們是否為全域。同時有多個 webslices 時"
+"也可能會有問題。"
 
 #: ../ui/ConfigExperimental.qml:39
 msgid "Back (ctrl+left already in)"
-msgstr ""
+msgstr "返回（Ctrl+左方向鍵已存在）"
 
 #: ../ui/ConfigExperimental.qml:45
 msgid "Forward (ctrl+right already in)"
-msgstr ""
+msgstr "向前（Ctrl+右方向鍵已存在）"
 
 #: ../ui/ConfigExperimental.qml:65
 msgid "Reload (F5 already in)"
-msgstr ""
+msgstr "重新載入（F5 已存在）"
 
 #: ../ui/ConfigExperimental.qml:71
 msgid "Stop (Esc already in)"
-msgstr ""
+msgstr "停止（Esc 已存在）"
 
 #: ../ui/ConfigExperimental.qml:100
 msgid "Fill the whole width and height"
-msgstr ""
+msgstr "填滿完整寬度與高度"
 
 #: ../ui/ConfigExperimental.qml:106
 msgid ""
@@ -111,6 +116,9 @@ msgid ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 msgstr ""
+"在 plasmoid 在面板中時可能有用，這樣就可以填滿空間。"
+"不確定是否可以正常運作，也不確定其垂直部份會不會填滿"
+"（看起來水平部份是正常的）。"
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -118,7 +126,7 @@ msgstr "URL："
 
 #: ../ui/ConfigGeneral.qml:58
 msgid "Zoom factor :"
-msgstr ""
+msgstr "縮放係數："
 
 #: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
@@ -131,7 +139,7 @@ msgstr "重新整理間隔："
 #: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
-msgstr ""
+msgstr "%1 秒"
 
 #: ../ui/ConfigGeneral.qml:123
 msgid "Plasmoid behaviour :"
@@ -156,7 +164,7 @@ msgstr "寬度"
 #: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
-msgstr ""
+msgstr "%1 像素"
 
 #: ../ui/ConfigGeneral.qml:175
 msgid "Height"
@@ -164,7 +172,7 @@ msgstr "高度"
 
 #: ../ui/ConfigGeneral.qml:191
 msgid "Icon :"
-msgstr ""
+msgstr "圖示："
 
 #: ../ui/ConfigGeneral.qml:204
 msgid ""
@@ -172,30 +180,33 @@ msgid ""
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
+"\"file:///media/.../icon.jpg\" 格式的圖示，或是<a href=\"https://"
+"specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
+"\">標準 freedesktop 圖示</a>的名字。"
 
 #: ../ui/ConfigGeneral.qml:222
 msgid "Display loading animation"
-msgstr ""
+msgstr "顯示正在載入的動畫"
 
 #: ../ui/ConfigGeneral.qml:233
 msgid "Plasmoid background color :"
-msgstr ""
+msgstr "Plasmoid 背景色彩："
 
 #: ../ui/ConfigGeneral.qml:244
 msgid "White"
-msgstr ""
+msgstr "白"
 
 #: ../ui/ConfigGeneral.qml:250
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
-msgstr ""
+msgstr "透明 <i>（⚠ 可能造成繪製問題）</i>"
 
 #: ../ui/ConfigGeneral.qml:256
 msgid "Theme's background color"
-msgstr ""
+msgstr "佈景主題背景色彩"
 
 #: ../ui/ConfigGeneral.qml:263
 msgid "Custom"
-msgstr ""
+msgstr "自訂"
 
 #: ../ui/ConfigGeneral.qml:277
 msgid ""
@@ -203,6 +214,8 @@ msgid ""
 "is also transparent or not set. This setting is for the background of the "
 "plasmoid, not of the page."
 msgstr ""
+"注意背景色彩將僅在頁面背景也是透明或是未設定時"
+"才可見。此設定是 plasmoid 的而非頁面的背景。"
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
@@ -248,7 +261,7 @@ msgstr "跳到"
 
 #: ../ui/main.qml:272
 msgid "Go Home"
-msgstr ""
+msgstr "到首頁"
 
 #: ../ui/main.qml:280
 msgid "Open current URL in default browser"
@@ -256,7 +269,7 @@ msgstr "在預設瀏覽器中開啟目前的 URL"
 
 #: ../ui/main.qml:286
 msgid "Open link's URL in default browser"
-msgstr ""
+msgstr "在預設的瀏覽器開啟連結的 URL"
 
 #: ../ui/main.qml:294
 msgid "Configure"
@@ -276,7 +289,7 @@ msgstr "更多 URL"
 
 #: ../config/config.qml:21
 msgid "Experimental"
-msgstr ""
+msgstr "實驗性"
 
 #~ msgid "URL :"
 #~ msgstr "URL："
