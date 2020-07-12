@@ -52,11 +52,14 @@ Item {
     property bool enableScrollTo: plasmoid.configuration.enableScrollTo
     property int scrollToX: plasmoid.configuration.scrollToX
     property int scrollToY: plasmoid.configuration.scrollToY
-    property bool enableReloadOnActivate: plasmoid.configuration.enableReloadOnActivate
     property bool enableJSID: plasmoid.configuration.enableJSID
     property string jsSelector: plasmoid.configuration.jsSelector
     property bool enableCustomUA: plasmoid.configuration.enableCustomUA
     property string customUA: plasmoid.configuration.customUA
+    property bool enableReloadOnActivate: plasmoid.configuration.enableReloadOnActivate
+    property bool scrollbarsShow: plasmoid.configuration.scrollbarsShow
+    property bool scrollbarsOverflow: plasmoid.configuration.scrollbarsOverflow
+    property bool scrollbarsWebkit: plasmoid.configuration.scrollbarsWebkit
     property bool enableJS: plasmoid.configuration.enableJS
     property string js: plasmoid.configuration.js
 
@@ -177,6 +180,13 @@ Item {
             }
             if (enableJSID && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 runJavaScript(jsSelector + ".scrollIntoView(true);");
+            }
+            if (scrollbarsOverflow && loadRequest.status === WebEngineView.LoadSucceededStatus) {
+                runJavaScript("document.body.style.overflow='hidden';");
+            }else if (scrollbarsWebkit && loadRequest.status === WebEngineView.LoadSucceededStatus){
+                runJavaScript("var style = document.createElement('style');
+                                style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+                                document.head.appendChild(style);");
             }
             if (enableJS && loadRequest.status === WebEngineView.LoadSucceededStatus) {
                 runJavaScript(js);

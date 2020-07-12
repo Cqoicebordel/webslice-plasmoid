@@ -13,16 +13,21 @@ Item {
     property alias cfg_enableCustomUA: enableCustomUA.checked
     property alias cfg_customUA: customUA.text
     property alias cfg_enableReloadOnActivate: enableReloadOnActivate.checked
+    property alias cfg_scrollbarsShow: scrollbarsShow.checked
+    property alias cfg_scrollbarsOverflow: scrollbarsOverflow.checked
+    property alias cfg_scrollbarsWebkit: scrollbarsWebkit.checked
     property alias cfg_enableJS: enableJS.checked
     property alias cfg_js: js.text
 
     property int textfieldWidth: theme.defaultFont.pointSize * 30
+    
+    property double maxWidth: width - 22
 
     GridLayout {
         Layout.fillWidth: true
+        width: maxWidth
         columns: 4
         rowSpacing: 25
-        width:parent.parent.parent.width
 
         // Scroll To Position
         GridLayout{
@@ -107,7 +112,6 @@ Item {
 
         // Scroll to view
         GridLayout{
-            //width: parent.width
             Layout.fillWidth: true
             Layout.columnSpan: 4
             columns: 4
@@ -166,7 +170,6 @@ Item {
 
         // Reload on Activate
         GridLayout{
-            //width: parent.width
             Layout.fillWidth: true
             Layout.columnSpan: 4
             columns: 1
@@ -175,6 +178,36 @@ Item {
                 id: enableReloadOnActivate
                 text: i18n('Reload the page when activated through the global shortcut')
                 Layout.fillWidth: true
+            }
+        }
+        
+        // Show scrollbars
+        GridLayout{
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 1
+            
+            ButtonGroup {
+                buttons: scrollbarsGroup.children
+            }
+
+            ColumnLayout {
+                id: scrollbarsGroup
+
+                RadioButton {
+                    id: scrollbarsShow
+                    text: i18n("Display the scrollbars (follow the site)")
+                }
+
+                RadioButton {
+                    id: scrollbarsOverflow
+                    text: i18n("Hide the scrollbars (<i>overflow: hidden</i> method)")
+                }
+
+                RadioButton {
+                    id: scrollbarsWebkit
+                    text: i18n("Hide the scrollbars (<i>::-webkit-scrollbar</i> method)")
+                }
             }
         }
 
