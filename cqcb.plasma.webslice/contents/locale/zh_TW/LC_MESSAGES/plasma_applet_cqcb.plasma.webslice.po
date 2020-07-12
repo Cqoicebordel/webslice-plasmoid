@@ -290,12 +290,3 @@ msgstr "更多 URL"
 #: ../config/config.qml:21
 msgid "Experimental"
 msgstr "實驗性"
-
-#~ msgid "URL :"
-#~ msgstr "URL："
-
-#~ msgid "Reload interval :"
-#~ msgstr "重新整理間隔："
-
-#~ msgid "Plasmoid behaviour :"
-#~ msgstr "Plasmoid 行為："
