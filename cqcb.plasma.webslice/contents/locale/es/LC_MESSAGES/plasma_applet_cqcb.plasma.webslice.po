@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-12 18:08+0200\n"
+"POT-Creation-Date: 2020-07-12 22:14+0200\n"
 "PO-Revision-Date: 2015-06-21 20:20+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
@@ -20,56 +20,68 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:36
+#: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll to a fixed position"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:46
 msgid "Scroll To : "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:52
+#: ../ui/ConfigAdvanced.qml:57
 msgid "X :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:71
+#: ../ui/ConfigAdvanced.qml:76
 msgid "px, "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:82
+#: ../ui/ConfigAdvanced.qml:87
 msgid "Y :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:101
+#: ../ui/ConfigAdvanced.qml:106
 msgid "px"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:118
+#: ../ui/ConfigAdvanced.qml:122
 msgid "Enable JS Scroll Into View"
 msgstr "Habilita desplazamiento JS en la View"
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:127
 msgid "JS Selector :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:147
+#: ../ui/ConfigAdvanced.qml:151
 msgid "Enable custom User-Agent"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:156
 msgid "User-Agent :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:176
+#: ../ui/ConfigAdvanced.qml:179
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:190
+#: ../ui/ConfigAdvanced.qml:199
+msgid "Display the scrollbars (follow the site)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:204
+msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:209
+msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Habilita la ejecución de Javascript personalizado cuando la página es cargada"
 
-#: ../ui/ConfigAdvanced.qml:194
+#: ../ui/ConfigAdvanced.qml:227
 msgid "Your JavaScript :"
 msgstr ""
 
@@ -231,35 +243,35 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:230
+#: ../ui/main.qml:240
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:237
+#: ../ui/main.qml:247
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:244
+#: ../ui/main.qml:254
 msgid "Reload"
 msgstr "Recargar"
 
-#: ../ui/main.qml:251
+#: ../ui/main.qml:261
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:272
+#: ../ui/main.qml:282
 msgid "Go Home"
 msgstr ""
 
-#: ../ui/main.qml:280
+#: ../ui/main.qml:290
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:286
+#: ../ui/main.qml:296
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:294
+#: ../ui/main.qml:304
 msgid "Configure"
 msgstr "Configurar"
 

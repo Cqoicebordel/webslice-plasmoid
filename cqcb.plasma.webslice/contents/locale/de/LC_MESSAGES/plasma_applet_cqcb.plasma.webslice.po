@@ -9,9 +9,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-12 18:16+0200\n"
+"POT-Creation-Date: 2020-07-12 22:14+0200\n"
 "PO-Revision-Date: 2020-07-12 16:13+0000\n"
-"Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n" 
+"Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
 "language/de/)\n"
 "Language: de\n"
@@ -20,57 +20,69 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:36
+#: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll to a fixed position"
 msgstr "Zu einer festen Position scrollen"
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:46
 msgid "Scroll To : "
 msgstr "Scroll nach : "
 
-#: ../ui/ConfigAdvanced.qml:52
+#: ../ui/ConfigAdvanced.qml:57
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:71
+#: ../ui/ConfigAdvanced.qml:76
 msgid "px, "
 msgstr "px,"
 
-#: ../ui/ConfigAdvanced.qml:82
+#: ../ui/ConfigAdvanced.qml:87
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:101
+#: ../ui/ConfigAdvanced.qml:106
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:118
+#: ../ui/ConfigAdvanced.qml:122
 msgid "Enable JS Scroll Into View"
 msgstr "JS Selektor Auswahl ins Blickfeld scrollen"
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:127
 msgid "JS Selector :"
 msgstr "JS-Selektor :"
 
-#: ../ui/ConfigAdvanced.qml:147
+#: ../ui/ConfigAdvanced.qml:151
 msgid "Enable custom User-Agent"
 msgstr "Benutzerdefinierten Benutzer-Agenten aktivieren"
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:156
 msgid "User-Agent :"
 msgstr "Benutzer-Agent :"
 
-#: ../ui/ConfigAdvanced.qml:176
+#: ../ui/ConfigAdvanced.qml:179
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 "Die Seite neu laden, wenn sie über das globale Tastenkürzel aktiviert wird"
 
-#: ../ui/ConfigAdvanced.qml:190
+#: ../ui/ConfigAdvanced.qml:199
+msgid "Display the scrollbars (follow the site)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:204
+msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:209
+msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Persönliche JavaScripts, die nach dem laden der Seite ausgeführt werden."
 
-#: ../ui/ConfigAdvanced.qml:194
+#: ../ui/ConfigAdvanced.qml:227
 msgid "Your JavaScript :"
 msgstr "Ihr JavaScript :"
 
@@ -251,35 +263,35 @@ msgstr "Ausgewählte URL nach oben verschieben"
 msgid "Move the selected URL down"
 msgstr "Ausgewählte URL nach unten verschieben"
 
-#: ../ui/main.qml:230
+#: ../ui/main.qml:240
 msgid "Back"
 msgstr "Zurück"
 
-#: ../ui/main.qml:237
+#: ../ui/main.qml:247
 msgid "Forward"
 msgstr "Vor"
 
-#: ../ui/main.qml:244
+#: ../ui/main.qml:254
 msgid "Reload"
 msgstr "Neu laden"
 
-#: ../ui/main.qml:251
+#: ../ui/main.qml:261
 msgid "Go to"
 msgstr "Gehe zu"
 
-#: ../ui/main.qml:272
+#: ../ui/main.qml:282
 msgid "Go Home"
 msgstr "Startseite aufrufen"
 
-#: ../ui/main.qml:280
+#: ../ui/main.qml:290
 msgid "Open current URL in default browser"
 msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:286
+#: ../ui/main.qml:296
 msgid "Open link's URL in default browser"
 msgstr "URL des Links im Standardbrowser öffnen"
 
-#: ../ui/main.qml:294
+#: ../ui/main.qml:304
 msgid "Configure"
 msgstr "Konfigurieren"
 

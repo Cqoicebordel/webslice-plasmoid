@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-12 18:08+0200\n"
+"POT-Creation-Date: 2020-07-12 22:14+0200\n"
 "PO-Revision-Date: 2020-07-12 10:36+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -20,55 +20,67 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 19.08.3\n"
 
-#: ../ui/ConfigAdvanced.qml:36
+#: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll to a fixed position"
 msgstr "捲動到固定的位置"
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:46
 msgid "Scroll To : "
 msgstr "捲動至："
 
-#: ../ui/ConfigAdvanced.qml:52
+#: ../ui/ConfigAdvanced.qml:57
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:71
+#: ../ui/ConfigAdvanced.qml:76
 msgid "px, "
 msgstr "像素，"
 
-#: ../ui/ConfigAdvanced.qml:82
+#: ../ui/ConfigAdvanced.qml:87
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:101
+#: ../ui/ConfigAdvanced.qml:106
 msgid "px"
 msgstr "像素"
 
-#: ../ui/ConfigAdvanced.qml:118
+#: ../ui/ConfigAdvanced.qml:122
 msgid "Enable JS Scroll Into View"
 msgstr "啟用 JS 捲動檢視範圍"
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:127
 msgid "JS Selector :"
 msgstr "JS 選擇器："
 
-#: ../ui/ConfigAdvanced.qml:147
+#: ../ui/ConfigAdvanced.qml:151
 msgid "Enable custom User-Agent"
 msgstr "啟用自訂使用者代理字串"
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:156
 msgid "User-Agent :"
 msgstr "使用者代理字串："
 
-#: ../ui/ConfigAdvanced.qml:176
+#: ../ui/ConfigAdvanced.qml:179
 msgid "Reload the page when activated through the global shortcut"
 msgstr "當透過全域快捷鍵啟動時重新載入頁面"
 
-#: ../ui/ConfigAdvanced.qml:190
+#: ../ui/ConfigAdvanced.qml:199
+msgid "Display the scrollbars (follow the site)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:204
+msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:209
+msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr "啟用個人化的 JavaScript 以在頁面被載入時執行"
 
-#: ../ui/ConfigAdvanced.qml:194
+#: ../ui/ConfigAdvanced.qml:227
 msgid "Your JavaScript :"
 msgstr "您的 JavaScript："
 
@@ -240,35 +252,35 @@ msgstr "將選定的 URL 向上移動"
 msgid "Move the selected URL down"
 msgstr "將選定的 URL 向下移動"
 
-#: ../ui/main.qml:230
+#: ../ui/main.qml:240
 msgid "Back"
 msgstr "上一頁"
 
-#: ../ui/main.qml:237
+#: ../ui/main.qml:247
 msgid "Forward"
 msgstr "下一頁"
 
-#: ../ui/main.qml:244
+#: ../ui/main.qml:254
 msgid "Reload"
 msgstr "重新整理"
 
-#: ../ui/main.qml:251
+#: ../ui/main.qml:261
 msgid "Go to"
 msgstr "跳到"
 
-#: ../ui/main.qml:272
+#: ../ui/main.qml:282
 msgid "Go Home"
 msgstr "到首頁"
 
-#: ../ui/main.qml:280
+#: ../ui/main.qml:290
 msgid "Open current URL in default browser"
 msgstr "在預設瀏覽器中開啟目前的 URL"
 
-#: ../ui/main.qml:286
+#: ../ui/main.qml:296
 msgid "Open link's URL in default browser"
 msgstr "在預設的瀏覽器開啟連結的 URL"
 
-#: ../ui/main.qml:294
+#: ../ui/main.qml:304
 msgid "Configure"
 msgstr "設定"
 
