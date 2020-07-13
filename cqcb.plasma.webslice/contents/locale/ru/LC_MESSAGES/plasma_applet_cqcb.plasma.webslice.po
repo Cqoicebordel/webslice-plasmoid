@@ -1,89 +1,97 @@
 # plasma-applet-webslice language translation file.
 # Copyright (C) 2018 Cqoicebordel
 # This file is distributed under the same license as the plasma-applet-webslice package.
-# 
 #
-#, fuzzy
+#
+# Translators:
+# Alexey Murz Korepov <murznn@gmail.com>, 2020
+# Niksn404 <nekitnik123@myrambler.ru>, 2018
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0\n"
+"Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-07-13 13:12+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"PO-Revision-Date: 2020-07-13 09:26+0000\n"
+"Last-Translator: Alexey Murz Korepov <murznn@gmail.com>\n"
+"Language-Team: Russian (http://www.transifex.com/cqoicebordel/webslice/"
+"language/ru/)\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
 
 #: ../ui/ConfigAdvanced.qml:41
 msgid "Scroll to a fixed position"
-msgstr ""
+msgstr "Прокручивать до фиксированной позиции"
 
 #: ../ui/ConfigAdvanced.qml:46
 msgid "Scroll To : "
-msgstr ""
+msgstr "Прокручивать до : "
 
 #: ../ui/ConfigAdvanced.qml:57
 msgid "X :"
-msgstr ""
+msgstr "X :"
 
 #: ../ui/ConfigAdvanced.qml:76
 msgid "px, "
-msgstr ""
+msgstr "пкс, "
 
 #: ../ui/ConfigAdvanced.qml:87
 msgid "Y :"
-msgstr ""
+msgstr "Y :"
 
 #: ../ui/ConfigAdvanced.qml:106
 msgid "px"
-msgstr ""
+msgstr "пкс"
 
 #: ../ui/ConfigAdvanced.qml:122
 msgid "Enable JS Scroll Into View"
-msgstr ""
+msgstr "Включить прокрутку JS"
 
 #: ../ui/ConfigAdvanced.qml:127
 msgid "JS Selector :"
-msgstr ""
+msgstr "Селектор JS :"
 
 #: ../ui/ConfigAdvanced.qml:151
 msgid "Enable custom User-Agent"
-msgstr ""
+msgstr "Включить пользовательский User-Agent"
 
 #: ../ui/ConfigAdvanced.qml:156
 msgid "User-Agent :"
-msgstr ""
+msgstr "User-Agent :"
 
 #: ../ui/ConfigAdvanced.qml:179
 msgid "Reload the page when activated through the global shortcut"
-msgstr ""
+msgstr "Перезагружать страницу при активации через глобальное сочетание клавиш"
 
 #: ../ui/ConfigAdvanced.qml:199
 msgid "Display the scrollbars (follow the site)"
-msgstr ""
+msgstr "Отображать полосы прокрутки (следуя сайту)"
 
 #: ../ui/ConfigAdvanced.qml:204
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
-msgstr ""
+msgstr "Скрывать полосы прокрутки (метод <i>overflow: hidden</i>)"
 
 #: ../ui/ConfigAdvanced.qml:209
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
-msgstr ""
+msgstr "Скрывать полосы прокрутки (метод <i>::-webkit-scrollbar</i>)"
 
 #: ../ui/ConfigAdvanced.qml:223
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
+"Включить пользовательский JavaScript, который будет выполняться после "
+"загрузки страницы"
 
 #: ../ui/ConfigAdvanced.qml:227
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "Ваш JavaScript :"
 
 #: ../ui/ConfigExperimental.qml:26
 msgid "Shortcuts :"
-msgstr ""
+msgstr "Клавиши быстрого доступа :"
 
 #: ../ui/ConfigExperimental.qml:33
 msgid ""
@@ -93,26 +101,32 @@ msgid ""
 "once the plasmoid is properly installed. There might also be an issue when "
 "multiple webslices are present."
 msgstr ""
+"Учитывайте, что обычные сочетания клавиш для данных действий уже подключены. "
+"Здесь вы можете добавить дополнительные. Это экспериментальная функция, "
+"потому что она похоже не работает для некоторых сочетаний клавиш, а также "
+"потому, что я не знаю будет ли это глобальным или нет, когда плазмоид будет "
+"правильно установлен. Также могут быть проблемы, когда присутствуют "
+"несколько виджетов данного типа."
 
 #: ../ui/ConfigExperimental.qml:39
 msgid "Back (ctrl+left already in)"
-msgstr ""
+msgstr "Назад (ctrl+left уже действует)"
 
 #: ../ui/ConfigExperimental.qml:45
 msgid "Forward (ctrl+right already in)"
-msgstr ""
+msgstr "Вперёд (ctrl+right уже действует)"
 
 #: ../ui/ConfigExperimental.qml:65
 msgid "Reload (F5 already in)"
-msgstr ""
+msgstr "Обновить (F5 уже действует)"
 
 #: ../ui/ConfigExperimental.qml:71
 msgid "Stop (Esc already in)"
-msgstr ""
+msgstr "Остановить (Esc уже действует)"
 
 #: ../ui/ConfigExperimental.qml:100
 msgid "Fill the whole width and height"
-msgstr ""
+msgstr "Заполнять высоту и ширину полностью"
 
 #: ../ui/ConfigExperimental.qml:106
 msgid ""
@@ -120,60 +134,63 @@ msgid ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 msgstr ""
+"Бывает полезно, когда плазмоид на панели, чтобы заполнить пустое место. Без "
+"гарантий что это работает правильно и реально заполнится по вертикали (по "
+"горизонтали, похоже, работает)."
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
-msgstr ""
+msgstr "URL :"
 
 #: ../ui/ConfigGeneral.qml:58
 msgid "Zoom factor :"
-msgstr ""
+msgstr "Коэффициент масштабирования:"
 
 #: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
-msgstr ""
+msgstr "Включить авто-обновление"
 
 #: ../ui/ConfigGeneral.qml:97
 msgid "Reload interval :"
-msgstr ""
+msgstr "Интервал перезагрузки :"
 
 #: ../ui/ConfigGeneral.qml:110
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
-msgstr ""
+msgstr "%1 сек"
 
 #: ../ui/ConfigGeneral.qml:123
 msgid "Plasmoid behaviour :"
-msgstr ""
+msgstr "Поведение плазмоида :"
 
 #: ../ui/ConfigGeneral.qml:136
 msgid "Display the site"
-msgstr ""
+msgstr "Отобразить страницу"
 
 #: ../ui/ConfigGeneral.qml:141
 msgid "Display a button that opens the site in a new panel"
-msgstr ""
+msgstr "Отобразить кнопку, которая открывает страницу в новой панели"
 
 #: ../ui/ConfigGeneral.qml:154
 msgid "Popup size"
-msgstr ""
+msgstr "Размер всплывающего окна"
 
 #: ../ui/ConfigGeneral.qml:159
 msgid "Width"
-msgstr ""
+msgstr "Ширина"
 
 #: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
-msgstr ""
+msgstr "%1 пкс"
 
 #: ../ui/ConfigGeneral.qml:175
 msgid "Height"
-msgstr ""
+msgstr "Высота"
 
 #: ../ui/ConfigGeneral.qml:196
 msgid "Icon :"
-msgstr ""
+msgstr "Иконка :"
 
 #: ../ui/ConfigGeneral.qml:210
 msgid ""
@@ -181,30 +198,33 @@ msgid ""
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
+"Иконка в формате \"file:///media/.../icon.jpg\", или имя из <a href="
+"\"https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-"
+"latest.html\">стандартных иконок freedesktop</a>."
 
 #: ../ui/ConfigGeneral.qml:228
 msgid "Display loading animation"
-msgstr ""
+msgstr "Отображать анимацию загрузки"
 
 #: ../ui/ConfigGeneral.qml:239
 msgid "Plasmoid background color :"
-msgstr ""
+msgstr "Цвет фона плазмоида :"
 
 #: ../ui/ConfigGeneral.qml:250
 msgid "White"
-msgstr ""
+msgstr "Белый"
 
 #: ../ui/ConfigGeneral.qml:256
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
-msgstr ""
+msgstr "Прозрачный <i>(⚠ может привести к изъянам в отрисовке)</i>"
 
 #: ../ui/ConfigGeneral.qml:262
 msgid "Theme's background color"
-msgstr ""
+msgstr "Цвет фона из темы"
 
 #: ../ui/ConfigGeneral.qml:269
 msgid "Custom"
-msgstr ""
+msgstr "Пользовательский"
 
 #: ../ui/ConfigGeneral.qml:283
 msgid ""
@@ -212,77 +232,81 @@ msgid ""
 "is also transparent or not set. This setting is for the background of the "
 "plasmoid, not of the page."
 msgstr ""
+"Учитывайте, что цвет фона будет виден только если фон страницы тоже "
+"прозрачный или не задан. Эта настройка для фона плазмоида, а не страницы."
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
 "List of URL accessible throught the context menu to switch to others "
 "websites."
 msgstr ""
+"Список URL-адресов, доступных через контекстное меню, для переключения на "
+"другие веб-сайты"
 
 #: ../ui/ConfigMultipleURLs.qml:34 ../ui/ConfigMultipleURLs.qml:43
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ../ui/ConfigMultipleURLs.qml:50
 msgid "Add a URL"
-msgstr ""
+msgstr "Добавить URL"
 
 #: ../ui/ConfigMultipleURLs.qml:59
 msgid "Remove the selected URL"
-msgstr ""
+msgstr "Удалить выбранный URL"
 
 #: ../ui/ConfigMultipleURLs.qml:67
 msgid "Move the selected URL up"
-msgstr ""
+msgstr "Переместить выбранный URL вверх"
 
 #: ../ui/ConfigMultipleURLs.qml:77
 msgid "Move the selected URL down"
-msgstr ""
+msgstr "Переместить выбранный URL вниз"
 
 #: ../ui/main.qml:240
 msgid "Back"
-msgstr ""
+msgstr "Назад"
 
 #: ../ui/main.qml:247
 msgid "Forward"
-msgstr ""
+msgstr "Вперед"
 
 #: ../ui/main.qml:254
 msgid "Reload"
-msgstr ""
+msgstr "Обновить"
 
 #: ../ui/main.qml:261
 msgid "Go to"
-msgstr ""
+msgstr "Перейти к"
 
 #: ../ui/main.qml:282
 msgid "Go Home"
-msgstr ""
+msgstr "Домой"
 
 #: ../ui/main.qml:290
 msgid "Open current URL in default browser"
-msgstr ""
+msgstr "Открыть текущий URL в браузере по умолчанию"
 
 #: ../ui/main.qml:296
 msgid "Open link's URL in default browser"
-msgstr ""
+msgstr "Открывать ссылки в браузере по-умолчанию"
 
 #: ../ui/main.qml:304
 msgid "Configure"
-msgstr ""
+msgstr "Настройки"
 
 #: ../config/config.qml:6
 msgid "General"
-msgstr ""
+msgstr "Основные"
 
 #: ../config/config.qml:11
 msgid "Advanced"
-msgstr ""
+msgstr "Расширенные"
 
 #: ../config/config.qml:16
 msgid "More URLs"
-msgstr ""
+msgstr "Больше URL"
 
 #: ../config/config.qml:21
 msgid "Experimental"
-msgstr ""
+msgstr "Экспериментально"

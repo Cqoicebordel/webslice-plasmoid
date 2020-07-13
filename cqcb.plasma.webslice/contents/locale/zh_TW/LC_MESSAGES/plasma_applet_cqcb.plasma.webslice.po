@@ -70,7 +70,7 @@ msgstr "顯示捲軸（跟隨頁面）"
 
 #: ../ui/ConfigAdvanced.qml:204
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
-msgstr "隱藏捲軸（<i>溢位：隱藏</i>方法）"
+msgstr "隱藏捲軸（<i>overflow: hidden</i>方法）"
 
 #: ../ui/ConfigAdvanced.qml:209
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
