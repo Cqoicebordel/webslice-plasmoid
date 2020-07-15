@@ -67,15 +67,15 @@ msgstr ""
 
 #: ../ui/ConfigAdvanced.qml:199
 msgid "Display the scrollbars (follow the site)"
-msgstr ""
+msgstr "Bildlaufleisten anzeigen (nach Seitenvorgabe)"
 
 #: ../ui/ConfigAdvanced.qml:204
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
-msgstr ""
+msgstr "Bildlaufleisten ausblenden (<i>overflow: hidden</i> Methode)"
 
 #: ../ui/ConfigAdvanced.qml:209
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
-msgstr ""
+msgstr "Bildlaufleisten ausblenden (<i>::-webkit-scrollbar</i> Methode)"
 
 #: ../ui/ConfigAdvanced.qml:223
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
