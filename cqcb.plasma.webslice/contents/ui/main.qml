@@ -108,7 +108,7 @@ Item {
         onHeightChanged: updateSizeHints()
 
         property bool isExternalLink: false
-        
+
         profile:  WebEngineProfile{
             httpUserAgent: (enableCustomUA)?customUA:httpUserAgent
         }
@@ -119,7 +119,7 @@ Item {
          */
         Plasmoid.onActivated: {
             if(enableReloadOnActivate){
-                reloadFn();
+                reloadFn(false);
             }
         }
 
@@ -134,7 +134,7 @@ Item {
         Shortcut {
             id:shortreload
             sequences: [StandardKey.Refresh, keysSeqReload]
-            onActivated: reloadFn()
+            onActivated: reloadFn(false)
         }
         
         Shortcut {
@@ -226,106 +226,120 @@ Item {
         onContextMenuRequested: {
             request.accepted = true
             contextMenu.request = request
-            contextMenu.open(request.x, request.y)
+            contextMenu.popup(request.x, request.y)
         }
 
         /**
          * Context menu
          */
-        PlasmaComponents.ContextMenu {
+        Menu {
             property var request
             id: contextMenu
 
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Back')
-                icon: 'draw-arrow-back'
+                icon.name: 'draw-arrow-back'
                 enabled: webviewID.canGoBack
                 onClicked: webviewID.goBack()
             }
 
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Forward')
-                icon: 'draw-arrow-forward'
+                icon.name: 'draw-arrow-forward'
                 enabled: webviewID.canGoForward
                 onClicked: webviewID.goForward()
             }
 
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Reload')
-                icon: 'view-refresh'
-                onClicked: reloadFn()
-            }
+                icon.name: 'view-refresh'
 
-            PlasmaComponents.MenuItem {
-                id: gotourls
-                text: i18n('Go to')
-                icon: 'go-jump'
-                visible:(urlsToShow.count>0)
-                enabled:(urlsToShow.count>0)
-
-                /**
-                 * Dynamic context menu
-                 * Display the principal URL first, then the list
-                 */
-                PlasmaComponents.ContextMenu {
-                    id:dynamicMenu
-                    visualParent: gotourls.action
-                    PlasmaComponents.MenuItem {
-                        text: websliceUrl
-                        icon: 'go-home'
-                        onClicked: webviewID.url = websliceUrl
+                MouseArea {
+                    anchors.fill: parent
+                    acceptedButtons: Qt.AllButtons
+                    onClicked: {
+                        mouse.accepted = true;
+                        if (mouse.modifiers & Qt.ControlModifier){
+                            reloadFn(true);
+                        }else{
+                            reloadFn(false);
+                        }
+                        contextMenu.close();
                     }
                 }
             }
+
+            /**
+            * Dynamic context menu
+            * Display the principal URL first, then the list
+            */
+            Menu {
+                id:dynamicMenu
+                title: i18n('Go to')
+
+                MenuItem {
+                    text: websliceUrl
+                    icon.name: 'go-home'
+                    onClicked: webviewID.url = websliceUrl
+                }
+            }
             
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Go Home')
-                icon: 'go-home'
+                icon.name: 'go-home'
                 visible:(urlsToShow.count==0)
                 enabled:(urlsToShow.count==0)
                 onClicked: webviewID.url = websliceUrl
             }
 
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Open current URL in default browser')
-                icon: 'document-share'
+                icon.name: 'document-share'
                 onClicked: Qt.openUrlExternally(webviewID.url)
             }
             
-            PlasmaComponents.MenuItem {
+            MenuItem {
                 text: i18n('Open link\'s URL in default browser')
-                icon: 'document-share'
+                icon.name: 'document-share'
                 enabled: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
             }
 
-            PlasmaComponents.MenuItem {
+            MenuSeparator { }
+
+            MenuItem {
                 text: i18n('Configure')
-                icon: 'configure'
+                icon.name: 'configure'
                 onClicked: plasmoid.action("configure").trigger()
             }
         }
 
         function addEntry(stringURL) {
-            var menuItemI = menuItem.createObject(dynamicMenu, {text: stringURL, icon: 'link', "stringURL":stringURL});
+            var menuItemI = menuItem.createObject(dynamicMenu, {text: stringURL, 'icon.name': 'link', "stringURL":stringURL});
             menuItemI.clicked.connect(function() { webviewID.url = stringURL; });
+            dynamicMenu.addItem(menuItemI);
         }
 
         Component {
             id: menuItem
-            PlasmaComponents.MenuItem {
+            MenuItem {
             }
         }
 
         function loadMenu() {
-            for(var i=1; i<dynamicMenu.content.length; i++){
-                dynamicMenu.content[i].visible=false;
+            for(var i=1; i<dynamicMenu.count; i++){
+                dynamicMenu.itemAt(i).visible=false;
             }
 
             for(var i=0; i<urlsToShow.count; i++){
                 var entry = addEntry(urlsToShow.get(i).url);
             }
+            
+            // A "Menu" is not a visible item. So, to style it, we need to use its parent.
+            // Thanks to https://stackoverflow.com/a/59167505/4190513
+            dynamicMenu.parent.visible = (urlsToShow.count>0);
+            dynamicMenu.parent.icon.name = 'go-jump';
         }
 
         Component.onCompleted: {
@@ -337,7 +351,7 @@ Item {
             running: enableReload
             repeat: true
             onTriggered: {
-                reloadFn()
+                reloadFn(false)
             }
         }
 
@@ -371,12 +385,16 @@ Item {
             }
         }
 
-        function reloadFn() {
+        function reloadFn(force) {
             if(reloadAnimation){
                 busyIndicator.visible = true;
                 busyIndicator.running = true;
             }
-            webviewID.reload();
+            if(force){
+                webviewID.reloadAndBypassCache();
+            }else{
+                webviewID.reload();
+            }
         }
     }
 
