@@ -299,6 +299,10 @@ Item {
                 visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
             }
+            
+            PlasmaComponents.MenuItem{
+                separator: true
+            }
 
             PlasmaComponents.MenuItem {
                 text: i18n('Configure')
