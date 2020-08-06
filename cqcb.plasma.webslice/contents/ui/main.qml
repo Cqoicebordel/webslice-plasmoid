@@ -119,7 +119,7 @@ Item {
          */
         Plasmoid.onActivated: {
             if(enableReloadOnActivate){
-                reloadFn();
+                reloadFn(false);
             }
         }
 
@@ -134,7 +134,7 @@ Item {
         Shortcut {
             id:shortreload
             sequences: [StandardKey.Refresh, keysSeqReload]
-            onActivated: reloadFn()
+            onActivated: reloadFn(false)
         }
         
         Shortcut {
@@ -229,6 +229,16 @@ Item {
             contextMenu.open(request.x, request.y)
         }
 
+
+        /**
+         * Get status of Ctrl key
+         */
+         PlasmaCore.DataSource {
+            id: dataSource
+            engine: "keystate"
+            connectedSources: ["Ctrl"]
+        }
+
         /**
          * Context menu
          */
@@ -253,7 +263,14 @@ Item {
             PlasmaComponents.MenuItem {
                 text: i18n('Reload')
                 icon: 'view-refresh'
-                onClicked: reloadFn()
+                onClicked: {
+                    // Force reload if Ctrl pressed
+                    if(dataSource.data["Ctrl"]["Pressed"]){
+                        reloadFn(true);
+                    }else{
+                        reloadFn(false);
+                    }
+                }
             }
 
             PlasmaComponents.MenuItem {
@@ -341,7 +358,7 @@ Item {
             running: enableReload
             repeat: true
             onTriggered: {
-                reloadFn()
+                reloadFn(false)
             }
         }
 
@@ -375,12 +392,16 @@ Item {
             }
         }
 
-        function reloadFn() {
+        function reloadFn(force) {
             if(reloadAnimation){
                 busyIndicator.visible = true;
                 busyIndicator.running = true;
             }
-            webviewID.reload();
+            if(force){
+                webviewID.reloadAndBypassCache()
+            }else{
+                webviewID.reload();
+            }
         }
     }
 
