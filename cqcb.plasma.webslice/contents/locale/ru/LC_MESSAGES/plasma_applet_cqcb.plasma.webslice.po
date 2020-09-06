@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-13 13:12+0200\n"
+"POT-Creation-Date: 2020-09-06 23:54+0200\n"
 "PO-Revision-Date: 2020-07-13 09:26+0000\n"
 "Last-Translator: Alexey Murz Korepov <murznn@gmail.com>\n"
 "Language-Team: Russian (http://www.transifex.com/cqoicebordel/webslice/"
@@ -23,69 +23,74 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:42
 msgid "Scroll to a fixed position"
 msgstr "Прокручивать до фиксированной позиции"
 
-#: ../ui/ConfigAdvanced.qml:46
+#: ../ui/ConfigAdvanced.qml:47
 msgid "Scroll To : "
 msgstr "Прокручивать до : "
 
-#: ../ui/ConfigAdvanced.qml:57
+#: ../ui/ConfigAdvanced.qml:58
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:76
+#: ../ui/ConfigAdvanced.qml:77
 msgid "px, "
 msgstr "пкс, "
 
-#: ../ui/ConfigAdvanced.qml:87
+#: ../ui/ConfigAdvanced.qml:88
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:106
+#: ../ui/ConfigAdvanced.qml:107
 msgid "px"
 msgstr "пкс"
 
-#: ../ui/ConfigAdvanced.qml:122
+#: ../ui/ConfigAdvanced.qml:123
 msgid "Enable JS Scroll Into View"
 msgstr "Включить прокрутку JS"
 
-#: ../ui/ConfigAdvanced.qml:127
+#: ../ui/ConfigAdvanced.qml:128
 msgid "JS Selector :"
 msgstr "Селектор JS :"
 
-#: ../ui/ConfigAdvanced.qml:151
+#: ../ui/ConfigAdvanced.qml:152
 msgid "Enable custom User-Agent"
 msgstr "Включить пользовательский User-Agent"
 
-#: ../ui/ConfigAdvanced.qml:156
+#: ../ui/ConfigAdvanced.qml:157
 msgid "User-Agent :"
 msgstr "User-Agent :"
 
-#: ../ui/ConfigAdvanced.qml:179
+#: ../ui/ConfigAdvanced.qml:180
 msgid "Reload the page when activated through the global shortcut"
 msgstr "Перезагружать страницу при активации через глобальное сочетание клавиш"
 
-#: ../ui/ConfigAdvanced.qml:199
+#: ../ui/ConfigAdvanced.qml:193
+msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
+msgid "Bypass Certificates/SSL/TLS errors"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:213
 msgid "Display the scrollbars (follow the site)"
 msgstr "Отображать полосы прокрутки (следуя сайту)"
 
-#: ../ui/ConfigAdvanced.qml:204
+#: ../ui/ConfigAdvanced.qml:218
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr "Скрывать полосы прокрутки (метод <i>overflow: hidden</i>)"
 
-#: ../ui/ConfigAdvanced.qml:209
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr "Скрывать полосы прокрутки (метод <i>::-webkit-scrollbar</i>)"
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:237
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Включить пользовательский JavaScript, который будет выполняться после "
 "загрузки страницы"
 
-#: ../ui/ConfigAdvanced.qml:227
+#: ../ui/ConfigAdvanced.qml:241
 msgid "Your JavaScript :"
 msgstr "Ваш JavaScript :"
 
@@ -263,35 +268,35 @@ msgstr "Переместить выбранный URL вверх"
 msgid "Move the selected URL down"
 msgstr "Переместить выбранный URL вниз"
 
-#: ../ui/main.qml:240
+#: ../ui/main.qml:253
 msgid "Back"
 msgstr "Назад"
 
-#: ../ui/main.qml:247
+#: ../ui/main.qml:260
 msgid "Forward"
 msgstr "Вперед"
 
-#: ../ui/main.qml:254
+#: ../ui/main.qml:267
 msgid "Reload"
 msgstr "Обновить"
 
-#: ../ui/main.qml:261
+#: ../ui/main.qml:281
 msgid "Go to"
 msgstr "Перейти к"
 
-#: ../ui/main.qml:282
+#: ../ui/main.qml:302
 msgid "Go Home"
 msgstr "Домой"
 
-#: ../ui/main.qml:290
+#: ../ui/main.qml:310
 msgid "Open current URL in default browser"
 msgstr "Открыть текущий URL в браузере по умолчанию"
 
-#: ../ui/main.qml:296
+#: ../ui/main.qml:316
 msgid "Open link's URL in default browser"
 msgstr "Открывать ссылки в браузере по-умолчанию"
 
-#: ../ui/main.qml:304
+#: ../ui/main.qml:328
 msgid "Configure"
 msgstr "Настройки"
 

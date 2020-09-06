@@ -13,6 +13,7 @@ Item {
     property alias cfg_enableCustomUA: enableCustomUA.checked
     property alias cfg_customUA: customUA.text
     property alias cfg_enableReloadOnActivate: enableReloadOnActivate.checked
+    property alias cfg_bypassSSLErrors: bypassSSLErrors.checked
     property alias cfg_scrollbarsShow: scrollbarsShow.checked
     property alias cfg_scrollbarsOverflow: scrollbarsOverflow.checked
     property alias cfg_scrollbarsWebkit: scrollbarsWebkit.checked
@@ -177,6 +178,19 @@ Item {
             CheckBox {
                 id: enableReloadOnActivate
                 text: i18n('Reload the page when activated through the global shortcut')
+                Layout.fillWidth: true
+            }
+        }
+        
+        // Bypass SSL errors
+        GridLayout{
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 1
+            
+            CheckBox {
+                id: bypassSSLErrors
+                text: i18nc('Setting, checkbox, to ignore HTTPS errors, and display the page', 'Bypass Certificates/SSL/TLS errors')
                 Layout.fillWidth: true
             }
         }

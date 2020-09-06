@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-12 22:14+0200\n"
+"POT-Creation-Date: 2020-09-06 23:54+0200\n"
 "PO-Revision-Date: 2018-04-01 22:44+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: English (http://www.transifex.com/cqoicebordel/webslice/"
@@ -20,67 +20,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:42
 msgid "Scroll to a fixed position"
 msgstr "Scroll to a fixed position"
 
-#: ../ui/ConfigAdvanced.qml:46
+#: ../ui/ConfigAdvanced.qml:47
 msgid "Scroll To : "
 msgstr "Scroll To : "
 
-#: ../ui/ConfigAdvanced.qml:57
+#: ../ui/ConfigAdvanced.qml:58
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:76
+#: ../ui/ConfigAdvanced.qml:77
 msgid "px, "
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:87
+#: ../ui/ConfigAdvanced.qml:88
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:106
+#: ../ui/ConfigAdvanced.qml:107
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:122
+#: ../ui/ConfigAdvanced.qml:123
 msgid "Enable JS Scroll Into View"
 msgstr "Enable JS Scroll Into View"
 
-#: ../ui/ConfigAdvanced.qml:127
+#: ../ui/ConfigAdvanced.qml:128
 msgid "JS Selector :"
 msgstr "JS Selector :"
 
-#: ../ui/ConfigAdvanced.qml:151
+#: ../ui/ConfigAdvanced.qml:152
 msgid "Enable custom User-Agent"
 msgstr "Enable custom User-Agent"
 
-#: ../ui/ConfigAdvanced.qml:156
+#: ../ui/ConfigAdvanced.qml:157
 msgid "User-Agent :"
 msgstr "User-Agent :"
 
-#: ../ui/ConfigAdvanced.qml:179
+#: ../ui/ConfigAdvanced.qml:180
 msgid "Reload the page when activated through the global shortcut"
 msgstr "Reload the page when activated through the global shortcut"
 
-#: ../ui/ConfigAdvanced.qml:199
+#: ../ui/ConfigAdvanced.qml:193
+msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
+msgid "Bypass Certificates/SSL/TLS errors"
+msgstr "Bypass Certificates/SSL/TLS errors"
+
+#: ../ui/ConfigAdvanced.qml:213
 msgid "Display the scrollbars (follow the site)"
 msgstr "Display the scrollbars (follow the site)"
 
-#: ../ui/ConfigAdvanced.qml:204
+#: ../ui/ConfigAdvanced.qml:218
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr "Hide the scrollbars (<i>overflow: hidden</i> method)"
 
-#: ../ui/ConfigAdvanced.qml:209
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:237
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr "Enable personnalized JavaScript to be executed once the page is loaded"
 
-#: ../ui/ConfigAdvanced.qml:227
+#: ../ui/ConfigAdvanced.qml:241
 msgid "Your JavaScript :"
 msgstr "Your JavaScript :"
 
@@ -258,35 +263,35 @@ msgstr "Move the selected URL up"
 msgid "Move the selected URL down"
 msgstr "Move the selected URL down"
 
-#: ../ui/main.qml:240
+#: ../ui/main.qml:253
 msgid "Back"
 msgstr "Back"
 
-#: ../ui/main.qml:247
+#: ../ui/main.qml:260
 msgid "Forward"
 msgstr "Forward"
 
-#: ../ui/main.qml:254
+#: ../ui/main.qml:267
 msgid "Reload"
 msgstr "Reload"
 
-#: ../ui/main.qml:261
+#: ../ui/main.qml:281
 msgid "Go to"
 msgstr "Go to"
 
-#: ../ui/main.qml:282
+#: ../ui/main.qml:302
 msgid "Go Home"
 msgstr "Go Home"
 
-#: ../ui/main.qml:290
+#: ../ui/main.qml:310
 msgid "Open current URL in default browser"
 msgstr "Open current URL in default browser"
 
-#: ../ui/main.qml:296
+#: ../ui/main.qml:316
 msgid "Open link's URL in default browser"
 msgstr "Open link's URL in default browser"
 
-#: ../ui/main.qml:304
+#: ../ui/main.qml:328
 msgid "Configure"
 msgstr "Configure"
 
@@ -305,3 +310,6 @@ msgstr "More URLs"
 #: ../config/config.qml:21
 msgid "Experimental"
 msgstr "Experimental"
+
+#~ msgid "Bypass Certificates/SSL/TLS errors"
+#~ msgstr "Bypass Certificates/SSL/TLS errors"

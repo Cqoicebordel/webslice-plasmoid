@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: 2.0\n"
+"Project-Id-Version: 2.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-07-13 13:12+0200\n"
+"POT-Creation-Date: 2020-09-06 23:54+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,67 +17,72 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../ui/ConfigAdvanced.qml:41
+#: ../ui/ConfigAdvanced.qml:42
 msgid "Scroll to a fixed position"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:46
+#: ../ui/ConfigAdvanced.qml:47
 msgid "Scroll To : "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:57
+#: ../ui/ConfigAdvanced.qml:58
 msgid "X :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:76
+#: ../ui/ConfigAdvanced.qml:77
 msgid "px, "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:87
+#: ../ui/ConfigAdvanced.qml:88
 msgid "Y :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:106
+#: ../ui/ConfigAdvanced.qml:107
 msgid "px"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:122
+#: ../ui/ConfigAdvanced.qml:123
 msgid "Enable JS Scroll Into View"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:127
+#: ../ui/ConfigAdvanced.qml:128
 msgid "JS Selector :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:151
+#: ../ui/ConfigAdvanced.qml:152
 msgid "Enable custom User-Agent"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:156
+#: ../ui/ConfigAdvanced.qml:157
 msgid "User-Agent :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:179
+#: ../ui/ConfigAdvanced.qml:180
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:199
+#: ../ui/ConfigAdvanced.qml:193
+msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
+msgid "Bypass Certificates/SSL/TLS errors"
+msgstr ""
+
+#: ../ui/ConfigAdvanced.qml:213
 msgid "Display the scrollbars (follow the site)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:204
+#: ../ui/ConfigAdvanced.qml:218
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:209
+#: ../ui/ConfigAdvanced.qml:223
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:237
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:227
+#: ../ui/ConfigAdvanced.qml:241
 msgid "Your JavaScript :"
 msgstr ""
 
@@ -239,35 +244,35 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:240
+#: ../ui/main.qml:253
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:247
+#: ../ui/main.qml:260
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:254
+#: ../ui/main.qml:267
 msgid "Reload"
 msgstr ""
 
-#: ../ui/main.qml:261
+#: ../ui/main.qml:281
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:282
+#: ../ui/main.qml:302
 msgid "Go Home"
 msgstr ""
 
-#: ../ui/main.qml:290
+#: ../ui/main.qml:310
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:296
+#: ../ui/main.qml:316
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:304
+#: ../ui/main.qml:328
 msgid "Configure"
 msgstr ""
 

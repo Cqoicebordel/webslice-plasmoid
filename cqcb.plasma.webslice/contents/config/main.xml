@@ -77,6 +77,9 @@
 		<entry name="enableReloadOnActivate" type="Bool">
             <default>true</default>
         </entry>
+		<entry name="bypassSSLErrors" type="Bool">
+            <default>false</default>
+        </entry>
 		<entry name="scrollbarsShow" type="Bool">
             <default>true</default>
         </entry>

@@ -57,6 +57,7 @@ Item {
     property bool enableCustomUA: plasmoid.configuration.enableCustomUA
     property string customUA: plasmoid.configuration.customUA
     property bool enableReloadOnActivate: plasmoid.configuration.enableReloadOnActivate
+    property bool bypassSSLErrors: plasmoid.configuration.bypassSSLErrors
     property bool scrollbarsShow: plasmoid.configuration.scrollbarsShow
     property bool scrollbarsOverflow: plasmoid.configuration.scrollbarsOverflow
     property bool scrollbarsWebkit: plasmoid.configuration.scrollbarsWebkit
@@ -106,6 +107,8 @@ Item {
         
         onWidthChanged: updateSizeHints()
         onHeightChanged: updateSizeHints()
+
+        onCertificateError: if(bypassSSLErrors){error.ignoreCertificateError()}
 
         property bool isExternalLink: false
         
