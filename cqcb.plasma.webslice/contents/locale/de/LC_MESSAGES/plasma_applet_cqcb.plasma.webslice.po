@@ -68,7 +68,7 @@ msgstr ""
 #: ../ui/ConfigAdvanced.qml:193
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
-msgstr ""
+msgstr "Zertifikat/SSL/TLS Fehler umgehen"
 
 #: ../ui/ConfigAdvanced.qml:213
 msgid "Display the scrollbars (follow the site)"
