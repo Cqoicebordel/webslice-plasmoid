@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2020-09-06 23:54+0200\n"
-"PO-Revision-Date: 2020-07-13 10:00+0800\n"
+"PO-Revision-Date: 2020-09-08 10:51+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
 "Language: zh_TW\n"
@@ -67,7 +67,7 @@ msgstr "當透過全域快捷鍵啟動時重新載入頁面"
 #: ../ui/ConfigAdvanced.qml:193
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
-msgstr ""
+msgstr "忽略憑證/SSL/TLS 錯誤"
 
 #: ../ui/ConfigAdvanced.qml:213
 msgid "Display the scrollbars (follow the site)"
