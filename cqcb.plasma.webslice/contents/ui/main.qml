@@ -312,12 +312,33 @@ Item {
                 onClicked: Qt.openUrlExternally(webviewID.url)
             }
             
+            PlasmaComponents.MenuItem{
+                separator: true
+                visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+            }
+            
             PlasmaComponents.MenuItem {
                 text: i18n('Open link\'s URL in default browser')
                 icon: 'document-share'
                 enabled: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
                 onClicked: Qt.openUrlExternally(contextMenu.request.linkUrl)
+            }
+            
+            PlasmaComponents.MenuItem {
+                text: i18n('Copy link\'s URL')
+                icon: 'edit-copy'
+                enabled: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                visible: (typeof contextMenu.request !== "undefined" && contextMenu.request.linkUrl && contextMenu.request.linkUrl != "")
+                onClicked: {
+                    copyURLTextEdit.text = contextMenu.request.linkUrl
+                    copyURLTextEdit.selectAll()
+                    copyURLTextEdit.copy()
+                }
+                TextEdit{
+                    id: copyURLTextEdit
+                    visible: false
+                }
             }
             
             PlasmaComponents.MenuItem{

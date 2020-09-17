@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-06 23:54+0200\n"
+"POT-Creation-Date: 2020-09-17 22:56+0200\n"
 "PO-Revision-Date: 2018-04-01 22:44+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: English (http://www.transifex.com/cqoicebordel/webslice/"
@@ -287,11 +287,15 @@ msgstr "Go Home"
 msgid "Open current URL in default browser"
 msgstr "Open current URL in default browser"
 
-#: ../ui/main.qml:316
+#: ../ui/main.qml:321
 msgid "Open link's URL in default browser"
 msgstr "Open link's URL in default browser"
 
-#: ../ui/main.qml:328
+#: ../ui/main.qml:329
+msgid "Copy link's URL"
+msgstr "Copy link's URL"
+
+#: ../ui/main.qml:349
 msgid "Configure"
 msgstr "Configure"
 
@@ -310,6 +314,3 @@ msgstr "More URLs"
 #: ../config/config.qml:21
 msgid "Experimental"
 msgstr "Experimental"
-
-#~ msgid "Bypass Certificates/SSL/TLS errors"
-#~ msgstr "Bypass Certificates/SSL/TLS errors"

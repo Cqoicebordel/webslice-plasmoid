@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-06 23:54+0200\n"
+"POT-Creation-Date: 2020-09-17 22:56+0200\n"
 "PO-Revision-Date: 2020-07-12 16:13+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
@@ -292,11 +292,15 @@ msgstr "Startseite aufrufen"
 msgid "Open current URL in default browser"
 msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:316
+#: ../ui/main.qml:321
 msgid "Open link's URL in default browser"
 msgstr "URL des Links im Standardbrowser öffnen"
 
-#: ../ui/main.qml:328
+#: ../ui/main.qml:329
+msgid "Copy link's URL"
+msgstr "URL des Links kopieren"
+
+#: ../ui/main.qml:349
 msgid "Configure"
 msgstr "Konfigurieren"
 

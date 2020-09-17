@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 2.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-07 13:50+0200\n"
+"POT-Creation-Date: 2020-09-17 23:05+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -268,11 +268,15 @@ msgstr ""
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:316
+#: ../ui/main.qml:321
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:328
+#: ../ui/main.qml:329
+msgid "Copy link's URL"
+msgstr ""
+
+#: ../ui/main.qml:349
 msgid "Configure"
 msgstr ""
 
