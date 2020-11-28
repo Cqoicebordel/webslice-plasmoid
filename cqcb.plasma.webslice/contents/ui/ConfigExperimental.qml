@@ -9,7 +9,11 @@ Item {
     property alias cfg_keysSeqForward: keysSeqForward.keySequence
     property alias cfg_keysSeqReload: keysSeqReload.keySequence
     property alias cfg_keysSeqStop: keysSeqStop.keySequence
+
     property alias cfg_fillWidthAndHeight: fillWidthAndHeight.checked
+
+    property alias cfg_notOffTheRecord: notOffTheRecord.checked
+    property alias cfg_profileName: profileName.text
 
     GridLayout {
         Layout.fillWidth: true
@@ -17,6 +21,7 @@ Item {
         rowSpacing: 25
         width:parent.parent.parent.width
 
+        // Shortcuts
         GridLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -89,6 +94,7 @@ Item {
             }
         }
         
+        // Fill
         GridLayout{
             Layout.fillWidth: true
             Layout.columnSpan: 4
@@ -104,6 +110,51 @@ Item {
             Label {
                 font.italic: true
                 text: i18n('Might be useful when the plasmoid is in a panel, to fill the empty space. Not sure if it works correctly, and not sure if it really fill vertically (seems OK horizontally).')
+                wrapMode: Text.Wrap
+                Layout.maximumWidth: parent.parent.width
+                Layout.columnSpan: 4
+            }
+        }
+        
+        // Not off the record
+        GridLayout{
+            Layout.fillWidth: true
+            Layout.columnSpan: 4
+            columns: 4
+            
+            CheckBox {
+                id: notOffTheRecord
+                text: i18nc('Setting, checkbox, to avoid behaving like a private window in a browser', 'Allow to store navigation data')
+                Layout.fillWidth: true
+                Layout.columnSpan: 4
+            }
+            
+            Label {
+                font.italic: true
+                text: i18nc('Text info just below the "Allow to store navigation data"', 'By default, Webslices behave like a private window in a standard and no data is stored on disk. That\'s why you have to re-login when you restart you computer. So, activate this option if you want data to be stored.<br />The profile name is the folder in which your data will be stored. Don\'t change it unless you want multiple webslices connected with different accounts to the same website.')
+                wrapMode: Text.Wrap
+                Layout.maximumWidth: parent.parent.width
+                Layout.columnSpan: 4
+            }
+            
+            Label {
+                text: i18nc('Setting, textfield, name of the folder containing the profile (navigation) data', 'Profile name :')
+                enabled: notOffTheRecord.checked
+                Layout.columnSpan: 1
+            }
+            
+            TextField {
+                id: profileName
+                placeholderText: 'webslice-data'
+                enabled: notOffTheRecord.checked
+                Layout.columnSpan: 3
+                Layout.fillWidth: true
+            }
+            
+            // https://bugreports.qt.io/browse/QTBUG-72738
+            Label {
+                font.italic: true
+                text: i18nc('Text info just below the "Profile name"', '⚠ Beware. Because of a bug in QT, those options will crash the web renderer each time they are changed. So, to make it work, change the settings, and restart the plasmoid (restarting plasmashell once should suffice).')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.width
                 Layout.columnSpan: 4

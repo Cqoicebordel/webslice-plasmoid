@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.9.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-17 23:05+0200\n"
+"POT-Creation-Date: 2020-11-28 17:46+0100\n"
 "PO-Revision-Date: 2020-09-18 10:02+0800\n"
 "Last-Translator: Jeff Huang <s8321414@gmail.com>\n"
 "Language-Team: Chinese <chinese-l10n@googlegroups.com>\n"
@@ -20,80 +20,80 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Generator: Lokalize 19.08.3\n"
 
-#: ../ui/ConfigAdvanced.qml:42
+#: ../ui/ConfigAdvanced.qml:48
 msgid "Scroll to a fixed position"
 msgstr "捲動到固定的位置"
 
-#: ../ui/ConfigAdvanced.qml:47
+#: ../ui/ConfigAdvanced.qml:53
 msgid "Scroll To : "
 msgstr "捲動至："
 
-#: ../ui/ConfigAdvanced.qml:58
+#: ../ui/ConfigAdvanced.qml:64
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:77
+#: ../ui/ConfigAdvanced.qml:83
 msgid "px, "
 msgstr "像素，"
 
-#: ../ui/ConfigAdvanced.qml:88
+#: ../ui/ConfigAdvanced.qml:94
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:107
+#: ../ui/ConfigAdvanced.qml:113
 msgid "px"
 msgstr "像素"
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:129
 msgid "Enable JS Scroll Into View"
 msgstr "啟用 JS 捲動檢視範圍"
 
-#: ../ui/ConfigAdvanced.qml:128
+#: ../ui/ConfigAdvanced.qml:134
 msgid "JS Selector :"
 msgstr "JS 選擇器："
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:158
 msgid "Enable custom User-Agent"
 msgstr "啟用自訂使用者代理字串"
 
-#: ../ui/ConfigAdvanced.qml:157
+#: ../ui/ConfigAdvanced.qml:163
 msgid "User-Agent :"
 msgstr "使用者代理字串："
 
-#: ../ui/ConfigAdvanced.qml:180
+#: ../ui/ConfigAdvanced.qml:186
 msgid "Reload the page when activated through the global shortcut"
 msgstr "當透過全域快捷鍵啟動時重新載入頁面"
 
-#: ../ui/ConfigAdvanced.qml:193
+#: ../ui/ConfigAdvanced.qml:199
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
 msgstr "忽略憑證/SSL/TLS 錯誤"
 
-#: ../ui/ConfigAdvanced.qml:213
+#: ../ui/ConfigAdvanced.qml:219
 msgid "Display the scrollbars (follow the site)"
 msgstr "顯示捲軸（跟隨頁面）"
 
-#: ../ui/ConfigAdvanced.qml:218
+#: ../ui/ConfigAdvanced.qml:224
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr "隱藏捲軸（<i>overflow: hidden</i>方法）"
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:229
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr "隱藏捲軸（<i>::-webkit-scrollbar</i> 方法）"
 
-#: ../ui/ConfigAdvanced.qml:237
+#: ../ui/ConfigAdvanced.qml:243
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr "啟用個人化的 JavaScript 以在頁面被載入時執行"
 
-#: ../ui/ConfigAdvanced.qml:241
+#: ../ui/ConfigAdvanced.qml:247
 msgid "Your JavaScript :"
 msgstr "您的 JavaScript："
 
-#: ../ui/ConfigExperimental.qml:26
+#: ../ui/ConfigExperimental.qml:31
 msgid "Shortcuts :"
 msgstr "快捷鍵："
 
-#: ../ui/ConfigExperimental.qml:33
+#: ../ui/ConfigExperimental.qml:38
 msgid ""
 "Note that the usual shortcuts for those actions are already included. Here "
 "you can add to those. It's in experimental, because it's seems to not work "
@@ -105,27 +105,27 @@ msgstr ""
 "某些快捷鍵似乎無法運作，且我不知道一旦 plasmoid 正確安裝時，它們是否為全域。"
 "同時有多個 webslices 時也可能會有問題。"
 
-#: ../ui/ConfigExperimental.qml:39
+#: ../ui/ConfigExperimental.qml:44
 msgid "Back (ctrl+left already in)"
 msgstr "返回（Ctrl+左方向鍵已存在）"
 
-#: ../ui/ConfigExperimental.qml:45
+#: ../ui/ConfigExperimental.qml:50
 msgid "Forward (ctrl+right already in)"
 msgstr "向前（Ctrl+右方向鍵已存在）"
 
-#: ../ui/ConfigExperimental.qml:65
+#: ../ui/ConfigExperimental.qml:70
 msgid "Reload (F5 already in)"
 msgstr "重新載入（F5 已存在）"
 
-#: ../ui/ConfigExperimental.qml:71
+#: ../ui/ConfigExperimental.qml:76
 msgid "Stop (Esc already in)"
 msgstr "停止（Esc 已存在）"
 
-#: ../ui/ConfigExperimental.qml:100
+#: ../ui/ConfigExperimental.qml:106
 msgid "Fill the whole width and height"
 msgstr "填滿完整寬度與高度"
 
-#: ../ui/ConfigExperimental.qml:106
+#: ../ui/ConfigExperimental.qml:112
 msgid ""
 "Might be useful when the plasmoid is in a panel, to fill the empty space. "
 "Not sure if it works correctly, and not sure if it really fill vertically "
@@ -133,6 +133,38 @@ msgid ""
 msgstr ""
 "在 plasmoid 在面板中時可能有用，這樣就可以填滿空間。不確定是否可以正常運作，"
 "也不確定其垂直部份會不會填滿（看起來水平部份是正常的）。"
+
+#: ../ui/ConfigExperimental.qml:127
+msgctxt ""
+"Setting, checkbox, to avoid behaving like a private window in a browser"
+msgid "Allow to store navigation data"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:134
+msgctxt "Text info just below the \"Allow to store navigation data\""
+msgid ""
+"By default, Webslices behave like a private window in a standard and no data "
+"is stored on disk. That's why you have to re-login when you restart you "
+"computer. So, activate this option if you want data to be stored.<br />The "
+"profile name is the folder in which your data will be stored. Don't change "
+"it unless you want multiple webslices connected with different accounts to "
+"the same website."
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:141
+msgctxt ""
+"Setting, textfield, name of the folder containing the profile (navigation) "
+"data"
+msgid "Profile name :"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:157
+msgctxt "Text info just below the \"Profile name\""
+msgid ""
+"⚠ Beware. Because of a bug in QT, those options will crash the web renderer "
+"each time they are changed. So, to make it work, change the settings, and "
+"restart the plasmoid (restarting plasmashell once should suffice)."
+msgstr ""
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -257,39 +289,39 @@ msgstr "將選定的 URL 向上移動"
 msgid "Move the selected URL down"
 msgstr "將選定的 URL 向下移動"
 
-#: ../ui/main.qml:253
+#: ../ui/main.qml:270
 msgid "Back"
 msgstr "上一頁"
 
-#: ../ui/main.qml:260
+#: ../ui/main.qml:277
 msgid "Forward"
 msgstr "下一頁"
 
-#: ../ui/main.qml:267
+#: ../ui/main.qml:284
 msgid "Reload"
 msgstr "重新整理"
 
-#: ../ui/main.qml:281
+#: ../ui/main.qml:298
 msgid "Go to"
 msgstr "跳到"
 
-#: ../ui/main.qml:302
+#: ../ui/main.qml:319
 msgid "Go Home"
 msgstr "到首頁"
 
-#: ../ui/main.qml:310
+#: ../ui/main.qml:327
 msgid "Open current URL in default browser"
 msgstr "在預設瀏覽器中開啟目前的 URL"
 
-#: ../ui/main.qml:321
+#: ../ui/main.qml:338
 msgid "Open link's URL in default browser"
 msgstr "在預設的瀏覽器開啟連結的 URL"
 
-#: ../ui/main.qml:329
+#: ../ui/main.qml:346
 msgid "Copy link's URL"
 msgstr "複製連結的 URL"
 
-#: ../ui/main.qml:349
+#: ../ui/main.qml:366
 msgid "Configure"
 msgstr "設定"
 

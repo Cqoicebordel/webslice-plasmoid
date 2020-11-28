@@ -71,6 +71,8 @@ Item {
     property string keysSeqReload: plasmoid.configuration.keysSeqReload
     property string keysSeqStop: plasmoid.configuration.keysSeqStop
     property bool fillWidthAndHeight: plasmoid.configuration.fillWidthAndHeight
+    property bool notOffTheRecord: plasmoid.configuration.notOffTheRecord
+    property string profileName: plasmoid.configuration.profileName
 
     signal handleSettingsUpdated();
 
@@ -88,10 +90,23 @@ Item {
     
     onZoomFactorCfgChanged:{  main.handleSettingsUpdated(); }
     
+    onNotOffTheRecordChanged:{ 
+        //console.debug("test");
+        //console.debug(Plasmoid.fullRepresentation);
+        //Plasmoid.fullRepresentation = null; 
+        //webviewID.destroy();
+        //var component = Qt.createComponent("WebviewWebslice.qml");
+        //webview = component.createObject(webview, {id: "webviewID"});
+        //Plasmoid.fullRepresentation=component;
+        //webview = component.createObject(webview);
+        //webview.createObject(WebviewWebslice);
+        //webview = webviewTemp;
+    }
+    
     //onKeysseqChanged: { main.handleSettingsUpdated(); }
 
 
-    property Component webview: WebEngineView {
+    property Component webview: WebEngineView{
         id: webviewID
         url: websliceUrl
         anchors.fill: parent
@@ -114,6 +129,8 @@ Item {
         
         profile:  WebEngineProfile{
             httpUserAgent: (enableCustomUA)?customUA:httpUserAgent
+            offTheRecord: !notOffTheRecord
+            storageName: (notOffTheRecord)?profileName:"webslice-data"
         }
         
         /*
@@ -442,4 +459,5 @@ Item {
 
         main.handleSettingsUpdated();
     }
+    
 }

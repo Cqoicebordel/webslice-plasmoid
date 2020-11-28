@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-17 22:56+0200\n"
+"POT-Creation-Date: 2020-11-28 17:46+0100\n"
 "PO-Revision-Date: 2015-06-21 19:59+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Portuguese (Brazil) (http://www.transifex.com/projects/p/"
@@ -20,82 +20,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:42
+#: ../ui/ConfigAdvanced.qml:48
 msgid "Scroll to a fixed position"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:47
+#: ../ui/ConfigAdvanced.qml:53
 msgid "Scroll To : "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:58
+#: ../ui/ConfigAdvanced.qml:64
 msgid "X :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:77
+#: ../ui/ConfigAdvanced.qml:83
 msgid "px, "
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:88
+#: ../ui/ConfigAdvanced.qml:94
 msgid "Y :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:107
+#: ../ui/ConfigAdvanced.qml:113
 msgid "px"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:129
 msgid "Enable JS Scroll Into View"
 msgstr "Habilitar rolagem JS na Visualização"
 
-#: ../ui/ConfigAdvanced.qml:128
+#: ../ui/ConfigAdvanced.qml:134
 msgid "JS Selector :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:158
 msgid "Enable custom User-Agent"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:157
+#: ../ui/ConfigAdvanced.qml:163
 msgid "User-Agent :"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:180
+#: ../ui/ConfigAdvanced.qml:186
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:193
+#: ../ui/ConfigAdvanced.qml:199
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:213
+#: ../ui/ConfigAdvanced.qml:219
 msgid "Display the scrollbars (follow the site)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:218
+#: ../ui/ConfigAdvanced.qml:224
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:229
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr ""
 
-#: ../ui/ConfigAdvanced.qml:237
+#: ../ui/ConfigAdvanced.qml:243
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Habilita Javascript personalizado a ser executado uma vez que a pagina tenha "
 "sido carregada."
 
-#: ../ui/ConfigAdvanced.qml:241
+#: ../ui/ConfigAdvanced.qml:247
 msgid "Your JavaScript :"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:26
+#: ../ui/ConfigExperimental.qml:31
 msgid "Shortcuts :"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:33
+#: ../ui/ConfigExperimental.qml:38
 msgid ""
 "Note that the usual shortcuts for those actions are already included. Here "
 "you can add to those. It's in experimental, because it's seems to not work "
@@ -104,31 +104,63 @@ msgid ""
 "multiple webslices are present."
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:39
+#: ../ui/ConfigExperimental.qml:44
 msgid "Back (ctrl+left already in)"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:45
+#: ../ui/ConfigExperimental.qml:50
 msgid "Forward (ctrl+right already in)"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:65
+#: ../ui/ConfigExperimental.qml:70
 msgid "Reload (F5 already in)"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:71
+#: ../ui/ConfigExperimental.qml:76
 msgid "Stop (Esc already in)"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:100
+#: ../ui/ConfigExperimental.qml:106
 msgid "Fill the whole width and height"
 msgstr ""
 
-#: ../ui/ConfigExperimental.qml:106
+#: ../ui/ConfigExperimental.qml:112
 msgid ""
 "Might be useful when the plasmoid is in a panel, to fill the empty space. "
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:127
+msgctxt ""
+"Setting, checkbox, to avoid behaving like a private window in a browser"
+msgid "Allow to store navigation data"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:134
+msgctxt "Text info just below the \"Allow to store navigation data\""
+msgid ""
+"By default, Webslices behave like a private window in a standard and no data "
+"is stored on disk. That's why you have to re-login when you restart you "
+"computer. So, activate this option if you want data to be stored.<br />The "
+"profile name is the folder in which your data will be stored. Don't change "
+"it unless you want multiple webslices connected with different accounts to "
+"the same website."
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:141
+msgctxt ""
+"Setting, textfield, name of the folder containing the profile (navigation) "
+"data"
+msgid "Profile name :"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:157
+msgctxt "Text info just below the \"Profile name\""
+msgid ""
+"⚠ Beware. Because of a bug in QT, those options will crash the web renderer "
+"each time they are changed. So, to make it work, change the settings, and "
+"restart the plasmoid (restarting plasmashell once should suffice)."
 msgstr ""
 
 #: ../ui/ConfigGeneral.qml:39
@@ -249,39 +281,39 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:253
+#: ../ui/main.qml:270
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:260
+#: ../ui/main.qml:277
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:267
+#: ../ui/main.qml:284
 msgid "Reload"
 msgstr "Atualizar"
 
-#: ../ui/main.qml:281
+#: ../ui/main.qml:298
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:302
+#: ../ui/main.qml:319
 msgid "Go Home"
 msgstr ""
 
-#: ../ui/main.qml:310
+#: ../ui/main.qml:327
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:321
+#: ../ui/main.qml:338
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:329
+#: ../ui/main.qml:346
 msgid "Copy link's URL"
 msgstr ""
 
-#: ../ui/main.qml:349
+#: ../ui/main.qml:366
 msgid "Configure"
 msgstr "Configurar"
 

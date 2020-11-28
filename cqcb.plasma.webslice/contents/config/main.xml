@@ -117,5 +117,11 @@
 		<entry name="fillWidthAndHeight" type="Bool">
             <default>false</default>
         </entry>
+		<entry name="notOffTheRecord" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="profileName" type="String">
+            <default>webslice-data</default>
+        </entry>
 	</group>
 </kcfg>

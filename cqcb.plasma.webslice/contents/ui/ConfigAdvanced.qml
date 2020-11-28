@@ -8,15 +8,21 @@ Item {
     property alias cfg_enableScrollTo: enableScrollTo.checked
     property alias cfg_scrollToX: scrollToX.text
     property alias cfg_scrollToY: scrollToY.text
+    
     property alias cfg_enableJSID: enableJSID.checked
     property alias cfg_jsSelector: jsSelector.text
+    
     property alias cfg_enableCustomUA: enableCustomUA.checked
     property alias cfg_customUA: customUA.text
+    
     property alias cfg_enableReloadOnActivate: enableReloadOnActivate.checked
+    
     property alias cfg_bypassSSLErrors: bypassSSLErrors.checked
+    
     property alias cfg_scrollbarsShow: scrollbarsShow.checked
     property alias cfg_scrollbarsOverflow: scrollbarsOverflow.checked
     property alias cfg_scrollbarsWebkit: scrollbarsWebkit.checked
+    
     property alias cfg_enableJS: enableJS.checked
     property alias cfg_js: js.text
 

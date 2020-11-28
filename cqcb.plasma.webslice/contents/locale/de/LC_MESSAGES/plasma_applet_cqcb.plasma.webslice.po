@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-09-17 22:56+0200\n"
+"POT-Creation-Date: 2020-11-28 17:46+0100\n"
 "PO-Revision-Date: 2020-07-12 16:13+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
@@ -20,82 +20,82 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: ../ui/ConfigAdvanced.qml:42
+#: ../ui/ConfigAdvanced.qml:48
 msgid "Scroll to a fixed position"
 msgstr "Zu einer festen Position scrollen"
 
-#: ../ui/ConfigAdvanced.qml:47
+#: ../ui/ConfigAdvanced.qml:53
 msgid "Scroll To : "
 msgstr "Scroll nach : "
 
-#: ../ui/ConfigAdvanced.qml:58
+#: ../ui/ConfigAdvanced.qml:64
 msgid "X :"
 msgstr "X :"
 
-#: ../ui/ConfigAdvanced.qml:77
+#: ../ui/ConfigAdvanced.qml:83
 msgid "px, "
 msgstr "px,"
 
-#: ../ui/ConfigAdvanced.qml:88
+#: ../ui/ConfigAdvanced.qml:94
 msgid "Y :"
 msgstr "Y :"
 
-#: ../ui/ConfigAdvanced.qml:107
+#: ../ui/ConfigAdvanced.qml:113
 msgid "px"
 msgstr "px"
 
-#: ../ui/ConfigAdvanced.qml:123
+#: ../ui/ConfigAdvanced.qml:129
 msgid "Enable JS Scroll Into View"
 msgstr "JS Selektor Auswahl ins Blickfeld scrollen"
 
-#: ../ui/ConfigAdvanced.qml:128
+#: ../ui/ConfigAdvanced.qml:134
 msgid "JS Selector :"
 msgstr "JS-Selektor :"
 
-#: ../ui/ConfigAdvanced.qml:152
+#: ../ui/ConfigAdvanced.qml:158
 msgid "Enable custom User-Agent"
 msgstr "Benutzerdefinierten Benutzer-Agenten aktivieren"
 
-#: ../ui/ConfigAdvanced.qml:157
+#: ../ui/ConfigAdvanced.qml:163
 msgid "User-Agent :"
 msgstr "Benutzer-Agent :"
 
-#: ../ui/ConfigAdvanced.qml:180
+#: ../ui/ConfigAdvanced.qml:186
 msgid "Reload the page when activated through the global shortcut"
 msgstr ""
 "Die Seite neu laden, wenn sie über das globale Tastenkürzel aktiviert wird"
 
-#: ../ui/ConfigAdvanced.qml:193
+#: ../ui/ConfigAdvanced.qml:199
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
 msgstr "Zertifikat/SSL/TLS Fehler umgehen"
 
-#: ../ui/ConfigAdvanced.qml:213
+#: ../ui/ConfigAdvanced.qml:219
 msgid "Display the scrollbars (follow the site)"
 msgstr "Bildlaufleisten anzeigen (nach Seitenvorgabe)"
 
-#: ../ui/ConfigAdvanced.qml:218
+#: ../ui/ConfigAdvanced.qml:224
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
 msgstr "Bildlaufleisten ausblenden (<i>overflow: hidden</i> Methode)"
 
-#: ../ui/ConfigAdvanced.qml:223
+#: ../ui/ConfigAdvanced.qml:229
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
 msgstr "Bildlaufleisten ausblenden (<i>::-webkit-scrollbar</i> Methode)"
 
-#: ../ui/ConfigAdvanced.qml:237
+#: ../ui/ConfigAdvanced.qml:243
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
 msgstr ""
 "Persönliche JavaScripts, die nach dem laden der Seite ausgeführt werden."
 
-#: ../ui/ConfigAdvanced.qml:241
+#: ../ui/ConfigAdvanced.qml:247
 msgid "Your JavaScript :"
 msgstr "Ihr JavaScript :"
 
-#: ../ui/ConfigExperimental.qml:26
+#: ../ui/ConfigExperimental.qml:31
 msgid "Shortcuts :"
 msgstr "Tastenkürzel :"
 
-#: ../ui/ConfigExperimental.qml:33
+#: ../ui/ConfigExperimental.qml:38
 msgid ""
 "Note that the usual shortcuts for those actions are already included. Here "
 "you can add to those. It's in experimental, because it's seems to not work "
@@ -110,27 +110,27 @@ msgstr ""
 "installiert ist. Es könnte auch Probleme mit mehreren vorhandenen Webslices "
 "geben."
 
-#: ../ui/ConfigExperimental.qml:39
+#: ../ui/ConfigExperimental.qml:44
 msgid "Back (ctrl+left already in)"
 msgstr "Zurück (Strg+Links bereits vorhanden) "
 
-#: ../ui/ConfigExperimental.qml:45
+#: ../ui/ConfigExperimental.qml:50
 msgid "Forward (ctrl+right already in)"
 msgstr "Vor (Strg+rechts bereits vorhanden)"
 
-#: ../ui/ConfigExperimental.qml:65
+#: ../ui/ConfigExperimental.qml:70
 msgid "Reload (F5 already in)"
 msgstr "Neu laden (F5 bereits vorhanden)"
 
-#: ../ui/ConfigExperimental.qml:71
+#: ../ui/ConfigExperimental.qml:76
 msgid "Stop (Esc already in)"
 msgstr "Stop (Esc bereits vorhanden)"
 
-#: ../ui/ConfigExperimental.qml:100
+#: ../ui/ConfigExperimental.qml:106
 msgid "Fill the whole width and height"
 msgstr "Die gesamte Breite und Höhe ausfüllen"
 
-#: ../ui/ConfigExperimental.qml:106
+#: ../ui/ConfigExperimental.qml:112
 msgid ""
 "Might be useful when the plasmoid is in a panel, to fill the empty space. "
 "Not sure if it works correctly, and not sure if it really fill vertically "
@@ -140,6 +140,38 @@ msgstr ""
 "den leeren Raum aufzufüllen. Ich bin mir nicht sicher, ob es richtig "
 "funktioniert und ob es tatsächlich vertikal auffüllt (horizontal scheint "
 "aber OK zu sein)."
+
+#: ../ui/ConfigExperimental.qml:127
+msgctxt ""
+"Setting, checkbox, to avoid behaving like a private window in a browser"
+msgid "Allow to store navigation data"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:134
+msgctxt "Text info just below the \"Allow to store navigation data\""
+msgid ""
+"By default, Webslices behave like a private window in a standard and no data "
+"is stored on disk. That's why you have to re-login when you restart you "
+"computer. So, activate this option if you want data to be stored.<br />The "
+"profile name is the folder in which your data will be stored. Don't change "
+"it unless you want multiple webslices connected with different accounts to "
+"the same website."
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:141
+msgctxt ""
+"Setting, textfield, name of the folder containing the profile (navigation) "
+"data"
+msgid "Profile name :"
+msgstr ""
+
+#: ../ui/ConfigExperimental.qml:157
+msgctxt "Text info just below the \"Profile name\""
+msgid ""
+"⚠ Beware. Because of a bug in QT, those options will crash the web renderer "
+"each time they are changed. So, to make it work, change the settings, and "
+"restart the plasmoid (restarting plasmashell once should suffice)."
+msgstr ""
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -268,39 +300,39 @@ msgstr "Ausgewählte URL nach oben verschieben"
 msgid "Move the selected URL down"
 msgstr "Ausgewählte URL nach unten verschieben"
 
-#: ../ui/main.qml:253
+#: ../ui/main.qml:270
 msgid "Back"
 msgstr "Zurück"
 
-#: ../ui/main.qml:260
+#: ../ui/main.qml:277
 msgid "Forward"
 msgstr "Vor"
 
-#: ../ui/main.qml:267
+#: ../ui/main.qml:284
 msgid "Reload"
 msgstr "Neu laden"
 
-#: ../ui/main.qml:281
+#: ../ui/main.qml:298
 msgid "Go to"
 msgstr "Gehe zu"
 
-#: ../ui/main.qml:302
+#: ../ui/main.qml:319
 msgid "Go Home"
 msgstr "Startseite aufrufen"
 
-#: ../ui/main.qml:310
+#: ../ui/main.qml:327
 msgid "Open current URL in default browser"
 msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:321
+#: ../ui/main.qml:338
 msgid "Open link's URL in default browser"
 msgstr "URL des Links im Standardbrowser öffnen"
 
-#: ../ui/main.qml:329
+#: ../ui/main.qml:346
 msgid "Copy link's URL"
 msgstr "URL des Links kopieren"
 
-#: ../ui/main.qml:349
+#: ../ui/main.qml:366
 msgid "Configure"
 msgstr "Konfigurieren"
 
