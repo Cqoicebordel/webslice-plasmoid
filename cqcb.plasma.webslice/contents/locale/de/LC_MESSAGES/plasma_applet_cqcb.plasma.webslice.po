@@ -145,7 +145,7 @@ msgstr ""
 msgctxt ""
 "Setting, checkbox, to avoid behaving like a private window in a browser"
 msgid "Allow to store navigation data"
-msgstr ""
+msgstr "Speicherunf von Navigationsdaten erlauben"
 
 #: ../ui/ConfigExperimental.qml:134
 msgctxt "Text info just below the \"Allow to store navigation data\""
@@ -156,14 +156,14 @@ msgid ""
 "profile name is the folder in which your data will be stored. Don't change "
 "it unless you want multiple webslices connected with different accounts to "
 "the same website."
-msgstr ""
+msgstr "Standardmäßig verhalten sich Webslices wie ein privates Fenster in einem Standard und es werden keine Daten auf der Festplatte gespeichert. Deshalb müssen Sie sich neu anmelden, wenn Sie Ihren Computer neu starten. Aktivieren Sie also diese Option, wenn Sie möchten, dass Daten gespeichert werden.<br />Der Profilname ist der Ordner, in dem Ihre Daten gespeichert werden. Ändern Sie ihn nicht, es sei denn, Sie möchten, dass mehrere Webslices mit verschiedenen Konten mit derselben Website verbunden werden."
 
 #: ../ui/ConfigExperimental.qml:141
 msgctxt ""
 "Setting, textfield, name of the folder containing the profile (navigation) "
 "data"
 msgid "Profile name :"
-msgstr ""
+msgstr "Profilname:"
 
 #: ../ui/ConfigExperimental.qml:157
 msgctxt "Text info just below the \"Profile name\""
@@ -171,7 +171,7 @@ msgid ""
 "⚠ Beware. Because of a bug in QT, those options will crash the web renderer "
 "each time they are changed. So, to make it work, change the settings, and "
 "restart the plasmoid (restarting plasmashell once should suffice)."
-msgstr ""
+msgstr "⚠ Vorsicht. Aufgrund eines Fehlers in QT führen diese Optionen bei jeder Änderung zum Absturz des Web-Renderers. Damit es funktioniert, ändern Sie also die Einstellungen und starten Sie das Plasmoid neu (ein einmaliger Neustart der Plasmashell sollte ausreichen)."
 
 #: ../ui/ConfigGeneral.qml:39
 msgid "URL :"
@@ -179,7 +179,7 @@ msgstr "URL:"
 
 #: ../ui/ConfigGeneral.qml:58
 msgid "Zoom factor :"
-msgstr "Vergrößerungsfaktor :"
+msgstr "Vergrößerungsfaktor:"
 
 #: ../ui/ConfigGeneral.qml:92
 msgid "Enable auto reload"
