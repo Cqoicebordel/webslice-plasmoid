@@ -131,7 +131,7 @@ Item {
             
             Label {
                 font.italic: true
-                text: i18nc('Text info just below the "Allow to store navigation data"', 'By default, Webslices behave like a private window in a standard and no data is stored on disk. That\'s why you have to re-login when you restart you computer. So, activate this option if you want data to be stored.<br />The profile name is the folder in which your data will be stored. Don\'t change it unless you want multiple webslices connected with different accounts to the same website.')
+                text: i18nc('Text info just below the "Allow to store navigation data"', 'By default, Webslices behave like a private window in a standard browser and no data is stored on disk. That\'s why you have to re-login when you restart you computer. So, activate this option if you want data to be stored.<br />The profile name is the folder in which your data will be stored. Don\'t change it unless you want multiple webslices connected with different accounts to the same website.')
                 wrapMode: Text.Wrap
                 Layout.maximumWidth: parent.parent.width
                 Layout.columnSpan: 4
