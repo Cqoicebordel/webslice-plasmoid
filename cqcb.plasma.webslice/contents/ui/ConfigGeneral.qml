@@ -11,10 +11,15 @@ Item {
     property alias cfg_reloadIntervalSec: reloadIntervalSec.value
     property alias cfg_displaySiteBehaviour: displaySiteBehaviour.checked
     property alias cfg_buttonBehaviour: buttonBehaviour.checked
+
     property alias cfg_webPopupWidth: webPopupWidth.value
     property alias cfg_webPopupHeight: webPopupHeight.value
     property alias cfg_webPopupIcon: webPopupIcon.text
+    property alias cfg_showPinButton: showPinButton.checked
+    property alias cfg_pinButtonAlignmentLeft: pinButtonAlignmentLeft.checked
+    property alias cfg_pinButtonAlignmentRight: pinButtonAlignmentRight.checked
     property alias cfg_reloadAnimation: reloadAnimation.checked
+
     property alias cfg_backgroundColorWhite: backgroundColorWhite.checked
     property alias cfg_backgroundColorTransparent: backgroundColorTransparent.checked
     property alias cfg_backgroundColorTheme: backgroundColorTheme.checked
@@ -187,10 +192,54 @@ Item {
                     Layout.columnSpan: 1
                 }
                 
+                // Pin button
                 GridLayout{
-                Layout.fillWidth: true
-                Layout.columnSpan: 5
-                columns: 5
+                    Layout.fillWidth: true
+                    Layout.columnSpan: 5
+                    columns: 5
+                    
+                    CheckBox {
+                        id: showPinButton
+                        text: i18nc('General setting, checkbox, to show the pin icon to keep the popup open', 'Show pin button')
+                        Layout.fillWidth: true
+                        Layout.columnSpan: 2
+                    }
+                    
+                    ButtonGroup {
+                        buttons: pinButtonAlignment.children
+                    }
+                    
+                    GridLayout{
+                        id: pinButtonAlignment
+                        Layout.fillWidth: true
+                        Layout.columnSpan: 3
+                        columns: 3
+                        
+                        RadioButton {
+                            id: pinButtonAlignmentLeft
+                            text: i18nc("General setting, radio button, to chose the alignement of the pin button, to the left or the right", "to the left")
+                            enabled: showPinButton.checked
+                            Layout.columnSpan: 1
+                        }
+
+                        RadioButton {
+                            id: pinButtonAlignmentRight
+                            text: i18nc("General setting, radio button, to chose the alignement of the pin button, to the left or the right", "to the right")
+                            enabled: showPinButton.checked
+                            Layout.columnSpan: 1
+                        }
+                        
+                        Item {
+                            Layout.fillWidth: true
+                        }
+                    }
+                }
+                
+                // Icon
+                GridLayout{
+                    Layout.fillWidth: true
+                    Layout.columnSpan: 5
+                    columns: 5
                 
                     Label {
                         text: i18n('Icon :')

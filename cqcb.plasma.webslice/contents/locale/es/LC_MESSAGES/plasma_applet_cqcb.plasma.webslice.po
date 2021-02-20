@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 14:48+0100\n"
+"POT-Creation-Date: 2021-02-20 14:40+0100\n"
 "PO-Revision-Date: 2015-06-21 20:20+0000\n"
 "Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
@@ -162,92 +162,112 @@ msgid ""
 "restart the plasmoid (restarting plasmashell once should suffice)."
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:39
+#: ../ui/ConfigGeneral.qml:44
 msgid "URL :"
 msgstr "URL:"
 
-#: ../ui/ConfigGeneral.qml:58
+#: ../ui/ConfigGeneral.qml:63
 msgid "Zoom factor :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:92
+#: ../ui/ConfigGeneral.qml:97
 msgid "Enable auto reload"
 msgstr "Habilita a recargar automáticamente."
 
-#: ../ui/ConfigGeneral.qml:97
+#: ../ui/ConfigGeneral.qml:102
 msgid "Reload interval :"
 msgstr "Intervalo de recarga: "
 
-#: ../ui/ConfigGeneral.qml:110
+#: ../ui/ConfigGeneral.qml:115
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:123
+#: ../ui/ConfigGeneral.qml:128
 msgid "Plasmoid behaviour :"
 msgstr "Comportamiento del plasmoid: "
 
-#: ../ui/ConfigGeneral.qml:136
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display the site"
 msgstr "Mostra el sitio"
 
-#: ../ui/ConfigGeneral.qml:141
+#: ../ui/ConfigGeneral.qml:146
 msgid "Display a button that opens the site in a new panel"
 msgstr "Mostra un butón que abre el sitio en un nuevo panel"
 
-#: ../ui/ConfigGeneral.qml:154
+#: ../ui/ConfigGeneral.qml:159
 msgid "Popup size"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:159
+#: ../ui/ConfigGeneral.qml:164
 msgid "Width"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
+#: ../ui/ConfigGeneral.qml:174 ../ui/ConfigGeneral.qml:190
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:175
+#: ../ui/ConfigGeneral.qml:180
 msgid "Height"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:196
+#: ../ui/ConfigGeneral.qml:203
+msgctxt ""
+"General setting, checkbox, to show the pin icon to keep the popup open"
+msgid "Show pin button"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:220
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the left"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:227
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the right"
+msgstr ""
+
+#: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:210
+#: ../ui/ConfigGeneral.qml:259
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:228
+#: ../ui/ConfigGeneral.qml:277
 msgid "Display loading animation"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:239
+#: ../ui/ConfigGeneral.qml:288
 msgid "Plasmoid background color :"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:250
+#: ../ui/ConfigGeneral.qml:299
 msgid "White"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:256
+#: ../ui/ConfigGeneral.qml:305
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:262
+#: ../ui/ConfigGeneral.qml:311
 msgid "Theme's background color"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:269
+#: ../ui/ConfigGeneral.qml:318
 msgid "Custom"
 msgstr ""
 
-#: ../ui/ConfigGeneral.qml:283
+#: ../ui/ConfigGeneral.qml:332
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
@@ -280,39 +300,39 @@ msgstr ""
 msgid "Move the selected URL down"
 msgstr ""
 
-#: ../ui/main.qml:270
+#: ../ui/main.qml:304
 msgid "Back"
 msgstr ""
 
-#: ../ui/main.qml:277
+#: ../ui/main.qml:311
 msgid "Forward"
 msgstr ""
 
-#: ../ui/main.qml:284
+#: ../ui/main.qml:318
 msgid "Reload"
 msgstr "Recargar"
 
-#: ../ui/main.qml:298
+#: ../ui/main.qml:332
 msgid "Go to"
 msgstr ""
 
-#: ../ui/main.qml:319
+#: ../ui/main.qml:353
 msgid "Go Home"
 msgstr ""
 
-#: ../ui/main.qml:327
+#: ../ui/main.qml:361
 msgid "Open current URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:338
+#: ../ui/main.qml:372
 msgid "Open link's URL in default browser"
 msgstr ""
 
-#: ../ui/main.qml:346
+#: ../ui/main.qml:380
 msgid "Copy link's URL"
 msgstr ""
 
-#: ../ui/main.qml:366
+#: ../ui/main.qml:400
 msgid "Configure"
 msgstr "Configurar"
 

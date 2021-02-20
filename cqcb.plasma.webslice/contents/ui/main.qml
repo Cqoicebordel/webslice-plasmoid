@@ -42,6 +42,8 @@ Item {
     property int webPopupWidth: plasmoid.configuration.webPopupWidth
     property int webPopupHeight: plasmoid.configuration.webPopupHeight
     property string webPopupIcon: plasmoid.configuration.webPopupIcon
+    property bool showPinButton: plasmoid.configuration.showPinButton
+    property bool pinButtonAlignmentLeft: plasmoid.configuration.pinButtonAlignmentLeft
     property bool reloadAnimation: plasmoid.configuration.reloadAnimation
     property bool backgroundColorWhite: plasmoid.configuration.backgroundColorWhite
     property bool backgroundColorTransparent: plasmoid.configuration.backgroundColorTransparent
@@ -89,7 +91,7 @@ Item {
     onWebPopupWidthChanged:{  main.handleSettingsUpdated(); }
     
     onZoomFactorCfgChanged:{  main.handleSettingsUpdated(); }
-    
+
     onNotOffTheRecordChanged:{ 
         //console.debug("test");
         //console.debug(Plasmoid.fullRepresentation);
@@ -102,8 +104,14 @@ Item {
         //webview.createObject(WebviewWebslice);
         //webview = webviewTemp;
     }
-    
+
     //onKeysseqChanged: { main.handleSettingsUpdated(); }
+
+    Binding {
+        target: plasmoid
+        property: "hideOnWindowDeactivate"
+        value: !plasmoid.configuration.pin
+    }
 
 
     property Component webview: WebEngineView{
@@ -132,7 +140,33 @@ Item {
             offTheRecord: !notOffTheRecord
             storageName: (notOffTheRecord)?profileName:"webslice-data"
         }
+
+
+        /* Access to system palette */
+        SystemPalette { id: myPalette}
         
+        /**
+         * Pin button
+         */
+        Button {
+            id: pinButton
+            x: pinButtonAlignmentLeft?y:parent.width-y-2*Math.round(units.gridUnit)
+            width: Math.round(units.gridUnit)
+            height: width
+            checkable: true
+            icon.name: "window-pin"
+            hoverEnabled: false
+            focusPolicy: Qt.NoFocus
+            checked: plasmoid.configuration.pin
+            onCheckedChanged: plasmoid.configuration.pin = checked
+            visible: !displaySiteBehaviour && showPinButton
+            z:1
+            palette {
+                button: plasmoid.configuration.pin ? myPalette.highlight : myPalette.button
+            }
+        }
+
+
         /*
          * When using the shortcut to activate the Plasmoid
          * Thanks to https://github.com/pronobis/webslice-plasmoid/commit/07633bf508c1876d45645415dfc98b802322d407

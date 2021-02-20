@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 14:48+0100\n"
+"POT-Creation-Date: 2021-02-20 14:40+0100\n"
 "PO-Revision-Date: 2020-07-11 16:16+0000\n"
 "Last-Translator: Cqoicebordel <david.barouh@wanadoo.fr>\n"
 "Language-Team: French (http://www.transifex.com/cqoicebordel/webslice/"
@@ -184,61 +184,81 @@ msgstr ""
 "changez ces options, et redémarrer le plasmoid (redémarrer plasmashell "
 "devrait suffire)."
 
-#: ../ui/ConfigGeneral.qml:39
+#: ../ui/ConfigGeneral.qml:44
 msgid "URL :"
 msgstr "Adresse :"
 
-#: ../ui/ConfigGeneral.qml:58
+#: ../ui/ConfigGeneral.qml:63
 msgid "Zoom factor :"
 msgstr "Facteur d'agrandissement :"
 
-#: ../ui/ConfigGeneral.qml:92
+#: ../ui/ConfigGeneral.qml:97
 msgid "Enable auto reload"
 msgstr "Activer l'auto-actualisation"
 
-#: ../ui/ConfigGeneral.qml:97
+#: ../ui/ConfigGeneral.qml:102
 msgid "Reload interval :"
 msgstr "Intervalle d'actualisation :"
 
-#: ../ui/ConfigGeneral.qml:110
+#: ../ui/ConfigGeneral.qml:115
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
 msgstr "%1 sec"
 
-#: ../ui/ConfigGeneral.qml:123
+#: ../ui/ConfigGeneral.qml:128
 msgid "Plasmoid behaviour :"
 msgstr "Comportement du plasmoid :"
 
-#: ../ui/ConfigGeneral.qml:136
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display the site"
 msgstr "Afficher le site"
 
-#: ../ui/ConfigGeneral.qml:141
+#: ../ui/ConfigGeneral.qml:146
 msgid "Display a button that opens the site in a new panel"
 msgstr "Afficher un bouton qui ouvre le site dans un nouveau panneau"
 
-#: ../ui/ConfigGeneral.qml:154
+#: ../ui/ConfigGeneral.qml:159
 msgid "Popup size"
 msgstr "Taille de la popup"
 
-#: ../ui/ConfigGeneral.qml:159
+#: ../ui/ConfigGeneral.qml:164
 msgid "Width"
 msgstr "Largeur"
 
-#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
+#: ../ui/ConfigGeneral.qml:174 ../ui/ConfigGeneral.qml:190
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
 msgstr "%1 px"
 
-#: ../ui/ConfigGeneral.qml:175
+#: ../ui/ConfigGeneral.qml:180
 msgid "Height"
 msgstr "Hauteur"
 
-#: ../ui/ConfigGeneral.qml:196
+#: ../ui/ConfigGeneral.qml:203
+msgctxt ""
+"General setting, checkbox, to show the pin icon to keep the popup open"
+msgid "Show pin button"
+msgstr "Montrer le bouton pour garder le site ouvert"
+
+#: ../ui/ConfigGeneral.qml:220
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the left"
+msgstr "à gauche"
+
+#: ../ui/ConfigGeneral.qml:227
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the right"
+msgstr "à droite"
+
+#: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
 msgstr "Icône :"
 
-#: ../ui/ConfigGeneral.qml:210
+#: ../ui/ConfigGeneral.qml:259
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
@@ -248,31 +268,31 @@ msgstr ""
 "le nom des <a href=\"https://specifications.freedesktop.org/icon-naming-spec/"
 "icon-naming-spec-latest.html\">icônes standard freedesktop</a>"
 
-#: ../ui/ConfigGeneral.qml:228
+#: ../ui/ConfigGeneral.qml:277
 msgid "Display loading animation"
 msgstr "Afficher l'animation de chargement"
 
-#: ../ui/ConfigGeneral.qml:239
+#: ../ui/ConfigGeneral.qml:288
 msgid "Plasmoid background color :"
 msgstr "Couleur d'arrière-plan du plasmoid :"
 
-#: ../ui/ConfigGeneral.qml:250
+#: ../ui/ConfigGeneral.qml:299
 msgid "White"
 msgstr "Blanc"
 
-#: ../ui/ConfigGeneral.qml:256
+#: ../ui/ConfigGeneral.qml:305
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr "Transparent <i>(⚠ pourrait créer des problèmes d'affichages)</i>"
 
-#: ../ui/ConfigGeneral.qml:262
+#: ../ui/ConfigGeneral.qml:311
 msgid "Theme's background color"
 msgstr "Couleur d'arrière-plan du thème"
 
-#: ../ui/ConfigGeneral.qml:269
+#: ../ui/ConfigGeneral.qml:318
 msgid "Custom"
 msgstr "Personnalisée"
 
-#: ../ui/ConfigGeneral.qml:283
+#: ../ui/ConfigGeneral.qml:332
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
@@ -310,39 +330,39 @@ msgstr "Monter l'adresse sélectionnée"
 msgid "Move the selected URL down"
 msgstr "Descendre l'adresse sélectionnée"
 
-#: ../ui/main.qml:270
+#: ../ui/main.qml:304
 msgid "Back"
 msgstr "Précédent"
 
-#: ../ui/main.qml:277
+#: ../ui/main.qml:311
 msgid "Forward"
 msgstr "Suivant"
 
-#: ../ui/main.qml:284
+#: ../ui/main.qml:318
 msgid "Reload"
 msgstr "Recharger"
 
-#: ../ui/main.qml:298
+#: ../ui/main.qml:332
 msgid "Go to"
 msgstr "Aller à"
 
-#: ../ui/main.qml:319
+#: ../ui/main.qml:353
 msgid "Go Home"
 msgstr "Aller à la page d'accueil"
 
-#: ../ui/main.qml:327
+#: ../ui/main.qml:361
 msgid "Open current URL in default browser"
 msgstr "Ouvrir l'URL actuelle dans le navigateur par défaut"
 
-#: ../ui/main.qml:338
+#: ../ui/main.qml:372
 msgid "Open link's URL in default browser"
 msgstr "Ouvrir l'adresse du lien dans le navigateur par défaut"
 
-#: ../ui/main.qml:346
+#: ../ui/main.qml:380
 msgid "Copy link's URL"
 msgstr "Copier l'adresse du lien"
 
-#: ../ui/main.qml:366
+#: ../ui/main.qml:400
 msgid "Configure"
 msgstr "Configurer"
 

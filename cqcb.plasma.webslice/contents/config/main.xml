@@ -30,6 +30,15 @@
 		<entry name="webPopupHeight" type="Int">
             <default>500</default>
         </entry>
+		<entry name="showPinButton" type="Bool">
+            <default>true</default>
+        </entry>
+		<entry name="pinButtonAlignmentLeft" type="Bool">
+            <default>false</default>
+        </entry>
+		<entry name="pinButtonAlignmentRight" type="Bool">
+            <default>true</default>
+        </entry>
 		<entry name="webPopupIcon" type="String">
             <default>applications-internet</default>
         </entry>

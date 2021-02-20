@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-11-30 14:48+0100\n"
+"POT-Creation-Date: 2021-02-20 14:40+0100\n"
 "PO-Revision-Date: 2020-07-12 16:13+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
@@ -150,13 +150,20 @@ msgstr "Speicherung von Navigationsdaten erlauben"
 #: ../ui/ConfigExperimental.qml:134
 msgctxt "Text info just below the \"Allow to store navigation data\""
 msgid ""
-"By default, Webslices behave like a private window in a standard browser and no data"
-" is stored on disk. That's why you have to re-login when you restart you "
-"computer. So, activate this option if you want data to be stored.<br />The "
-"profile name is the folder in which your data will be stored. Don't change "
-"it unless you want multiple webslices connected with different accounts to "
-"the same website."
-msgstr "Standardmäßig verhalten sich Webslices wie private Fenster in einem Browser und es werden keine Daten auf der Festplatte gespeichert. Deshalb müssen Sie sich neu anmelden, wenn Sie Ihren Computer neu starten. Aktivieren Sie diese Option, wenn Sie möchten, dass Daten gespeichert werden.<br />Der Profilname ist der Ordner, in dem Ihre Daten gespeichert werden. Ändern Sie ihn nicht, außer Sie möchten mehrere Webslices mit unterschiedlichen Konten der selben Website verbinden."
+"By default, Webslices behave like a private window in a standard browser and "
+"no data is stored on disk. That's why you have to re-login when you restart "
+"you computer. So, activate this option if you want data to be stored.<br /"
+">The profile name is the folder in which your data will be stored. Don't "
+"change it unless you want multiple webslices connected with different "
+"accounts to the same website."
+msgstr ""
+"Standardmäßig verhalten sich Webslices wie private Fenster in einem Browser "
+"und es werden keine Daten auf der Festplatte gespeichert. Deshalb müssen Sie "
+"sich neu anmelden, wenn Sie Ihren Computer neu starten. Aktivieren Sie diese "
+"Option, wenn Sie möchten, dass Daten gespeichert werden.<br />Der Profilname "
+"ist der Ordner, in dem Ihre Daten gespeichert werden. Ändern Sie ihn nicht, "
+"außer Sie möchten mehrere Webslices mit unterschiedlichen Konten der selben "
+"Website verbinden."
 
 #: ../ui/ConfigExperimental.qml:141
 msgctxt ""
@@ -171,64 +178,88 @@ msgid ""
 "⚠ Beware. Because of a bug in QT, those options will crash the web renderer "
 "each time they are changed. So, to make it work, change the settings, and "
 "restart the plasmoid (restarting plasmashell once should suffice)."
-msgstr "⚠ Vorsicht. Aufgrund eines Fehlers in QT führen diese Optionen bei jeder Änderung zum Absturz des Web-Renderers. Um ihn wieder zum Laufen zu bringen, ändern Sie die Einstellungen und starten Sie das Plasmoid neu (ein einmaliger Neustart der Plasmashell sollte ausreichen)."
+msgstr ""
+"⚠ Vorsicht. Aufgrund eines Fehlers in QT führen diese Optionen bei jeder "
+"Änderung zum Absturz des Web-Renderers. Um ihn wieder zum Laufen zu bringen, "
+"ändern Sie die Einstellungen und starten Sie das Plasmoid neu (ein "
+"einmaliger Neustart der Plasmashell sollte ausreichen)."
 
-#: ../ui/ConfigGeneral.qml:39
+#: ../ui/ConfigGeneral.qml:44
 msgid "URL :"
 msgstr "URL:"
 
-#: ../ui/ConfigGeneral.qml:58
+#: ../ui/ConfigGeneral.qml:63
 msgid "Zoom factor :"
 msgstr "Vergrößerungsfaktor:"
 
-#: ../ui/ConfigGeneral.qml:92
+#: ../ui/ConfigGeneral.qml:97
 msgid "Enable auto reload"
 msgstr "Automatisch neu laden"
 
-#: ../ui/ConfigGeneral.qml:97
+#: ../ui/ConfigGeneral.qml:102
 msgid "Reload interval :"
 msgstr "Nachladeintervall:"
 
-#: ../ui/ConfigGeneral.qml:110
+#: ../ui/ConfigGeneral.qml:115
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
 msgstr "%1 s"
 
-#: ../ui/ConfigGeneral.qml:123
+#: ../ui/ConfigGeneral.qml:128
 msgid "Plasmoid behaviour :"
 msgstr "Plasmoid Verhalten:"
 
-#: ../ui/ConfigGeneral.qml:136
+#: ../ui/ConfigGeneral.qml:141
 msgid "Display the site"
 msgstr "Site anzeigen"
 
-#: ../ui/ConfigGeneral.qml:141
+#: ../ui/ConfigGeneral.qml:146
 msgid "Display a button that opens the site in a new panel"
 msgstr ""
 "Kompakt-Ansicht anzeigen. Öffnet die Site bei Klick in einem neuen Paneel."
 
-#: ../ui/ConfigGeneral.qml:154
+#: ../ui/ConfigGeneral.qml:159
 msgid "Popup size"
 msgstr "Pop-Up Größe"
 
-#: ../ui/ConfigGeneral.qml:159
+#: ../ui/ConfigGeneral.qml:164
 msgid "Width"
 msgstr "Breite"
 
-#: ../ui/ConfigGeneral.qml:169 ../ui/ConfigGeneral.qml:185
+#: ../ui/ConfigGeneral.qml:174 ../ui/ConfigGeneral.qml:190
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
 msgstr "%1 px"
 
-#: ../ui/ConfigGeneral.qml:175
+#: ../ui/ConfigGeneral.qml:180
 msgid "Height"
 msgstr "Höhe"
 
-#: ../ui/ConfigGeneral.qml:196
+#: ../ui/ConfigGeneral.qml:203
+msgctxt ""
+"General setting, checkbox, to show the pin icon to keep the popup open"
+msgid "Show pin button"
+msgstr "Anheften Schaltfläche anzeigen"
+
+#: ../ui/ConfigGeneral.qml:220
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the left"
+msgstr "links"
+
+#: ../ui/ConfigGeneral.qml:227
+msgctxt ""
+"General setting, radio button, to chose the alignement of the pin button, to "
+"the left or the right"
+msgid "to the right"
+msgstr "rechts"
+
+#: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
 msgstr "Icon :"
 
-#: ../ui/ConfigGeneral.qml:210
+#: ../ui/ConfigGeneral.qml:259
 msgid ""
 "Icon in \"file:///media/.../icon.jpg\" format, or name of <a href=\"https://"
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
@@ -238,31 +269,31 @@ msgstr ""
 "\"https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-"
 "latest.html\">standard freedesktop icons</a>."
 
-#: ../ui/ConfigGeneral.qml:228
+#: ../ui/ConfigGeneral.qml:277
 msgid "Display loading animation"
 msgstr "Ladeanimation anzeigen"
 
-#: ../ui/ConfigGeneral.qml:239
+#: ../ui/ConfigGeneral.qml:288
 msgid "Plasmoid background color :"
 msgstr "Plasmoid Hintergrundfarbe :"
 
-#: ../ui/ConfigGeneral.qml:250
+#: ../ui/ConfigGeneral.qml:299
 msgid "White"
 msgstr "Weiß"
 
-#: ../ui/ConfigGeneral.qml:256
+#: ../ui/ConfigGeneral.qml:305
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
 msgstr "Transparent <i>(⚠ könnte Darstellungsprobleme verursachen)</i>"
 
-#: ../ui/ConfigGeneral.qml:262
+#: ../ui/ConfigGeneral.qml:311
 msgid "Theme's background color"
 msgstr "Hintergrundfarbe des Themas"
 
-#: ../ui/ConfigGeneral.qml:269
+#: ../ui/ConfigGeneral.qml:318
 msgid "Custom"
 msgstr "Benutzerdefiniert"
 
-#: ../ui/ConfigGeneral.qml:283
+#: ../ui/ConfigGeneral.qml:332
 msgid ""
 "Note that the background color will only be visible if the page background "
 "is also transparent or not set. This setting is for the background of the "
@@ -300,39 +331,39 @@ msgstr "Ausgewählte URL nach oben verschieben"
 msgid "Move the selected URL down"
 msgstr "Ausgewählte URL nach unten verschieben"
 
-#: ../ui/main.qml:270
+#: ../ui/main.qml:304
 msgid "Back"
 msgstr "Zurück"
 
-#: ../ui/main.qml:277
+#: ../ui/main.qml:311
 msgid "Forward"
 msgstr "Vor"
 
-#: ../ui/main.qml:284
+#: ../ui/main.qml:318
 msgid "Reload"
 msgstr "Neu laden"
 
-#: ../ui/main.qml:298
+#: ../ui/main.qml:332
 msgid "Go to"
 msgstr "Gehe zu"
 
-#: ../ui/main.qml:319
+#: ../ui/main.qml:353
 msgid "Go Home"
 msgstr "Startseite aufrufen"
 
-#: ../ui/main.qml:327
+#: ../ui/main.qml:361
 msgid "Open current URL in default browser"
 msgstr "Aktuelle URL im Standard-Browser öffnen."
 
-#: ../ui/main.qml:338
+#: ../ui/main.qml:372
 msgid "Open link's URL in default browser"
 msgstr "URL des Links im Standardbrowser öffnen"
 
-#: ../ui/main.qml:346
+#: ../ui/main.qml:380
 msgid "Copy link's URL"
 msgstr "URL des Links kopieren"
 
-#: ../ui/main.qml:366
+#: ../ui/main.qml:400
 msgid "Configure"
 msgstr "Konfigurieren"
 
