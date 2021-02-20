@@ -5,14 +5,15 @@
 #
 # Translators:
 # Anderson Casimiro <duodraco@php.net>, 2015
+# Facundo Olivera <facu_900@hotmail.com>, 2020
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-20 14:40+0100\n"
-"PO-Revision-Date: 2015-06-21 20:20+0000\n"
-"Last-Translator: Anderson Casimiro <duodraco@php.net>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/webslice/"
+"POT-Creation-Date: 2021-02-20 15:16+0100\n"
+"PO-Revision-Date: 2021-02-20 14:00+0000\n"
+"Last-Translator: Cqoicebordel\n"
+"Language-Team: Spanish (http://www.transifex.com/cqoicebordel/webslice/"
 "language/es/)\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -22,27 +23,27 @@ msgstr ""
 
 #: ../ui/ConfigAdvanced.qml:48
 msgid "Scroll to a fixed position"
-msgstr ""
+msgstr "Desplazarse hacia una posición fija"
 
 #: ../ui/ConfigAdvanced.qml:53
 msgid "Scroll To : "
-msgstr ""
+msgstr "Desplazarse hacia  :"
 
 #: ../ui/ConfigAdvanced.qml:64
 msgid "X :"
-msgstr ""
+msgstr "X :"
 
 #: ../ui/ConfigAdvanced.qml:83
 msgid "px, "
-msgstr ""
+msgstr "px,"
 
 #: ../ui/ConfigAdvanced.qml:94
 msgid "Y :"
-msgstr ""
+msgstr "Y :"
 
 #: ../ui/ConfigAdvanced.qml:113
 msgid "px"
-msgstr ""
+msgstr "px"
 
 #: ../ui/ConfigAdvanced.qml:129
 msgid "Enable JS Scroll Into View"
@@ -50,36 +51,36 @@ msgstr "Habilita desplazamiento JS en la View"
 
 #: ../ui/ConfigAdvanced.qml:134
 msgid "JS Selector :"
-msgstr ""
+msgstr "Selector JS :"
 
 #: ../ui/ConfigAdvanced.qml:158
 msgid "Enable custom User-Agent"
-msgstr ""
+msgstr "Habilitar agente de usuario personalizado"
 
 #: ../ui/ConfigAdvanced.qml:163
 msgid "User-Agent :"
-msgstr ""
+msgstr "Agente de usuario :"
 
 #: ../ui/ConfigAdvanced.qml:186
 msgid "Reload the page when activated through the global shortcut"
-msgstr ""
+msgstr "Recargar la página cuando se activa a través de un atajo global"
 
 #: ../ui/ConfigAdvanced.qml:199
 msgctxt "Setting, checkbox, to ignore HTTPS errors, and display the page"
 msgid "Bypass Certificates/SSL/TLS errors"
-msgstr ""
+msgstr "Bypass errores de Certificados/SSL/TLS"
 
 #: ../ui/ConfigAdvanced.qml:219
 msgid "Display the scrollbars (follow the site)"
-msgstr ""
+msgstr "Mostrar barras de desplazamiento (siguen el sitio)"
 
 #: ../ui/ConfigAdvanced.qml:224
 msgid "Hide the scrollbars (<i>overflow: hidden</i> method)"
-msgstr ""
+msgstr "Ocultar barras de desplazamiento (método <i>overflow: hidden </i>)"
 
 #: ../ui/ConfigAdvanced.qml:229
 msgid "Hide the scrollbars (<i>::-webkit-scrollbar</i> method)"
-msgstr ""
+msgstr "Ocultar barras de desplazamiento (método <i>::-webkit-scrollbar</i>)"
 
 #: ../ui/ConfigAdvanced.qml:243
 msgid "Enable personnalized JavaScript to be executed once the page is loaded"
@@ -88,11 +89,11 @@ msgstr ""
 
 #: ../ui/ConfigAdvanced.qml:247
 msgid "Your JavaScript :"
-msgstr ""
+msgstr "Tu JavaScript :"
 
 #: ../ui/ConfigExperimental.qml:31
 msgid "Shortcuts :"
-msgstr ""
+msgstr "Atajos :"
 
 #: ../ui/ConfigExperimental.qml:38
 msgid ""
@@ -102,26 +103,31 @@ msgid ""
 "once the plasmoid is properly installed. There might also be an issue when "
 "multiple webslices are present."
 msgstr ""
+"Tenga en cuenta que los atajos habituales para esas acciones ya están "
+"incluidos. Aquí puede añadir a los mismos. Está en fase experimental, porque "
+"parece que no funciona para algunos atajos, y porque no sé si serán globales "
+"o no una vez que el plasmoide esté propiamente instalado. También podría "
+"haber un problema cuando hay múltiples webslices presentes."
 
 #: ../ui/ConfigExperimental.qml:44
 msgid "Back (ctrl+left already in)"
-msgstr ""
+msgstr "Atrás (ctrl+izquierda una vez dentro)"
 
 #: ../ui/ConfigExperimental.qml:50
 msgid "Forward (ctrl+right already in)"
-msgstr ""
+msgstr "Adelante (ctrl+derecha una vez dentro)"
 
 #: ../ui/ConfigExperimental.qml:70
 msgid "Reload (F5 already in)"
-msgstr ""
+msgstr "Recargar (F5 una vez dentro)"
 
 #: ../ui/ConfigExperimental.qml:76
 msgid "Stop (Esc already in)"
-msgstr ""
+msgstr "Detener (Esc una vez dentro)"
 
 #: ../ui/ConfigExperimental.qml:106
 msgid "Fill the whole width and height"
-msgstr ""
+msgstr "Rellenar ancho y altura por completo"
 
 #: ../ui/ConfigExperimental.qml:112
 msgid ""
@@ -129,12 +135,15 @@ msgid ""
 "Not sure if it works correctly, and not sure if it really fill vertically "
 "(seems OK horizontally)."
 msgstr ""
+"Puede ser útil cuando el plasmoide está en un panel, para llenar el espacio "
+"vacío. No estoy seguro si funciona correctamente, y tampoco si realmente se "
+"llena verticalmente (horizontalmente parece estar bien)."
 
 #: ../ui/ConfigExperimental.qml:127
 msgctxt ""
 "Setting, checkbox, to avoid behaving like a private window in a browser"
 msgid "Allow to store navigation data"
-msgstr ""
+msgstr "Permitir almacenar los datos de navegación"
 
 #: ../ui/ConfigExperimental.qml:134
 msgctxt "Text info just below the \"Allow to store navigation data\""
@@ -146,13 +155,20 @@ msgid ""
 "change it unless you want multiple webslices connected with different "
 "accounts to the same website."
 msgstr ""
+"Por defecto, los Webslices se comportan como una ventana privada en un "
+"navegador estándar y no se almacenan datos en el disco. Por eso mismo debes "
+"volver a iniciar sesión cuando reinicies tu ordenador. Por lo tanto, activa "
+"esta opción si quieres que se almacenen datos.<br /> El nombre del perfil es "
+"la carpeta en la que se almacenarán tus datos. No lo cambies a menos que "
+"quieras que múltiples webslices se conecten con diferentes cuentas al mismo "
+"sitio web."
 
 #: ../ui/ConfigExperimental.qml:141
 msgctxt ""
 "Setting, textfield, name of the folder containing the profile (navigation) "
 "data"
 msgid "Profile name :"
-msgstr ""
+msgstr "Nombre de perfil :"
 
 #: ../ui/ConfigExperimental.qml:157
 msgctxt "Text info just below the \"Profile name\""
@@ -161,56 +177,60 @@ msgid ""
 "each time they are changed. So, to make it work, change the settings, and "
 "restart the plasmoid (restarting plasmashell once should suffice)."
 msgstr ""
+"⚠ Atento. Debido a un bug en QT, esas opciones bloquearán el renderizador "
+"web cada vez que se cambien. Así que, para que funcione, cambie la "
+"configuración y reinicie el plasmoide (reiniciar plasmashell una vez debería "
+"ser suficiente)."
 
 #: ../ui/ConfigGeneral.qml:44
 msgid "URL :"
-msgstr "URL:"
+msgstr "URL :"
 
 #: ../ui/ConfigGeneral.qml:63
 msgid "Zoom factor :"
-msgstr ""
+msgstr "Factor de zoom :"
 
 #: ../ui/ConfigGeneral.qml:97
 msgid "Enable auto reload"
-msgstr "Habilita a recargar automáticamente."
+msgstr "Habilitar recarga automática"
 
 #: ../ui/ConfigGeneral.qml:102
 msgid "Reload interval :"
-msgstr "Intervalo de recarga: "
+msgstr "Intérvalo de recarga :"
 
 #: ../ui/ConfigGeneral.qml:115
 msgctxt "Abbreviation for seconds"
 msgid "%1 sec"
-msgstr ""
+msgstr "%1 seg"
 
 #: ../ui/ConfigGeneral.qml:128
 msgid "Plasmoid behaviour :"
-msgstr "Comportamiento del plasmoid: "
+msgstr "Comportamento del plasmoid :"
 
 #: ../ui/ConfigGeneral.qml:141
 msgid "Display the site"
-msgstr "Mostra el sitio"
+msgstr "Mostrar el sitio"
 
 #: ../ui/ConfigGeneral.qml:146
 msgid "Display a button that opens the site in a new panel"
-msgstr "Mostra un butón que abre el sitio en un nuevo panel"
+msgstr "Mostrar un botón que abre el sitio en un panel nuevo"
 
 #: ../ui/ConfigGeneral.qml:159
 msgid "Popup size"
-msgstr ""
+msgstr "Tamaño del pop-up"
 
 #: ../ui/ConfigGeneral.qml:164
 msgid "Width"
-msgstr ""
+msgstr "Ancho"
 
 #: ../ui/ConfigGeneral.qml:174 ../ui/ConfigGeneral.qml:190
 msgctxt "Abbreviation for pixels"
 msgid "%1 px"
-msgstr ""
+msgstr "%1 px"
 
 #: ../ui/ConfigGeneral.qml:180
 msgid "Height"
-msgstr ""
+msgstr "Alto"
 
 #: ../ui/ConfigGeneral.qml:203
 msgctxt ""
@@ -234,7 +254,7 @@ msgstr ""
 
 #: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
-msgstr ""
+msgstr "Ícono :"
 
 #: ../ui/ConfigGeneral.qml:259
 msgid ""
@@ -242,30 +262,33 @@ msgid ""
 "specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-latest.html"
 "\">standard freedesktop icons</a>."
 msgstr ""
+"Ícono en formato \"file:///media/.../icon.jpg\", o el nombre de <a href="
+"\"https://specifications.freedesktop.org/icon-naming-spec/icon-naming-spec-"
+"latest.html\">íconos estándar de freedesktop</a>."
 
 #: ../ui/ConfigGeneral.qml:277
 msgid "Display loading animation"
-msgstr ""
+msgstr "Mostrar animación de carga"
 
 #: ../ui/ConfigGeneral.qml:288
 msgid "Plasmoid background color :"
-msgstr ""
+msgstr "Color de fondo del plasmoid :"
 
 #: ../ui/ConfigGeneral.qml:299
 msgid "White"
-msgstr ""
+msgstr "Blanco"
 
 #: ../ui/ConfigGeneral.qml:305
 msgid "Transparent <i>(⚠ might cause drawing issues)</i>"
-msgstr ""
+msgstr "Transparente <i>(⚠ podría causar problemas de dibujado)</i>"
 
 #: ../ui/ConfigGeneral.qml:311
 msgid "Theme's background color"
-msgstr ""
+msgstr "Color de fondo del tema"
 
 #: ../ui/ConfigGeneral.qml:318
 msgid "Custom"
-msgstr ""
+msgstr "Personalizado"
 
 #: ../ui/ConfigGeneral.qml:332
 msgid ""
@@ -273,40 +296,45 @@ msgid ""
 "is also transparent or not set. This setting is for the background of the "
 "plasmoid, not of the page."
 msgstr ""
+"Tenga en cuenta que el color de fondo sólo será visible si el fondo de la "
+"página también es transparente o no está configurado. Este ajuste es para el "
+"fondo del plasmoide, no de la página."
 
 #: ../ui/ConfigMultipleURLs.qml:25
 msgid ""
 "List of URL accessible throught the context menu to switch to others "
 "websites."
 msgstr ""
+"Lista de URL accesibles a través del menú contextual para cambiar a otros "
+"sitios web."
 
 #: ../ui/ConfigMultipleURLs.qml:34 ../ui/ConfigMultipleURLs.qml:43
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: ../ui/ConfigMultipleURLs.qml:50
 msgid "Add a URL"
-msgstr ""
+msgstr "Agregar URL"
 
 #: ../ui/ConfigMultipleURLs.qml:59
 msgid "Remove the selected URL"
-msgstr ""
+msgstr "Eliminar URL seleccionada"
 
 #: ../ui/ConfigMultipleURLs.qml:67
 msgid "Move the selected URL up"
-msgstr ""
+msgstr "Mover URL seleccionada hacia arriba"
 
 #: ../ui/ConfigMultipleURLs.qml:77
 msgid "Move the selected URL down"
-msgstr ""
+msgstr "Mover URL seleccionada hacia abajo"
 
 #: ../ui/main.qml:304
 msgid "Back"
-msgstr ""
+msgstr "Atrás"
 
 #: ../ui/main.qml:311
 msgid "Forward"
-msgstr ""
+msgstr "Adelante"
 
 #: ../ui/main.qml:318
 msgid "Reload"
@@ -314,23 +342,23 @@ msgstr "Recargar"
 
 #: ../ui/main.qml:332
 msgid "Go to"
-msgstr ""
+msgstr "Ir a"
 
 #: ../ui/main.qml:353
 msgid "Go Home"
-msgstr ""
+msgstr "Ir a página de inicio"
 
 #: ../ui/main.qml:361
 msgid "Open current URL in default browser"
-msgstr ""
+msgstr "Abrir URL actual en el navegador predeterminado"
 
 #: ../ui/main.qml:372
 msgid "Open link's URL in default browser"
-msgstr ""
+msgstr "Abrir enlace de URL en el navegador predeterminado"
 
 #: ../ui/main.qml:380
 msgid "Copy link's URL"
-msgstr ""
+msgstr "Copiar enlace de URL"
 
 #: ../ui/main.qml:400
 msgid "Configure"
@@ -338,16 +366,16 @@ msgstr "Configurar"
 
 #: ../config/config.qml:6
 msgid "General"
-msgstr ""
+msgstr "General"
 
 #: ../config/config.qml:11
 msgid "Advanced"
-msgstr ""
+msgstr "Avanzado"
 
 #: ../config/config.qml:16
 msgid "More URLs"
-msgstr ""
+msgstr "Más URLs"
 
 #: ../config/config.qml:21
 msgid "Experimental"
-msgstr ""
+msgstr "Experimental"
