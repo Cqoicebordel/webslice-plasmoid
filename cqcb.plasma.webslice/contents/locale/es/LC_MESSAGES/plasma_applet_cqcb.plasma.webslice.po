@@ -6,13 +6,14 @@
 # Translators:
 # Anderson Casimiro <duodraco@php.net>, 2015
 # Facundo Olivera <facu_900@hotmail.com>, 2020
+# Facundo Olivera <fakuw8@outlook.es>, 2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-20 15:16+0100\n"
-"PO-Revision-Date: 2021-02-20 14:00+0000\n"
-"Last-Translator: Cqoicebordel\n"
+"POT-Creation-Date: 2021-02-23 19:44+0100\n"
+"PO-Revision-Date: 2021-02-23 15:52+0000\n"
+"Last-Translator: Facundo Olivera <fakuw8@outlook.es>\n"
 "Language-Team: Spanish (http://www.transifex.com/cqoicebordel/webslice/"
 "language/es/)\n"
 "Language: es\n"
@@ -236,21 +237,21 @@ msgstr "Alto"
 msgctxt ""
 "General setting, checkbox, to show the pin icon to keep the popup open"
 msgid "Show pin button"
-msgstr ""
+msgstr "Mostrar botón de anclado"
 
 #: ../ui/ConfigGeneral.qml:220
 msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the left"
-msgstr ""
+msgstr "a la izquierda"
 
 #: ../ui/ConfigGeneral.qml:227
 msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the right"
-msgstr ""
+msgstr "a la derecha"
 
 #: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
