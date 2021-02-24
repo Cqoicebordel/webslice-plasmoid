@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Heimen Stoffels <vistausss@outlook.com>, 2020
+# Heimen Stoffels <vistausss@outlook.com>, 2020-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-20 14:40+0100\n"
-"PO-Revision-Date: 2020-11-29 11:30+0000\n"
+"POT-Creation-Date: 2021-02-24 18:45+0100\n"
+"PO-Revision-Date: 2021-02-24 16:09+0000\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: Dutch (http://www.transifex.com/cqoicebordel/webslice/"
 "language/nl/)\n"
@@ -233,21 +233,21 @@ msgstr "Hoogte"
 msgctxt ""
 "General setting, checkbox, to show the pin icon to keep the popup open"
 msgid "Show pin button"
-msgstr ""
+msgstr "Vastmaakknop tonen"
 
 #: ../ui/ConfigGeneral.qml:220
 msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the left"
-msgstr ""
+msgstr "aan linkerkant"
 
 #: ../ui/ConfigGeneral.qml:227
 msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the right"
-msgstr ""
+msgstr "aan rechterkant"
 
 #: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
