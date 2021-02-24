@@ -4,13 +4,13 @@
 #
 #
 # Translators:
-# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015,2018,2020
+# Roland Reck <rolandNOSPAMreck@gmx.de>, 2015-2021
 msgid ""
 msgstr ""
 "Project-Id-Version: Webslice\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-02-20 14:40+0100\n"
-"PO-Revision-Date: 2020-07-12 16:13+0000\n"
+"POT-Creation-Date: 2021-02-25 00:40+0100\n"
+"PO-Revision-Date: 2021-02-20 14:50+0000\n"
 "Last-Translator: Roland Reck <rolandNOSPAMreck@gmx.de>\n"
 "Language-Team: German (http://www.transifex.com/cqoicebordel/webslice/"
 "language/de/)\n"
@@ -246,14 +246,14 @@ msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the left"
-msgstr "links"
+msgstr "Links"
 
 #: ../ui/ConfigGeneral.qml:227
 msgctxt ""
 "General setting, radio button, to chose the alignement of the pin button, to "
 "the left or the right"
 msgid "to the right"
-msgstr "rechts"
+msgstr "Rechts"
 
 #: ../ui/ConfigGeneral.qml:245
 msgid "Icon :"
