@@ -173,6 +173,9 @@ Item {
                     textFromValue: function(value, locale) {
                         return i18nc('Abbreviation for pixels', '%1 px', value);
                     }
+                    valueFromText: function(text) {
+                        return parseInt(text.split(' px')[0], 10)
+                    }
                     Layout.columnSpan: 1
                 }
 
@@ -188,6 +191,9 @@ Item {
                     stepSize: 10
                     textFromValue: function(value, locale) {
                         return i18nc('Abbreviation for pixels', '%1 px', value);
+                    }
+                    valueFromText: function(text) {
+                        return parseInt(text.split(' px')[0], 10)
                     }
                     Layout.columnSpan: 1
                 }
