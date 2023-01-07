@@ -123,6 +123,10 @@ Item {
 
         width: (displaySiteBehaviour) ? 0 : webPopupWidth
         height: (displaySiteBehaviour) ? 0 : webPopupHeight
+
+        implicitWidth: width
+        implicitHeight: height
+
         Layout.fillWidth: fillWidthAndHeight
         Layout.fillHeight: fillWidthAndHeight
 
