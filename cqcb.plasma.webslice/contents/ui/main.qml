@@ -121,8 +121,8 @@ Item {
 
         backgroundColor: backgroundColorWhite?"white":(backgroundColorTransparent?"transparent":(backgroundColorTheme?theme.viewBackgroundColor:(backgroundColorCustom?customBackgroundColor:"black")))
 
-        width: (displaySiteBehaviour) ? 0 : webPopupWidth
-        height: (displaySiteBehaviour) ? 0 : webPopupHeight
+        width: (displaySiteBehaviour) ? parent.width : webPopupWidth
+        height: (displaySiteBehaviour) ? parent.height : webPopupHeight
 
         implicitWidth: width
         implicitHeight: height
